@@ -1,0 +1,143 @@
+
+=======================
+Question 0:
+mkdir ANYTHING
+cd ANYTHING
+touch Annual.html
+
+#|
+Open Ended Question:
+Skill:
+Description
+
+Possible solution:
+|#
+ANSWER GOES HERE
+=======================
+Question 1:
+mkdir public_html
+cd public_html
+touch hello.html
+=======================
+Question 2:
+cd public_html
+touch testpage
+<title> testpage </title>
+<ul> <li> apple </li> <li> pineapple </li> <li> grape </li> </ul>
+=======================
+Question 3:
+HTML file 
+!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title> Tets prep </title>
+  </head>
+  <body>
+    <p>
+<h1> MY WEBSITE </h1>
+<br>
+welcome to my website 
+<br>
+<h2> TABLE OF CONTENTS </h2>
+<ul>
+<li> Background Info </li>
+<li> Career </li>
+<li> Fun Facts </li>
+</ul>
+</p>
+  </body>
+</html>
+
+CSS File 
+body 
+{
+background-color: yellow;
+}  
+p 
+{
+color: blue
+}
+h1 
+{
+color: red;
+}
+=======================
+Question 4:
+ANSWER GOES HERE
+=======================
+Question 5:
+p {
+font-family: "Times";
+color: green;
+text-align: center;
+border: dashed blue
+}
+=======================
+Question 6:
+CSS is used to style web pages and it does not need to be held in a different file from the HTML but it can be using <link>.
+=======================
+Question 7:
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+</head>
+<body>
+<h1>your name</h1>
+  <h2>wsp</h2>
+  <p>hi there</p>
+  <a href="https://www.foodandwine.com/recipes/matcha-latte"> </a>
+  <h2>!!!</h2>
+  <ol>
+    <li>hi</li>
+    <li>hello</li>
+    <li>hru</li>
+    <a href="https://ohayodesigns.com/products/matcha-whisk-chasen-4h-100-prong-bamboo-whisk?variant=46021061443828&country=US&currency=USD&utm_medium=product_sync&utm_source=google&utm_content=sag_organic&utm_campaign=sag_organic&gad_source=1&gclid=EAIaIQobChMI4LK1x7KyiwMVb2BHAR33BTy6EAQYASABEgLS-fD_BwE">here is a link if u wanna purchase one.</a>
+    <img src="data:image/jpeg;base64,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" alt="chasen image">
+</body>
+=======================
+Question 8:
+Multiple Choice
+When including a link into your HTML anchor element, what must go before it?
+1. href
+2. href=
+3. href"
+4. <a>
+Answer: 2
+
+#2
+Multiple Choice
+When navigating through the terminal, how do you change directories?
+1. ls
+2. touch
+3. cd
+4. cat
+Answer: 3
+
+#3
+Free Response
+Prompt: You are trying to add style to an HTML web page and you want to use a separate CSS file to code your style. You have already linked it successfully, but you want to make the background color for your main heading, h1, to green. What is the command for that?
+
+
+Answer:
+h1{
+background-color: green;
+}
+=======================
+Question 9:
+ANSWER GOES HERE
+A block element will always start on a new line, an inline element does not start on a new line. Inline CSS can be used to modify specific parts of an element with <span>. An example of a block element is <div> which creates a new line and creates a division which we can style in CSS. 
+ex: <div class="hello"><h1>Hello World</h1></div> 
+.hello {
+   text-align:center;
+}
+creates a block with Hello World, while defining it as a division and assigning it a class.
+=======================
+Question 10:
+<ul> <li> 1 </li> <li> 2 </li> <li> 3 </li> </ul>
+=======================
+Question 11:
+1) It is easier to maintain and less confusing to read. Having two languages in the same file can make it difficult or confusing to read and modify.
+2) You can reuse the same CSS file (and the layout of its contents) across multiple webpages
+3) separating enhances organization

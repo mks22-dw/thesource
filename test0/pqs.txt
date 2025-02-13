@@ -1,0 +1,115 @@
+
+=======================
+Question 0:
+Open Ended Question:
+Create a file called "Annual.html" within a directory
+Skill: 26
+Description
+
+
+=======================
+Question 1:
+Open Ended Question: 
+Skill:26, 27
+Description
+Write codes to create a directory, called public_html, and check if there is a file named hello.html If not, create one.
+
+=======================
+Question 2:
+Open Ended Question:Write the command line and html code to make a web page that has a title: testpage and an unordered list of threee fruits. Without the header such as doctype
+Skill:26,27,28
+Description
+
+
+=======================
+Question 3:
+Open Ended Question: Write an html and css file that would include the bottom text and with the heading being red, the text blue, and the background yellow. (i know a very eh color scheme) 
+Title: Test prep
+MY WEBSITE
+welcome to my website! 
+
+TABLE OF CONTENTS
+-Background Info
+-Career
+-Fun Facts
+
+Skill: 28 29
+Description
+
+
+=======================
+Question 4:
+Open Ended Question:
+Skill:
+Description
+
+
+=======================
+Question 5:
+Open Ended Question:
+Skill:29
+Write CSS code to modify the font style of a parragraph to the font family Times, set it's text color to green, center the text, and create a dashed blue border around it.
+
+
+=======================
+Question 6:
+Open Ended Question: 
+Skill: 28,29
+Description:
+What is the point of css and do you need to have a different file to hold it?
+
+
+=======================
+Question 7:
+Open Ended Question:
+Write an HTML program that will create a webpage titled "hello" with a heading that says your name, two sub-headings with any title, one with a paragraph and any link below it, and the other with a list containing 3 NUMBERED elements and any link.
+Skill: 27, 28
+Description
+
+=======================
+Question 8:
+Multiple Choice
+When including a link into your HTML anchor element, what must go before it?
+1. href
+2. href=
+3. href"
+4. <a>
+Answer: 2
+
+#2
+Multiple Choice
+When navigating through the terminal, how do you change directories?
+1. ls
+2. touch
+3. cd
+4. cat
+Answer: 3
+
+#3
+Free Response
+Prompt: You are trying to add style to an HTML web page and you want to use a separate CSS file to code your style. You have already linked it successfully, but you want to make the background color for your main heading, h1, to green. What is the command for that?
+
+
+Answer:
+h1{
+background-color: green;
+=======================
+Question 9:
+Open Ended Question: What is the difference between inline and block in HTML?
+Skill: 28, 29
+Description: What is the difference between them in HTML, how can we apply this in CSS?
+
+
+=======================
+Question 10:
+Open Ended Question: 
+Skill: 27
+Description: Write a block of code that will produce a list of three unnumbered items: 1, 2, and 3. (All other necessities such as in <head> or <html> are correct)
+
+ <ul> <li> 1 </li> <li> 2 </li> <li> 3 </li> </ul>
+=======================
+Question 11:
+Open Ended Question: What is one reason why we should separate CSS and HTML files?
+Skill: 28 and 29
+Description
+

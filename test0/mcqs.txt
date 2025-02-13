@@ -1,0 +1,335 @@
+
+=======================
+Question 0.a:
+MC Question:
+Which below does not relate to the comand-line?
+Skill: 26
+Options: 
+A. ls
+B. cr
+C. cd
+D. touch
+Answer B
+=======================
+Question 0.b:
+MC Question: 
+Which below is not valid HTML?
+Options:
+A.<img src="cat.jpg">
+B.<p style="color: green">
+C. <ititle<My amazing webpage>/title>
+D.<ol> <li>a thing</li> </ol>
+Skill:28
+Answer: C
+=======================
+Question 1.a:
+MC Question:
+How many different types of headings do we have in HTML(ex. h1)?
+Skill:28
+Options:
+A. 1
+B. 5
+C. 6
+D. 8
+Answer C
+=======================
+Question 1.b:
+MC Question: How to open a file and edit it using HTML in terminal?
+Options:
+A. nano
+B. cd
+C. open
+D. exit
+Skill:26
+Answer A
+=======================
+Question 2.a:
+MC Question:Which is an unordered list
+Skill:28
+Options:
+A)ul
+B)ol
+C)li
+D)unli
+Answer
+=======================
+Question 2.b:
+MC Question:In CSS what must follow every line of code?
+Skill:29
+Options:
+A):
+B)"
+C)'
+D);
+Answer
+=======================
+Question 3.a:
+MC Question: 
+In the sample template for a basic page:
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>WEBPAGE</title>
+  </head>
+  <body>
+    <p>
+      STUFF
+    </p>
+  </body>
+</html>
+
+If you were to want all the text of your page to be the color peru what would you include in your css file???
+
+Skill:29 
+Options:
+A) body 
+{
+background-color: peru;
+}  
+B) p
+{ 
+color: peru
+}
+C) Set color = peru
+D) body 
+{
+color: peru;
+}
+Answer
+D
+=======================
+Question 3.b:
+MC Question:
+How would make the following tree: 
+ $ tree Animals/
+ Animals/
+ ├── Pets
+     ├── Cats
+        ├── siamese.txt
+        └── Persian.txt
+Options:
+A) 
+~ % mkdir Animals 
+~ % mkdir Animals/Pets/
+~ % mkdir Animals/Pets/Cats 
+~ % touch Animals/Pets/Cats siamese.txt
+~ % touch Animals/Pets/Cats Persian.txt
+B) 
+~ % touch Animals/Pets/Cats siamese.txt & Persian.txt
+C) 
+~ % touch Animals/Pets/Cats siamese.txt
+~ % touch Animals/Pets/Cats Persian.txt
+D) 
+~ % mkdir Animals touch siamese.txt
+~ % mkdir Animals touch Persian.txt 
+
+Skill:26 27
+Answer A
+=======================
+Question 4.a:
+MC Question: What tags go inside the <head> tag?
+Skill: 28
+Options:
+A)
+B)
+C)
+D)
+Answer
+=======================
+Question 4.b:
+MC Question:
+Options:
+Skill:
+Answer
+=======================
+Question 5.a:
+MC Question:
+Which of the following copies the contents of a file named hello.txt to a file named newhello.txt?
+Skill: 26
+Options:
+A) cp newhello.txt hello.txt
+B) cp hello.txt newhello.txt
+C) rm hello.txt newhello.txt
+D) cat hello.txt newhello.txt
+
+Answer: B
+=======================
+Question 5.b:
+MC Question:
+Which of the following is a void element?
+Skill: 28
+Options:
+A) <p> This is a super cool paragraph </p>
+B) <h1> Fun and exciting heading </h1>
+C) <img src="unicorn.jpg">
+D) <li> 1 </li>
+
+Answer: C
+=======================
+Question 6.a:
+MC Question:How do you find more info about a command?
+Skill: 26
+Options:
+A) man
+B) cd
+C) pwd
+D) ls
+Answer: A
+=======================
+Question 6.b:
+MC Question: How does public_html serve web servers.
+Options:
+A) through itself
+B) through homer it is recognized as it is under the specific directory
+C) it is always like this
+D) it is linked directly to an ISP
+Skill: 27
+Answer: B
+=======================
+Question 7.a:
+MC Question: What command could one use in the terminal to create a plaintext file?
+Skill: 26
+Options:
+a. touch
+b. ls
+c. crt
+d. mkdir
+Answer
+a. touch
+=======================
+Question 7.b:
+MC Question: How would you access a plaintext file within a directory that you AREN'T currently in?
+Options:
+a. cd directory
+ls file.tx
+b. ls directory
+cat file.xt
+c. cd directory
+ca file.txt
+d. cd directory
+mv file.xt
+Skill: 26
+Answer
+=======================
+Question 8.a:
+#1
+Multiple Choice
+When including a link into your HTML anchor element, what must go before it?
+1. href
+2. href=
+3. href"
+4. <a>
+Answer: 2
+
+#2
+Multiple Choice
+When navigating through the terminal, how do you change directories?
+1. ls
+2. touch
+3. cd
+4. cat
+Answer: 3
+
+#3
+Free Response
+Prompt: You are trying to add style to an HTML web page and you want to use a separate CSS file to code your style. You have already linked it successfully, but you want to make the background color for your main heading, h1, to green. What is the command for that?
+
+
+Answer:
+h1{
+background-color: green;
+=======================
+Question 8.b:
+1
+Multiple Choice
+When including a link into your HTML anchor element, what must go before it?
+1. href
+2. href=
+3. href"
+4. <a>
+Answer: 2
+
+#2
+Multiple Choice
+When navigating through the terminal, how do you change directories?
+1. ls
+2. touch
+3. cd
+4. cat
+Answer: 3
+
+#3
+Free Response
+Prompt: You are trying to add style to an HTML web page and you want to use a separate CSS file to code your style. You have already linked it successfully, but you want to make the background color for your main heading, h1, to green. What is the command for that?
+
+
+Answer:
+h1{
+background-color: green;
+=======================
+Question 9.a:
+MC Question: What is the format of the "mv" command in the terminal
+Skill: 26
+Options: 
+A) mv FILE_NAME DIR_NAME
+B) mv DIR_NAME DESTINATION
+C) mv FILE SOURCE
+D) mv SOURCE DESTINATION1
+Answer
+D
+=======================
+Question 9.b:
+MC Question: What is the signifiance of the * element used in CSS
+Options:
+A) Every element that is inline
+B) Every element in the body
+C) Every single element 
+D) Every element in the head
+Skill: 29
+Answer
+C
+=======================
+Question 10.a:
+MC Question: Which of the following selectors will not stylize h1 elements?
+Skill: 29
+Options:
+A) *
+B) h1
+C) headings
+D) heading1 (a class that all headings contain) 
+Answer: C
+=======================
+Question 10.b:
+MC Question: Which of the following will open answer.txt?
+Skill: 26
+Options:
+A) cp answer.txt 
+B) mv answer.txt
+C) cat answer.txt
+D) less answer.txt
+Answer: C
+=======================
+Question 11.a:
+MC Question: Which HTML element is not used in <head>?
+Skill: 28
+Options:
+A) <meta>
+B) <head> 
+C) <link>
+D) <h1>
+Answer
+D
+=======================
+Question 11.b:
+MC Question: What will happen if you don't include alt in <img>?
+Skill: 28
+Options: 
+A) There will be no image
+B) The screen reader won't be able to read the image.
+C) The image will be stuck on loading or missing file
+D) Nothing. image will load as usual
+
+Answer
+B
