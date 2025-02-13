@@ -23,3 +23,8 @@ a {
   height: 50px;
   padding: 20px;
 }
+
+.foo {
+  background-color: lime;
+  font-family: sans-serif;
+}
