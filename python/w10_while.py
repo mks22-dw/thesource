@@ -8,7 +8,7 @@ def fizz_buzz(limit):
         elif n % 5 == 0:
             print(n, "buzz")
         n+= 1
-
+        
 print("fizz_buzz(20)")
 fizz_buzz(20)
 
@@ -32,6 +32,7 @@ fizz_what(50, 6, 9)
 def sum_digs(n):
     s = 0
     while n > 0:
+        print(n)
         s+= n % 10
         n = n // 10
     return s
