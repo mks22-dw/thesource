@@ -35,21 +35,24 @@ def camelCase(s):
     camelString = ""
     while i + 1 <= len(s):
         if "0" <= s[i] <= "9":
+            caps = True
             camelString += s[i]
         elif "A" <= s[i] <= "Z":
             if caps:
                 camelString += s[i]
+                caps = False
             else:
                 camelString += chr(ord(s[i]) + (ord("a") - ord("A"))) ## capitalizes
         elif "a" <= s[i] <= "z":
             if caps:
-                camelString += chr(ord(s[i]) + (ord("a") - ord("A")))
+                camelString += chr(ord(s[i]) - (ord("a") - ord("A")))
+                caps = False
             else:
                 camelString += s[i]
-        if s[i] = " ":
-            caps = True  # next word will become capitalized 
-        else:
-            caps = False # this will only run after the capitalization process.
+        if s[i] == " ":
+            caps = True  # next word will become capitalized
+        i += 1
+    print(camelString)
 =======================
 Question 6:
 """
