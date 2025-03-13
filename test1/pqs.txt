@@ -1,0 +1,423 @@
+
+=======================
+Question 0:
+Write a program to do b^n iteritavely.
+skill:
+Description
+
+
+def exp (b, n):
+    x = 0
+    ans = 1
+    while x < n:
+        ans = ans * b
+        x = x + 1
+    print (ans)
+=======================
+Question 1:
+Write a function called which_num that takes an integer as an input and prints "Positive" if the number is positive, "Negative" if the number is negative, and "Zero" if the number is zero. 
+skill: 3, 6, 30 
+Description
+
+
+def which_num (a):
+    if a > 0:
+        print ("Positive")
+    elif a < 0:
+        print ("Negative")
+    else: 
+        print ("Zero")
+=======================
+Question 2:
+skill: 3 8 11 30
+
+Description
+Write a function called turnaround that takes a multiple-character string and reverses it.
+Example: turnaround('mantis shrimp') would return 'pmirhs sitnam'
+
+def turnaround(notturned):
+    x = 1
+    turned = ''
+    while x < len(notturned) + 1:
+        turned += notturned[-x]
+    x += 1
+    return(turned)
+print(turnaround('mantis shrimp'))
+=======================
+Question 3:
+skill: 3, 4, 5, 11, 30 
+Find the number of a single string, a, existed in the string we enter. 
+
+
+=======================
+Question 4:
+Return the sum of digits in a variable a
+skill:5
+Description
+def sum(a):
+
+def sum(a):
+    b = 0
+    while a > 0:
+        print(a)
+        b+= b % 10
+        a = a // 10
+    return b
+=======================
+Question 5:
+skill:
+Description
+
+Write a program camelCase(s) that takes a string and converts it into camel case.
+
+Capitalize every word, except for the first one, which should be lowercase.
+"foo bar baz quux" ---> "fooBarBazQuux"
+"x y z" --> "xYZ"
+"Shibboleth" --> "shibboleth"
+
+Letters in a word that aren't the first one should be lowercase, no matter what.
+"antIdIsestABlIsHMENtAriAnISm" --> "antidisestablishmentarianism"
+"12Ab3cD45EF6" --> "12ab3cd45ef6"
+
+All spaces and symbols that aren't numbers or letters should be removed.
+"I feel ...hUnGrY" ---> "iFeelHungry"
+"9,000 numbers?" ---> "9000Numbers"
+
+
+=======================
+Question 6:
+skill:
+Description: Create a function, fib, that will take a parameter, n, and prints the first n numbers of the fibonacci sequence.
+Example: fib(5) -> [1, 1, 2, 3, 5]
+
+
+
+def fib(n):
+    a = 1             #initial value of 1st number
+    b = 1             #initial value of 2nd number
+    i = 1             #counter of the number of times the loop would run, until i equals n, therefore n times
+    
+    while i <= n:     #initialize loop
+        print(a)      #prints the current value of sequence
+        temp = a      #stores this current value in a temporary variable "temp"
+        a = b         #updates the current number to the next number in the sequence
+        b = temp + b  #calculates the next number in the sequence
+        i += 1        #increases counter by 1
+
+Explanation: This function sets variables a and b = 1
+=======================
+Question 7:
+skill: string basics 
+Description
+Write a function called replace that takes the letters whose index is divisble by 3 and returns the character that is 5 more and replaces that letter in the string.
+example: print(replace("hello") --> melqo
+
+=======================
+Question 8:
+Write a function that determines if a number is prime.
+skill: 3, 4, 5, 6, 11
+Description
+
+
+def isPrime (n):
+    counter = 2
+    while counter <= (n / 2):
+        if n % counter == 0:
+            return(n, "is not a prime number :(")
+        else:
+            counter += 1            
+    return(n, "is a prime number :)")
+
+print(isPrime(3))
+print(isPrime(4))
+=======================
+Question 9:
+skill: 6
+Write a function that takes in 3 nonequal integers and returns the product of the largest and the smallest.
+
+=======================
+Question 10:
+skill:3, 5, 6, 11, 30
+Description: Create a function called evens that takes a string and returns only the even numbers in that string. Create one test case.
+
+
+=======================
+Question 11:
+Make a function that counts the number of lower case letters in a string
+skill: 3
+Description
+
+
+def lettercounter(input):
+    c = 0
+    t = 0
+    while t < len (input):
+        if input[t] >= 'a' and input[t] <= 'z':
+            c += 1
+            t += 1
+        else:
+            t+= 1
+    return c
+=======================
+Question 12:
+skill:
+Write a function that splits a
+string into multiple lines wherever
+spaces are present, and prints each
+line.
+
+For instance, if you used the string
+"colorless green ideas" as an
+argument for the function:
+
+>>> new_function("colorless green ideas")
+
+"colorless"
+"green"
+"ideas"
+
+
+=======================
+Question 13:
+write a function that takes a string and returns the char
+values associated with 30 less than each characters UTF-8 value. BONUS: add an int variable that can reverse the function
+so m30(0, 's') subtracts 30 and m30(74, 's') adds 30
+skill:
+Description
+
+
+=======================
+Question 14:
+Write a python function that takes two numbers and returns their Least Common Multipl
+skill: 3 5 6 11
+Description
+write a function to take the lcm of 2 numbers
+
+def l(a, b):
+    m = a
+    while True:
+        if m % b == 0:
+            return m
+            break
+        else:
+            m += a
+=======================
+Question 15:
+Write a function that transforms every 3rd letter in a string to "a"
+skill: 11, 6, 3, 4, 5, 30
+Description
+
+
+
+def thIrdLetter(n):
+    x = 0
+    Transformed = ""
+    while x <= len(n):
+        if x % 3 == 0:
+            Transformed += "a"
+        else:
+            Transformed += n[x]
+        x += 1
+    return Transformed
+=======================
+Question 16:
+int
+c. asc
+d. len
+asnwer a
+
+what will the following function print?
+print ('false')
+a. false
+b. 'false'
+c. error
+
+Write a Python function reverse_string(s)
+that takes a string s as input and returns
+the string reversed.
+
+def reverse_string(s):
+    reversed_str = ""
+    index = len(s) - 1  
+    while index >= 0:
+        reversed_str += s[index] 
+        index -= 1  
+    return reversed_str
+
+""
+=======================
+Question 17:
+skill:
+Description: Write a code that takes a string (only lowercase) and inverts the letters in the string so 'z' becomes 'a', 'y' becomes 'b', 'c' becomes 'x', etc.
+
+
+=======================
+Question 18:
+skill: 3, 5, 8, 11, 30
+Description
+Write a program that takes a string and reverses its characters (ex., hello! -> !olleh).
+
+
+def reverse(s):
+    x = len(s)
+    newstring = ''
+    y = x - 1
+    while x > 0:
+        newstring+= s[y]
+        y-= 1
+        x -= 1
+    return(print(newstring))
+reverse('hello!') # -> !olleh
+=======================
+Question 19:
+gramming question:
+Skill:
+Description
+
+
+=======================
+Question 20:
+skill: 30
+Write a function called `reverse_string` that takes a string as input and returns the reversed version of the string.
+
+
+def reverse_string(s):
+    new_s = " "
+    n = len(s) - 1
+    while n >= 0:
+        new_s += s[n]
+        n -= 1
+    return new_s
+=======================
+Question 21:
+skill: 3, 8, 11, 30
+Write a function "staircaseString" that takes two inputs, a number n and a string s.
+This function should print out n lines.
+The first line printed is s, and each line after has another copy of s.
+For example, staircaseString(4, "car") prints out
+car
+carcar
+carcarcar
+carcarcarcar
+
+ 
+def staircaseString(n, s):
+    i = 1
+    while i <= n:
+        print(i * s)
+        i += 1
+=======================
+Question 22:
+Write a function called "pys" that when given two integer values
+(a and b) and a sentence, return back a new sentence with the UTF values being increased
+by a * b. leave all non-alphabet letters alone.
+skill: 3, 5, 6, 8, 11, 30
+Description:
+Function name: pys
+Inputs: a, b, s
+
+def pys (a, b, s):
+    x = ""
+    c = a* b
+    shuffle = 0
+    while len(s)>len(x):
+        character= s[shuffle]
+        shuffle +=1
+        if character>"A" and character<"Z" or character>"a" and character<"z":
+            x += chr(ord(character) + c)
+        else:
+            x += character
+    print(x)
+pys(5, 1, "hi, welcome to Our HUMBLE adopbe!:)")
+mn, |jqhtrj yt Tzw MZRGQJ aitugj!:)
+=======================
+Question 23:
+Write a program named ast that replaces all vowels with asterisks in a string
+skill: 3, 8, 11, 30
+Description
+Write a program named ast that replaces all vowels with asterisks in a string
+
+=======================
+Question 24:
+Upper-Lower
+skill: 3, 6, 11, 30
+Description
+Create a program that inputs a string, and lowercases all the uppercases, and uppercases the lowercases, then returns the new string
+
+=======================
+Question 25:
+Write a function to reverse a string. 
+skill: 11, 30, 6, 3
+Description
+
+
+def reverse(string):
+    counter = len(string) - 1
+    reverse = ""
+    
+    while counter >= 0:
+        reverse += string[counter]
+        counter -= 1
+=======================
+Question 26:
+Write a function called reversal that returns the reverse of a string, while also capitalizing all letters that are lowercase and lowercasing all capital letters.
+skill: 3, 6, 8, 11, 30
+Description
+
+
+=======================
+Question 27:
+Write a function that, given any eight
+character string (in which the characters are all lower case
+letters), the difference in UTF value between each character 
+Description
+
+
+=======================
+Question 28:
+skill: 30
+Description
+Write a function that will take the 3rd (starting from 0) characters of two strings and return their concatenation
+
+
+def thirdchars(a,b):
+    end = ''
+    end += a[3]
+    end += b[3]
+    return end
+=======================
+Question 29:
+skill: Strings (30)
+Program a function, sec_find(char, string0), that will find the second instance of a character?
+
+
+def sec_find(char, string0):
+    x = string0.find(char) + 1
+    while x < len(string0):
+        if string0[x] == char:
+            return x
+        x += 1
+    return -1
+=======================
+Question 30:
+Write a Python function that takes in a string and outputs the number of vowels there are
+skill: 3, 30
+Description
+
+
+
+def countingvowels(s):  
+    count = 0  
+    i = 0 
+    
+    while i < len(s): 
+        if s[i] == 'a' or s[i] == 'e' or s[i] == 'i' or s[i] == 'o' or s[i] == 'u':  
+            count += 1  
+        i += 1  
+    
+    return count  #
+=======================
+Question 31:
+skill:
+Write a function will return the product of the digits in a number.
+

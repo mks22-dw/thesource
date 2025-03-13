@@ -1,0 +1,795 @@
+
+=======================
+Question 0.a:
+Which of the followng works as the boolean value true?
+skill: 5
+I: T
+II: #True
+III: True
+Options:
+a) II
+b) I and III
+c) I, II, and III
+d) Not A, B, or C
+Answer
+d
+=======================
+Question 0.b:
+How do you call the nth element in the string s?
+skill: 30
+Options:
+a) s(n + 1)
+b) s[n - 1]
+c) s(n - 1)
+d) s[n]
+Answer
+b
+=======================
+Question 1.a:
+What will be the output of the following Python code?
+x = 3
+while x > 0:
+    print (x)
+    x=-1 
+skill: 11
+Options:
+A. Infinite
+B. 3 3 3
+C. 1 2 3
+D. 3 2 1 
+Answer
+D
+=======================
+Question 1.b:
+What will be the output of the following Python code?
+x = 9
+y = 4
+z = 0
+result = (x > y) == (y > z) != (x < z) 
+skill: 5 
+Options:
+A. True
+B. true
+C. False
+D. Error 
+Answer
+A
+=======================
+Question 2.a:
+Which of the following codes would return the UTF-8 value of a letter
+skill:30 8
+Options:
+A. ord()
+B. chr()
+C. str()
+D. int()
+Answer
+A. ord()
+=======================
+Question 2.b:
+What would be returned by the following code:
+best = 'Penguin'
+best[2]
+skill:30 8 
+Options:
+A. i
+B. 2
+C. n
+D. e
+Answer
+C. n
+=======================
+Question 3.a:
+What is the length of "Hello World!"?
+skill: 30
+Options:
+A. 11
+B. 12
+C. 5
+D. 6
+
+Answer: B
+=======================
+Question 3.b:
+What is the result of "Hello" * 5?
+skill: 3, 30
+Options:
+A. HelloHelloHelloHelloHello
+B. Hello Hello Hello Hello Hello
+C. 25
+D. Wrong
+
+Answer: A
+=======================
+Question 4.a:
+Which shows a value for the coder to see on screen?
+skill:4
+Options:
+A)Print
+B)print
+C)Return
+D)return
+Answer
+B)print
+=======================
+Question 4.b:
+What is true about ord
+skill:30
+Options:
+A)returns the character of a value
+B)returns the letter given
+C)returns the value of a character
+D)Always returns a letter
+Answer
+C)returns the value of a character
+=======================
+Question 5.a:
+skill:
+Options:
+
+Answer
+=======================
+Question 5.b:
+skill:
+Options:
+
+Answer
+=======================
+Question 6.a:
+What is the difference between any capital letter and its lowercase equivalent?
+Skill: 30
+Options:
+A) 13
+B) 16
+C) 26
+D) 32
+Answer: D
+=======================
+Question 6.b:
+Which of the following is a correct way to define a if statement in Python?
+skill: 6
+Options:
+A) if a == 1: *code to be executed*
+B) if (a == 1)(*code to be executed)
+C) if a == 1 {*code to be executed*}
+D) if (a == 1){*code to be executed*}
+Answer: A
+=======================
+Question 7.a:
+In the code:
+def omg (x):
+    if x < 2 * (x - 2):
+        print(x)
+    else:
+        print("omg!")
+what would print x?        
+skill: while 
+Options:
+A) omg(4)
+B) omg(1)
+C) omg(6)
+D) omg 3) 
+
+
+Answer
+A) omg(4)
+=======================
+Question 7.b:
+Which one of these is valid code in python? 
+skill:Python basics
+Options:
+A) hello < 3
+B) 3 = 4
+C) 4 * chr(128169)
+D) (a * b) < b 
+
+Answer
+C
+=======================
+Question 8.a:
+Which of the following is not a valid python conditional?
+skill:
+Options:
+A) if
+B) else
+C) ifel
+D) elif
+
+Answer
+C
+=======================
+Question 8.b:
+Which of the following is a function that acts on a string of multiple characters?
+skill:30
+Options:
+A) ord()
+B) chr()
+C) str()
+D) len()
+
+Answer
+D
+=======================
+Question 9.a:
+Which of the following complexities is considered the most efficient?
+skill: 4
+Options:
+A) log(n)
+B) x^2
+C) xlogx
+D) 2^x
+
+Answer: A
+=======================
+Question 9.b:
+Which of the following will return the index of a character in a string?
+skill: 30
+Options:
+A) chr
+B) find
+C) []
+D) locate
+
+Answer: B
+=======================
+Question 10.a:
+Which of the following is NOT valid string syntax?
+skill: 30
+Options:
+A. "hello world"
+B. '''hello world'''
+C. "'"hello world"'"
+D. 'hello world'
+Answer: C
+=======================
+Question 10.b:
+Which of the following will return a string?
+skill: 8 
+Options:
+A. ord('💩')
+B. int("I have the high ground!")
+C. print('the quick brown fox')
+D. chr(97)
+
+Answer
+=======================
+Question 11.a:
+Which function will shift one lowercase letter 13 units up in its unicode value?
+skill: 8
+Options:
+A: def fuzz (c):
+    if 'c' >= 'a' and 'c' <= 'z':
+        return chr (ord (c) + 13)
+    else:
+        return c
+B:def fuzz (c):
+    if 'c' = 'a' and 'c' = 'z':
+        return chr (ord (c) + 13)
+    else:
+        return c
+C:def fuzz (c):
+    if 'c' >= 'a' and 'c' <= 'z':
+        return chr (c + 13)
+    else:
+        return c
+D:def fuzz (c):
+    if 'c' >= 'a' and 'c' <= 'z':
+        return ord (c) + 13
+    else:
+        return c
+Answer: A
+=======================
+Question 11.b:
+When running 45 in the function 
+skill:
+Options:
+
+Answer
+=======================
+Question 12.a:
+In ASCII, ASCII code 64 is for the character "@"
+Which of the following statements will return the boolean True?
+skill:30
+Options:
+A) '@' == 64
+B) @ = '64'
+C) ord('@') == '64'
+D) '@' <= chr(100)
+
+Answer: D
+=======================
+Question 12.b:
+Answer based on the given function.
+
+def countup():
+    count = 0
+    while count <= 3:
+        if (count % 2) == 1:
+            print('and',count)
+        count+= 1
+
+skill:11
+Options: How many times does the function print when it is called?
+A) 1
+B) 2
+C) 3
+D) 4
+
+Answer: B
+=======================
+Question 13.a:
+Why are indents important?
+skill: 3
+Options:
+A) it is used to define variable
+B) it marks where functions begin or end
+C) they are cosmetic
+D) they are not important in python
+Answer: B
+=======================
+Question 13.b:
+What does ord(chr(a)) return if a is an integer?
+skill: 8, 30
+Options:
+A) 'a'
+B) the character a represents
+C) a
+D) nothing
+Answer: C
+=======================
+Question 14.a:
+skill:
+Options:
+
+Answer
+=======================
+Question 14.b:
+skill:
+Options:
+
+Answer
+=======================
+Question 15.a:
+What happens when you put a string with a single character through the ord function then through the chr function
+skill: 30
+Options:
+A: It returns the original character
+B: Returns an error
+C: Either A or B depending on the character
+D: Returns null
+Answer: A
+=======================
+Question 15.b:
+What must be true of a function that contains an elif statement and works
+skill: 3 6 
+Options:
+A: It returns a value
+B: It prints something
+C: It has an if statement as well
+D: It is an iterative function 
+
+Answer: C
+=======================
+Question 16.a:
+unction is used to find ASCII
+skill: 30
+a. ord
+b. int
+c. asc
+d. len
+asnwer a
+
+what will the following function print?
+print ('false')
+a. false
+b. 'false'
+c. error
+
+Write a Python function reverse_string(s)
+that takes a string s as input and returns
+the string reversed.
+
+def reverse_string(s):
+    reversed_str = ""
+    index = len(s) - 1  
+    while index >= 0:
+        reversed_str += s[index] 
+        index -= 1  
+    return reversed_str
+
+""
+=======================
+Question 16.b:
+find ASCII
+skill: 30
+a. ord
+b. int
+c. asc
+d. len
+asnwer a
+
+what will the following function print?
+print ('false')
+a. false
+b. 'false'
+c. error
+
+Write a Python function reverse_string(s)
+that takes a string s as input and returns
+the string reversed.
+
+def reverse_string(s):
+    reversed_str = ""
+    index = len(s) - 1  
+    while index >= 0:
+        reversed_str += s[index] 
+        index -= 1  
+    return reversed_str
+
+""
+=======================
+Question 17.a:
+skill:
+Options:
+
+Answer
+=======================
+Question 17.b:
+skill:
+Options:
+
+Answer
+=======================
+Question 18.a:
+What can you concatenate together in a string?
+skill: 30, 8
+Options:
+a. strings and integers
+b. integers ONLY
+c. strings ONLY
+d. strings, integers, and booleans
+Answer
+=======================
+Question 18.b:
+What would the following function return, given that n is the string 'h3LLo!!'?
+def foo(n):
+    X = 4
+    y = 0
+    s = ''
+    while x > 0:
+        if n[y] >= 'a' and n[y] <= 'z':
+            s+= chr(ord(n[y] - 32)
+            y+= 1
+            x-= 1
+        else:
+            s+= n[y]
+            y+= 1
+            x-= 1
+    return(print(s))
+skill: 3, 6, 8, 11, 30
+Options:
+a. h3LLo
+b. H3LLO!!
+c. H3LLO
+d. H3LLO!
+Answer
+=======================
+Question 19.a:
+ich inequality of two letter strings reports the correct value?
+Skill:
+Options:
+a. 'a' > 'a', "False"
+b. 'Z' < 'a', "False"
+c. 'B' > 'L', "True"
+d. 'C' < 'f', "False"
+
+Answer
+c
+=======================
+Question 19.b:
+====
+MC Question1: 
+Skill:
+Options:
+a.
+b.
+c.
+d.
+
+Answer
+=======================
+Question 20.a:
+skill: 8
+Which of the following is a valid way to declare and initialize a variable in Python?
+
+Options:
+A) var x = 10
+B) int x = 10
+C) x = 10
+D) x := 10
+
+Answer:
+C) x = 10
+=======================
+Question 20.b:
+skill: 6
+What will be the output of the following code?
+
+x = 15
+if x > 10:
+    print("A")
+elif x > 5:
+    print("B")
+else:
+    print("C")
+
+Options:
+A) A
+B) B
+C) C
+D) A B
+
+Answer:
+A) A
+=======================
+Question 21.a:
+Which of the following is NOT required to define a function?
+skill: 3
+Options:
+A) def
+B) A colon
+C) A return statement
+D) Parenthesis 
+
+Answer: C
+=======================
+Question 21.b:
+Which of these returns the string "July has 31 days"?
+skill: 30
+Options:
+A) return("July has " + 31 + " days")
+B) return("July has ", 31, " days")
+C) return("July has " + str(31) + " days")
+D) return("July has ", str(31), " days")
+
+Answer: C
+=======================
+Question 22.a:
+What does not return a boolean value? (In Shell)
+skill: 5, 3
+Options:
+a.) 3 > 0
+b.) true and False
+c.) True or False
+d.) "a" >= "b"
+Answer
+b
+=======================
+Question 22.b:
+skill:
+Options:
+
+Answer
+=======================
+Question 23.a:
+Which of these cannot be input into ord?
+skill: 8
+Options: 
+A) ?
+B) '7'
+C) 'a'
+D) 'A'
+Answer
+A
+=======================
+Question 23.b:
+Which code is correct?
+skill: 3
+Options:
+A) define addten (x)
+    x+=10
+    return x
+B) def addten (x)
+    x=+10
+    return x
+C) define addten (x)
+    x=+10
+    return x
+D) def addten (x)
+    x+=10
+    return x
+Answer
+D
+=======================
+Question 24.a:
+What does it mean when a string is immutable?
+skill: 30
+Options:
+A) The string cannot be assigned to a variable 
+B) You cannot assign a new string to a variable 
+C) You can't add numbers to it
+D) You cannot reassign individual characters in a string
+
+Answer
+D
+=======================
+Question 24.b:
+What data types is compatible with concatenate? 
+skill: 8, 30
+Options:
+A) Only strings
+B) Only integers
+C) Both strings and integers
+D) All strings, integers, and booleans 
+
+Answer
+A
+=======================
+Question 25.a:
+What is the output for 'string' + 'e' , 'd'?
+skill: 30
+Options:
+A: 'stringed'
+B: ('string', 'e', 'd')
+C: ('stringe', 'd')
+D: 'stringe d'
+
+Answer: C
+=======================
+Question 25.b:
+What value do the comparison operators take in account regarding strings?
+skill: 6, 30
+Options:
+A: Case 
+B: Length
+C: Encoder values
+D: Alphabetical order
+
+Answer: C
+=======================
+Question 26.a:
+Which of these returns False?
+skill: 8, 30
+Options:
+A) 'z' > 'A'
+B) 'A' > 'a'
+C) 0 < ord('0')
+D) ord('z') > ord('A')
+
+Answer: B
+=======================
+Question 26.b:
+The following function is already defined:
+def Xify(s):
+    count = 1
+    new = ''
+    while count < len(s):
+        if s[count] >= 'A' and s[count] <= 'Z':
+            new += 'X'
+        else:
+            new += s[count]
+        count += 1
+    return new
+What does Xify(SaXOphonE!!) return?
+skill: 3, 6, 11, 30
+Options:
+A) SaXXphonX!!
+B) XaXXphonX
+C) XXXXXXXXXXX
+D) XaXXphonX!!
+
+Answer: A
+=======================
+Question 27.a:
+which of the following is NOT necessary a
+valid while statement in Python?
+skill: 3 11
+Options:
+A) A boolean operator
+B) A colon
+C) A variable
+D) Indentation
+Answer 
+C
+=======================
+Question 27.b:
+Which of the following is not a literal
+value?
+skill: 8
+Options:
+A '15'
+B 15
+C Fifteen
+D 'Fifteen'
+Answer
+C
+=======================
+Question 28.a:
+Given that string s = 'pythons' what will s.find(s) return?
+skill: 30
+Options:
+A) -1
+B) 0
+C) 6
+D) An error
+
+Answer
+B
+=======================
+Question 28.b:
+Which option would correctly be a xor (exclusive or) gate for inputs a and b?
+skill: 5
+Options:
+
+A) a or b
+B) (a or b) and not (a and b)
+C) a || b
+D) (a || b) && !(a && b)
+
+Answer
+B
+=======================
+Question 29.a:
+Which of the following functions will ALWAYS return an integer?
+skill: Data Types (8)
+Options:
+A) +
+B) -
+C) //
+D) /
+Answer: C
+=======================
+Question 29.b:
+An elif block can be placed after a _____ block?
+skill: Using Conditional Statements (6)
+Options:
+A) elif
+B) else
+C) while
+D) def
+Answer: A
+=======================
+Question 30.a:
+What is the result of the following code? a = "5" b = "10" print(a + b)
+skill: 30
+Options:
+A) 15
+B) 510
+C) 5 10
+D) Error
+
+Answer: B
+=======================
+Question 30.b:
+What will be the output of the following code? i = 0 while i < 3:  print(i)  i += 1
+skill: 6
+Options:
+A) 0 1 2
+B) 0 1 2 3
+C) 0 1
+D) Error
+
+Answer: A
+=======================
+Question 31.a:
+Whhich of these does not return a string?
+skill:30
+Options:
+A) str()
+B) ord()
+C) chr()
+D) ''
+
+Answer: B
+=======================
+Question 31.b:
+str = "who are you"
+What will str.find(s) return?
+skill:30
+Options:
+A) -1
+B) 0
+C) 1
+D) 2
+
+Answer: A
