@@ -54,9 +54,9 @@ def analyze_data(data, totals):
 
 data = extract_data(yankees)
 print(data)
-analyze_data(data, totals)
-print(data)
-print(totals)
+# analyze_data(data, totals)
+# print(data)
+# print(totals)
 
 def make_html_table_header(s):
     html = '<thead><tr>'
@@ -83,4 +83,4 @@ html+= make_html_table_header(header)
 html+= make_html_table_body(data)
 html+= '</table>'
 
-print(html)
+# print(html)
