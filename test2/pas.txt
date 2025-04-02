@@ -1,0 +1,327 @@
+
+=======================
+Question 0:
+"""
+=======================
+Question 1:
+"""
+def list_sums(s):
+  s = s.split('\n')
+  new = []
+  for i in s:
+    new += [sum(map(int, i.split(',')))]
+  return new
+=======================
+Question 2:
+"""
+def multiple_list(b, n):
+  i = 0
+  g = []
+  while i < n:
+    g.append(b*(i+1))
+    i += 1
+  return g
+=======================
+Question 3:
+"""
+if reimanHypothesis:
+    return True
+else:
+    return False
+=======================
+Question 4:
+"""
+=======================
+Question 5:
+"""
+=======================
+Question 6:
+def make_name(first_names, last_names, n):
+    first_list = first_names.split(" ")
+    last_list = last_names.split(" ")
+    name_list = []
+    for i in range(n):
+        first = first_list[random.randrange(len(first_list))]
+        last = last_list[random.randrange(len(last_list))]
+        name_list.append((first + " " + last))
+    return name_list
+=======================
+Question 7:
+"""
+def string_func(s):
+    lines = s.split("\n")
+    newlines = []
+    for line in lines:
+        newline = line[::-1]
+        newlines.append(newline)
+    newstr = ",".join(newlines)
+    return newstr
+=======================
+Question 8:
+"""
+def add_ptag(s):
+    new_str = "" # string that will be returned with HTML formatting
+    paragraphs = s.split("\n")
+    for i in paragraphs:
+        new_p = "<p>" + i + "</p>\n"
+        new_str += new_p
+    return new_str
+
+sampletext = '''lorem
+ipsum
+dolor sit amet'''
+print(add_ptag(sampletext))
+=======================
+Question 9:
+0:
+        g.append(random.randrange(limit))
+        n = n - 1
+    return g
+
+sample_list = rand_list(15, 100)
+
+def sandwich(numbers):
+    sandwiched = []
+    while len(sandwiched) != len(numbers):
+        if len(sandwiched) >= (len(numbers) / 2):
+    return()
+=======================
+Question 10:
+Write a program that takes a list of student scores in the form [['student_name', 'score'], ['student_name', 'score']] and returns a list with score replaced by whether they failed or passed (below or above 65). (hint: score is a string)
+skill: 3, 8, 11, 30, 31
+Description:
+assume there are no repeats
+here is a list DeepSeek made for us <3: 
+s = [
+    ["Emily Johnson", 87],
+    ["Michael Chen", 92],
+    ["Sarah Williams", 76],
+    ["David Kim", 65],
+    ["Jessica Martinez", 94],
+    ["Daniel Brown", 58],
+    ["Olivia Davis", 81],
+    ["Matthew Wilson", 73],
+    ["Sophia Garcia", 99],
+    ["Andrew Taylor", 42],
+    ["Emma Anderson", 88],
+    ["Christopher Lee", 77],
+    ["Ava Hernandez", 91],
+    ["James Rodriguez", 63],
+    ["Isabella Smith", 85],
+    ["Joshua Lopez", 79],
+    ["Mia Gonzalez", 96],
+    ["Ethan Perez", 54],
+    ["Charlotte Moore", 89],
+    ["Alexander White", 71]
+]
+Possible solution:
+def failedOrPass(list):
+    for i in list:
+        index = list.index(i)
+        score = int(list[index][1])
+        if score > 65:
+            list[index].remove(score)
+            list[index].append('pass')
+        else:
+            list[index].remove(score)
+            list[index].append('fail')
+    return list
+            """
+=======================
+Question 11:
+MC Question3:
+How can you manipulate strings in Python?
+Options:
+A) You can only join and split strings.
+B) You can change characters by using their Unicode values.
+C) You must convert strings to lists before changing them.
+D) Only lowercase letters can be changed using Unicode values.
+
+Answer:
+B) You can change characters by using their Unicode values.
+
+=======================
+MC Question4:
+Which statement about lists in Python is correct?
+Options:
+A) Lists can only have the same type of items.
+B) Lists can’t be changed once created.
+C) Lists can hold other lists, and you can flatten them.
+D) You can’t change lists after creating them.
+
+Answer:
+C) Lists can hold other lists, and you can flatten them.
+
+=======================
+Programming question:
+skill: 3
+Description:
+Write a function `find_duplicates()` that takes a list of integers and returns a list of duplicates in that list
+
+Possible solution:
+def find_duplicates(nums):
+    seen = {}
+    duplicates = []
+    for num in nums:
+        if num in seen:
+            duplicates.append(num)
+        else:
+            seen[num] = True
+    return duplicates
+=======================
+Programming question:
+skill: 8
+Description:
+Write a function sum_valid_numbers() that accepts a list containing different data types and returns the sum of the numeric values only.
+
+Possible solution:
+
+def sum_valid_numbers(data_list):
+    total = 0
+    for item in data_list:
+        if type(item) == int or type(item) == float:
+            total += item
+    return total
+
+=======================
+Programming question:
+skill: 11
+Description: Write a function find_primes() that generates a list of prime numbers up to a given number using iteration and boolean conditions.
+
+Possible solution:
+
+def find_primes(limit):
+    primes = []
+    for num in range(2, limit + 1):
+        is_prime = True
+        for i in range(2, num):
+            if num % i == 0:
+                is_prime = False
+                break
+        if is_prime:
+            primes.append(num)
+    return primes
+
+=======================
+Programming question:
+skill: 30
+Description: Write a function shift_string() that shifts each character of a string by one position in the alphabet, non-alphabetic characters should remain unchanged.
+
+Possible solution:
+
+def shift_string(s):
+    shifted = []
+    for char in s:
+        if 'a' <= char <= 'z':
+            shifted.append(chr(((ord(char) - ord('a') + 1) % 26) + ord('a')))
+        elif 'A' <= char <= 'Z':
+            shifted.append(chr(((ord(char) - ord('A') + 1) % 26) + ord('A')))
+        else:
+            shifted.append(char)
+    return ''.join(shifted)
+
+=======================
+Programming question:
+skill: 31
+Description: Write a function flatten_list() that takes a list of sublists and flattens it into a single list. Ensure that the function works for any level of nested sublists.
+
+Possible solution:
+
+def flatten_list(nested_list):
+    flat_list = []
+    for item in nested_list:
+        if type(item) == list:
+            flat_list += flatten_list(item)
+        else:
+            flat_list.append(item)
+    return flat_list
+
+"""
+=======================
+Question 12:
+"""
+def numberStr(g):
+    last = g[len(g) - 1]
+    g.remove(g[len(g) - 1])
+    new = ''
+    x = 1
+    for i in g:
+        new+= i + str(x)
+        x+= 1
+    new+= last
+    return(new)
+=======================
+Question 13:
+"""
+=======================
+Question 14:
+def factorial(n):
+    result = 1
+    while n > 0:
+        result *= n
+        n -= 1
+    return result
+"""
+=======================
+Question 15:
+"""
+
+def cipher(s, n):
+    result = ""
+    i = 1
+    while i <= n:
+        result += '\n'
+        j = 0
+        while j < len(s):
+            c = ord(s[j])
+            if(s[j] >= 'a' and s[j] <= 'z'):
+                c += i
+                while(c > ord('z')):
+                    c -= 26
+            if(s[j] >= 'A' and s[j] <= 'Z'):
+                c += i
+                while(c > ord('Z')):
+                    c -= 26
+            result += chr(c)
+            j += 1
+        i += 1
+    return result
+=======================
+Question 16:
+"""
+=======================
+Question 17:
+"""
+=======================
+Question 18:
+"""
+=======================
+Question 19:
+"""
+=======================
+Question 20:
+"""
+def programmingQuestionSolutionFunction(n):
+    a1 = 2
+    d = 4
+    aN = a1 + ((n - 1) * 4)
+    return ((a1 + aN)*n) / 2
+=======================
+Question 21:
+"""
+=======================
+Question 22:
+"""
+def ans(x, y):
+    counter = 0
+    f = []
+    g = []
+    while counter < 10:
+        f += [x + counter * y]
+        g += [sum(f)]
+        counter += 1
+    return sum(g)
+ans(1, 1)
+=======================
+Question 23:
+"""

@@ -1,0 +1,596 @@
+
+=======================
+Question 0.a:
+What does split do?
+skill:30, 31
+Options:
+A. Takes one list and makes it into multiple strings at a defined point
+B. Takes one string and makes it into multiple lists at a defined point
+C. Performs a function on a list to make a new list
+D. Adds something to a string
+Answer
+B. Takes one string and makes it into multiple lists at a defined point
+=======================
+Question 0.b:
+What is the proper syntax for adding a key into a list(g) at a specified location(i)?
+skill:
+Options:
+A. place key at i of g 
+B. put key in g[i]
+C. g.insert(i, key)
+D. key enter g at i
+Answer
+C. g.insert(i, key)
+=======================
+Question 1.a:
+What would be the value of x in the following code:
+def value(i):
+  print(i+1)
+x = value(1)  
+skill: 8
+Options:
+A. None
+B. '2'
+C. '11'
+D. 2
+Answer: A
+=======================
+Question 1.b:
+What should the value of s in the following code?
+s = [1, 2, 3]
+s.append([1])
+skill: 31
+Options:
+A. [1, 2, 3, [1]]
+B. [1, 2, 3 ,1]
+C. [[1], 1, 2, 3]
+D. Error
+Answer: A
+=======================
+Question 2.a:
+What is map
+skill:31
+Options:
+A)makes a list from a string
+B)combines two lists
+C)modifies an already made list
+D)Performs a function on a list to make a new list
+Answer
+D)Performs a function on a list to make a new list
+=======================
+Question 2.b:
+What is join
+skill:31
+Options:30,
+A)makes a list from a string
+B)combines two lists
+C)Creates a string from a list of strings
+D)modifies an already made list
+)
+Answer
+C)Creates a string from a list of strings
+=======================
+Question 3.a:
+What restrictions exist on the first parameter of map(a, b)?
+skill: 8?
+Options:
+A) It must be a function with one parameter.
+B) It just has to be a list.
+C) It just has to be a function.
+D) It must be a list with all the same type of value.
+E) It can be any value.
+
+Answer
+A
+=======================
+Question 3.b:
+Pick all data types that can replace the variable B in
+for A in B
+Bonus points for identifying what A would become based off of B's data type!
+skill: 11
+Options:
+A) number
+B) string
+C) function
+D) list
+Answer
+B, and A becomes each character in the string.
+D, and A becomes each element in the list.
+=======================
+Question 4.a:
+Which of the following are considered iteration in Python?
+I. while
+II. for
+III. def
+IV. return
+
+skill: 11
+Options:
+A) I and III
+B) I and II
+C) II and IV
+D) I, II, IV
+
+Answer: B
+=======================
+Question 4.b:
+How do you make a string into a list?
+skill:
+Options: 
+A) .split()
+B) .list
+C) .stringsplit()
+D) .splitstring()
+
+Answer: A
+=======================
+Question 5.a:
+How does ".join" work? (Use list g.)
+skill: 30, 31
+Options:
+A) '-'.join(g) combines the elements of g into one string, separated by '-'.
+B) g.join('-') combines the elements of g into one string, separated by '-'.
+C) '-'.join(g) finds the first two instances of '-' in list g, and removes any elements between them.
+D) g.join('-') finds the first two instances of '-' in list g, and removes any elements between them.
+
+Answer A
+=======================
+Question 5.b:
+Which is an invalid string method?
+skill:
+Options:
+A)s.split()
+B)s.find()
+C)s.count()
+D)s.remove()
+
+Answer D
+=======================
+Question 6.a:
+MC Question0:
+# Which of the following returns a list of elements taken from x, split at the commas?
+# x = "apple,banana,orange,grape,strawberry"
+# skill: 30, 31
+# Options:
+# A) x.slice(,)
+# B) x.split(,)
+# C) split(x, ",")
+# D) None of the above
+#
+# Answer: D
+#
+#
+=======================
+Question 6.b:
+1:
+# What does the following code print?
+# x = ["James", "Bob", "Sarah", "Amy"]
+# for i in x:
+#   i = i[1:]
+# print(x)
+# skill: 8, 31
+# Options:
+# A) ['ames', 'ob', 'arah', 'my']
+# B) ['J', 'B', 'S', 'A']
+# C) ['James', 'Bob', 'Sarah', 'Amy']
+# D) ['Ja', 'Bo', 'Sa', 'Am']
+#
+# Answer: C
+#
+#
+=======================
+Question 7.a:
+Which of the following is not equivalent to s[0:10], where s is a string of length 19?
+skill:30
+Options:
+A) s[:10]
+B) s[:10:1]
+C) s[:10:-1]
+D) s[0:10:1]
+
+Answer: C
+=======================
+Question 7.b:
+Which of the following returns a list of all the numbers in list g after a function f has been performed on each element?
+skill:31
+Options:
+A) map(f, g)
+B) list(map(f, g))
+C) map(g, f)
+D) list(map(g, f))
+
+Answer: B
+=======================
+Question 8.a:
+The list g is defined below:
+
+g = ["A", "B", "C", "D"]
+
+Which line will return the value of ["D", "C"] when run in the shell?
+
+skill: 31
+Options:
+A) g[3,2:1]
+B) g[3:1]
+C) g[3:2:-1]
+D) g[3:1:-1]
+
+Answer: D
+=======================
+Question 8.b:
+The variables qazwsx and edcrfv is defined below:
+
+qazwsx = "A B C"
+edcrfv = "DEF"
+
+Which line of Python code will return the string "ABC DEF" when run in the shell?
+
+skill: 30
+Options:
+A) qazwsx.split() + edcrfv
+B) qaswsx + ' '.join(edcrfv)
+C) ''.join(qazwsx.split()) + ' ' + edcrfv
+D) ' '.join([qazwsx.split(), edcrfv])
+
+Answer: C
+=======================
+Question 9.a:
+ef rand_list(n, limit):
+    g = []
+    while n != 0:
+        g.append(random.randrange(limit))
+        n = n - 1
+    return g
+
+sample_list = rand_list(15, 100)
+
+def sandwich(numbers):
+    sandwiched = []
+    while len(sandwiched) != len(numbers):
+        if len(sandwiched) >= (len(numbers) / 2):
+    return(
+=======================
+Question 9.b:
+t):
+    g = []
+    while n != 0:
+        g.append(random.randrange(limit))
+        n = n - 1
+    return g
+
+sample_list = rand_list(15, 100)
+
+def sandwich(numbers):
+    sandwiched = []
+    while len(sandwiched) != len(numbers):
+        if len(sandwiched) >= (len(numbers) / 2):
+    return(
+=======================
+Question 10.a:
+What happens when the step of a slice is negative
+skill: 30, 31
+Options:
+A: bro that doesn't work
+B: reverses the string
+C: Converts whatever is being sliced into an iterable object
+D: The slice operation works from the last index to the first index
+Answer: D
+=======================
+Question 10.b:
+What is funky about the map function in python specifically
+skill: 8
+Options:
+A: It only accepts anonymous functions
+B: It only accepts functions with one parameter
+C: It returns an iterable which isn't a list by default
+D: It only accepts lists
+Answer: C
+=======================
+Question 11.a:
+Which of these is true about a function contract?
+Options:
+A) It includes the function’s code.
+B) It describes what the function does and what it returns, but not how it works.
+C) It only talks about return values.
+D) It’s not needed for simple functions.
+
+Answer:
+B) It describes what the function does and what it returns, but not how it works.
+=======================
+Question 11.b:
+What should you do if a function returns None in Python?
+Options:
+A) You can't mix numbers and strings in a list.
+B) Convert `None` to `0` when doing math.
+C) `None` can represent a missing value, and can be treated as `0` in math.
+D) `None` is treated like a number.
+
+Answer:
+C) `None` can represent a missing value, and can be treated as `0` in math.
+=======================
+Question 12.a:
+Given that s = [1, 4, 5, 7, 8, 9, 3], what would s[2:-1:2] return?
+skill: 31
+Options:
+a. [5, 8, 3]
+b. [5, 8]
+c. [4, 7, 9, 1]
+d. [1, 5]
+Answer
+b.
+=======================
+Question 12.b:
+Which of the following is false? (Given a list g)
+skill:
+Options:
+a. g.index(key) -> returns a list of all the indeces of key in g
+b. g.removew(key) -> removes the first occurrence of key in g
+c. g,insert(i, key) -> adds key to the list at i, shifts all indices up to and after i to the right
+d. a and b
+Answer
+a.
+=======================
+Question 13.a:
+What is an alternate way to write the equation or whatever you call this below?
+h = ['Hi!']
+h = h + ['Bye!']
+skill: 31
+Options:
+a. h =+ ['Bye!']
+b. h.append('Bye!')
+c. append.h('Bye!')
+d. h = ['Bye!']
+Answer
+b
+=======================
+Question 13.b:
+What data type can you concatenate a list with?
+skill: 8
+Options:
+a. list
+b. string
+c. All of the Above
+d. None of the Above
+Answer
+a
+=======================
+Question 14.a:
+What will be the output of the following code snippet?
+
+x = [1, 2, 3]
+y = x
+y.append(4)
+print(x)
+
+skill: Lists (31)
+Options:
+A) [1, 2, 3]
+B) [1, 2, 3, 4]
+C) Error
+D) None
+
+Answer: B
+=======================
+Question 14.b:
+What is the output of the following expression?
+
+print("Python"[::-1])
+
+skill: Strings (30)
+Options:
+A) Python
+B) nohtyP
+C) P
+D) Error
+
+Answer: B
+=======================
+Question 15.a:
+What does the following line of code return?
+print(print("Hello"))
+skill:8
+Options:
+A) print("Hello")
+B) Hello
+C) Hello
+   None
+D) None
+
+Answer: C
+=======================
+Question 15.b:
+Which of the following does not return the string "rn"?
+skill:31
+Options:
+A) "Corn"[2:5]
+B) "alternate"[4:6]
+C) "to return"[8:]
+D) "lk ia rn uq".split()[2]
+
+Answer: C
+=======================
+Question 16.a:
+What is the difference between the function map and for loop?
+skill: 3, 11
+Options:
+a.) There is no difference
+b.) For-loop requires a counter while map does not
+c.) map applies a function to every element, but for loop makes the variable defined with each element.
+d.) map requires two inputs, but for loop requires only 1
+Answer: c
+=======================
+Question 16.b:
+skill:
+Options:
+
+Answer
+=======================
+Question 17.a:
+Which of the following correctly adds 'hi' to the end of list b?
+skill: 30, 31
+Options:
+A) b+='hi'
+B) 'hi'.append(b)
+C) b.append('hi')
+D) append.b('hi')
+Answer C
+=======================
+Question 17.b:
+Which of the following doesn't create the list a which returns [7, 7, 7]
+skill: 31
+Options:
+A) a = [7, 7, 7]
+B) d=0
+   while d<7:
+       a.append(7)
+       d+=1
+C) d=0
+   a=[]
+   while d<7:
+       a.append(7)
+       d+=1
+D) d=0
+   a=[]
+   while d<7:
+       a.append(int('7'))
+       d+=1
+Answer B
+=======================
+Question 18.a:
+funcquestion0 is defined as:
+def funcquestion0(g):
+    b = ((str(g.split())).find('a'))
+    print(b)
+
+What will funcquestion0("s a l l y") return?
+skill: 8
+Options:
+A. 0
+B. 3
+C. 7
+D. 9
+Answer
+C
+=======================
+Question 18.b:
+list1 and list2 are defined as:
+list1 = ['1974', [1974], ['leatherface', 'franklin'], 'kirk']
+list2 = list1[2]
+What will print(list2[1]) return?
+skill: 31
+Options:
+A. 1974
+B. 'franklin'
+C. 'leatherface'
+D. '1974'
+Answer
+B
+=======================
+Question 19.a:
+The slice g[:3] returns...
+skill: 31
+Options:
+A: The last three values of the list
+B: The first three values of the list
+C: an error
+D: the value at g[3]
+
+Answer : B
+=======================
+Question 19.b:
+0. numbers = [1, 2, 3, 4]
+1. new_numbers = numbers.join(' ')
+2. new_numbers.append('5")
+3. print(new_numbers)
+
+Which is not a flaw in this problem?
+skill: 3, 8, 30, 31
+Options:
+A: Line 0, incorrect declaration 
+B: Line 1, incorrect syntax 
+C: Line 2, incorrect data typing
+D: Line 2, syntax mismatch 
+
+Answer : A
+=======================
+Question 20.a:
+The following list is defined:
+g = [[0, 1, 2, 3], ['4', '5', '6'], True, '7', 8, 'True']
+What does g[len(g[1])] + g[1][1] return? 
+skill: 8, 31
+Options:
+A) '74'
+B) 80
+C) 8
+D) '75'
+
+Answer: D
+=======================
+Question 20.b:
+Which of these will return 'J'?
+skill: 30
+Options:
+A) chr(ord('j') - (ord('a') - ord('A')))
+B) chr(ord('j') - (ord('a') + ord('A')))
+C) chr(ord('j') + (ord('a') - ord('A')))
+D) chr(ord('j') + (ord('a') + ord('A')))
+
+Answer: A
+=======================
+Question 21.a:
+Which of the following is NOT viable code as
+pertaining to list g?
+skill: 31
+Options:
+A) g.join(s)
+B) g.insert(s)
+C) g.append(s)
+D) g.remove(s)
+Answer
+A
+=======================
+Question 21.b:
+skill:
+Options:
+
+Answer
+=======================
+Question 22.a:
+Which of the following is not compatable with a for loop?
+skill: 11
+Options:
+A) [1, 2, 3]
+B) '1, 2, 3'
+C) 123
+D) '1, 2, 3'[0]
+Answer: C
+=======================
+Question 22.b:
+Which of the following will return "Hello-World", x = "Hello World"? 
+skill: 30
+Options:
+A) x.split()
+B) '-'.join(x).split()
+C) x.join([-, ])
+D) '-'.join(x.split(' '))
+Answer
+=======================
+Question 23.a:
+Given the code s = "PythonProgramming" print(s[::-2]), which of the following will be outputted?
+skill: 30
+Options:
+A) "gimroPnhy"
+B) "gimrnhy"
+C) "gmrnai"
+D) "gmrPto"
+Answer: B
+=======================
+Question 23.b:
+Which of the following statements about Python loops is false?
+skill: 11
+Options:
+A) A for loop can iterate a string
+B) A while loop always runs at least 1 time
+C) A for loop can be used to iterate over a range of #s
+D) A while loop requires the condition to be updated during each iteration
+Answer: B

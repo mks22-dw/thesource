@@ -1,0 +1,302 @@
+
+=======================
+Question 0:
+skill: 3, 8, 30, 31
+Description
+Create a function that takes a sentence with words seperated only by spaces and returns the longest word. If multiple words in the sentence are the same size the function should return the first of these words
+
+
+def longest_word(s):
+    s = s.split(' ')
+    biggest = ''
+    for i in s:
+        if len(i) > len(biggest):
+            biggest = i
+    return(biggest)
+print(longest_word("The quick brown fox jumps over the lazy dog"))
+=======================
+Question 1:
+skill: 3, 11, 31
+Write a code to return a list of sums of each line.
+Ex. a = '''1,2,3,4
+5,6,7,8'''
+Result: [10, 26]
+
+=======================
+Question 2:
+skill:3, 31
+
+Description
+Return a list of all the multiples of i from 1 to g
+
+
+def multiple_list(b, n):
+  i = 0
+  g = []
+  while i < n:
+    g.append(b*(i+1))
+    i += 1
+  return g
+=======================
+Question 3:
+solve the reimann hypothesis
+skill:
+Description
+
+
+=======================
+Question 4:
+skill:
+Description: Create a function, splitVar, to split a string that has no spaces but has a consistent variable character between words into a list and then return it. The function should have 2 parameters
+
+
+
+def splitVar(s, splitter):
+return s.split(splitter)
+=======================
+Question 5:
+write a function that takes a list of sublists
+separated by newlines. Each sublist contains numberic strings separated
+by commas. Return a list of the averages of each sublist.
+skill:
+Description
+ex:
+h = [[15,12,18,43],
+[16, 13,56,33],
+[14,28,62,55,54],
+[12, 11, 44, 22, 23]]
+
+
+def list_avgs(g):
+    avgs = []
+    for sub in g:
+        intsub = list(map(int, sub))
+        avgs.append(sum(intsub)/len(intsub))
+    return(avgs)
+=======================
+Question 6:
+n:
+# skill: 3, 31
+# Write a function that takes a string of first names(separated by spaces), a string of last names(separated by spaces), and an integer n.
+# It returns a list that contains n names made using a random first name and a random last name each. Assume import random has already been called.
+#
+# 
+#
+=======================
+Question 7:
+skill:3, 30
+Write a function that takes in a string with multiple lines and returns a string with each line reversed, also now separated by commas instead of newlines.
+
+
+=======================
+Question 8:
+Create a function that adds the HTML tag <p> to every paragraph in a string.
+The new text should start a paragraph <p> after every new line, and should
+close every paragraph with </p> before the next new line.
+
+Example:
+>>> sampletext = '''lorem
+ipsum
+dolor sit amet'''
+>>> print(add_ptag(sampletext))
+"<p>lorem</p>
+<p>ipsum</p>
+<p>dolor sit amet</p>"
+
+skill: 3, 11, 30
+Description
+
+
+=======================
+Question 9:
+0:
+        g.append(random.randrange(limit))
+        n = n - 1
+    return g
+
+sample_list = rand_list(15, 100)
+
+def sandwich(numbers):
+    sandwiched = []
+    while len(sandwiched) != len(numbers):
+        if len(sandwiched) >= (len(numbers) / 2):
+    return(
+=======================
+Question 10:
+Write a program that takes a list of student scores in the form [['student_name', 'score'], ['student_name', 'score']] and returns a list with score replaced by whether they failed or passed (below or above 65). (hint: score is a string)
+skill: 3, 8, 11, 30, 31
+Description:
+assume there are no repeats
+here is a list DeepSeek made for us <3: 
+s = [
+    ["Emily Johnson", 87],
+    ["Michael Chen", 92],
+    ["Sarah Williams", 76],
+    ["David Kim", 65],
+    ["Jessica Martinez", 94],
+    ["Daniel Brown", 58],
+    ["Olivia Davis", 81],
+    ["Matthew Wilson", 73],
+    ["Sophia Garcia", 99],
+    ["Andrew Taylor", 42],
+    ["Emma Anderson", 88],
+    ["Christopher Lee", 77],
+    ["Ava Hernandez", 91],
+    ["James Rodriguez", 63],
+    ["Isabella Smith", 85],
+    ["Joshua Lopez", 79],
+    ["Mia Gonzalez", 96],
+    ["Ethan Perez", 54],
+    ["Charlotte Moore", 89],
+    ["Alexander White", 71]
+]
+
+def failedOrPass(list):
+    for i in list:
+        index = list.index(i)
+        score = int(list[index][1])
+        if score > 65:
+            list[index].remove(score)
+            list[index].append('pass')
+        else:
+            list[index].remove(score)
+            list[index].append('fail')
+    return list
+            ""
+=======================
+Question 11:
+f these is true about `while` loops?
+Options:
+A) `while` loops are not useful for repeating actions based on conditions.
+B) You always need a counter in a `while` loop.
+C) You can control loops with conditions without using a counter.
+D) `for` loops can’t check conditions.
+
+Answer:
+C) You can control loops with conditions without using a counter.
+=======================
+Question 12:
+skill:
+Description
+Create a function that takes a list of strings, and joins them together in a new string with consecutive increasing integers.
+ex. g = ['hello', 'left', 'right', 'goodbye'] --> 'hello1left2right3goodbye'
+
+=======================
+Question 13:
+skill: 3, 8, 11, 30, 31
+Description
+Write a function named str_to_liststr that turns one string into a list of strings split by the spaces.
+Ex.
+str_to_liststr('Good morning or afternoon or evening or night or hello.') -> ['Good', 'morning', 'or', 'afternoon', 'or', 'evening', 'or', 'night', 'or', 'hello']
+
+=======================
+Question 14:
+skill: Writing functions/procedures (3), Iteration (11), Data Types (8)
+
+Write a function `factorial(n)` that takes an integer `n` and returns the factorial of `n` using a `while` loop.
+The factorial of a number `n` is defined as:
+
+n! = n × (n-1) × (n-2) × ... × 1
+
+For example:
+factorial(5) should return 120 because 5 × 4 × 3 × 2 × 1 = 120.
+
+
+=======================
+Question 15:
+skill: 3, 8, 11, 30
+
+Write a function that takes in a string s and an integer n, that returns a string with the result of the following procedure:
+Loop through the numbers 1 to n, starting a newline each time. Each line should contain the string s with every letter incremented by 1 to n, increasing by one each time.
+Characters other than letters should be unchanged, and letters after the end of the alphabet should loop back around to the beginning.
+
+For example, inputting "abc def xyz" and 3 would output:
+bcd efg yza
+cde fgh zab
+def ghi abc
+
+
+=======================
+Question 16:
+when given any random amount of integers in a lists, modify the structure so it displays as a string with 5 integers in each line before a new line is created. 
+skill:3, 8, 11, 30, 31
+Description
+[[[[30,88,1290,230,1],[213,32]], [431,829,0,12]], 78,29,43,10]
+returns:
+        30,88,1290,230,1
+        213,32,431,829,0
+        12,78,29,43,10
+
+=======================
+Question 17:
+Create a function that takes a string of numbers and returns a list of the numbers squared
+skill: 30, 31
+Description
+
+
+def square (x):
+    a=[]
+    for n in x:
+        a.append[n**2]
+    return a
+=======================
+Question 18:
+Write a program that will use "str", "list", and "split" to return a string that reads: '['pam', 'ela']'
+skill: 3, 8, 30, 31
+
+string = "pam ela"
+print(str(string.split(' ')))
+=======================
+Question 19:
+skill:
+Description
+
+
+=======================
+Question 20:
+Write a function that calculates the series of the first n terms in an arithmetic sequence with a1 = 2 and d = 4.
+skill: 3, 11
+Description:
+Remember: aN = a1 + (n - 1)d
+You should bash it with iteration instead of using the formula!
+
+=======================
+Question 21:
+Write a function that, given the
+following list 'Leshwi: Fused, Kaladin: Radiant, El: Fused, Venli: Singer, Shallan: Radiant, Rlain: Singer'
+Makes three unordered html lists: Fused, Singer, and Radiant, each of which accurately reflects the categories
+of the characters provided.
+skill: 3, 8, 30
+Description
+The result of this will be three strings of this format:
+"<h1> Fused </h2>
+<ul>
+<il> El </il>
+<il> Leshwi </il>
+</ul>
+
+=======================
+Question 22:
+skill: 3, 11, 31
+Description:
+Write a program to find the sum of the 10 first numbers of an arithmetic sequence composed of the arithmetic series of an arithmetic sequence f with a starting value of x and a difference of y.
+
+
+=======================
+Question 23:
+skill: 3, 30, 31
+Description
+Write a Python program that takes a list of words,
+appends a new word to the list, 
+and then prints all the words in the list as a single string
+with spaces between them.
+
+
+
+def e(l):
+    w = 'fish'
+    l.append(w)
+    s = " ".join(l)
+    return s
+    
+(print(e(['apple', 'bear', 'yellow'])))
