@@ -1,10 +1,10 @@
 from pprint import pprint
 
-def lists2dict(g0, g1):
+def lists2dict(keys, values):
     d = {}
     i = 0
-    while i < len(g0):
-        d[g0[i]] = g1[i]
+    while i < len(keys):
+        d[keys[i]] = values[i]
         i+= 1
     return d
 
@@ -45,4 +45,6 @@ f = open("data/alice.txt")
 text = f.read()
 f.close()
 
-#print(word_counts(text))
+counts = word_counts(text)
+pprint(counts)
+print(counts)

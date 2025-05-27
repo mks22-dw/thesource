@@ -8,12 +8,16 @@ weather = {
 
 def get_next_day(model, today):
     odds = model[today]
+    print(odds)
     r = random()
     total = 0
     for state in odds:
         total+= odds[state]
+        print('r:', r, 'total:', total)
         if r < total:
             return state
+
+print(get_next_day(weather, 'sunny'))
 
 def get_forecast(model, days, start):
     forecast = []
@@ -24,5 +28,5 @@ def get_forecast(model, days, start):
         i+= 1
     return forecast
 
-print(get_forecast(weather, 10, 'sunny'))
+#print(get_forecast(weather, 10, 'sunny'))
         

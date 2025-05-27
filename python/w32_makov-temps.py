@@ -1,4 +1,5 @@
 from random import random
+from pprint import pprint
 
 f = open('data/2024_nyc_temps.csv')
 text = f.read().strip()
