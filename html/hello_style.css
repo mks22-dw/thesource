@@ -1,0 +1,38 @@
+/*
+This is how you comment out things in css
+* {
+  border: 1px solid black;
+}
+*/
+
+li {
+  display: inline;
+}
+
+img {
+  display: block;
+}
+
+body {
+  background-color: lightsteelblue;
+  color: purple;
+  font-size: 20px;
+  border: 1px solid black;
+  width: 680px;
+  margin: auto;
+}
+
+
+h1 {
+  background-color: yellow;
+  padding: 20px;
+  border: 1px solid black;
+  width: 500px;
+  margin: auto;
+  }
+
+a {
+  color: mediumorchid;
+  height: 50px;
+  padding: 20px;
+}
