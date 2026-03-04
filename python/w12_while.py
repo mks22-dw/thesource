@@ -1,0 +1,37 @@
+def fizz_buzz(limit):
+    n = 1
+    while n <= limit:
+        if n % 15 == 0:
+            print(n, 'fizzbuzz!')
+        elif n % 3 == 0:
+            print(n, 'fizz')
+        elif n % 5 == 0:
+            print(n, 'buzz')
+        n+= 1
+print('fizzbuzz test:')
+fizz_buzz(22)
+
+
+def fizz_what(limit, fizz_num, buzz_num):
+    n = 1
+    while n <= limit:
+        if n % fizz_num == 0 and n % buzz_num == 0:
+            print(n, 'fizzbuzz!')
+        elif n % fizz_num == 0:
+            print(n, 'fizz')
+        elif n % buzz_num == 0:
+            print(n, 'buzz')
+        n+= 1
+
+print('\nfizzwhat test:')
+fizz_what(50, 6, 9)
+
+def sum_digs(n):
+    sum = 0
+    while n > 0:
+        sum = sum + n % 10
+        n = n // 10
+    return sum
+
+print('\nsumdigs test')
+print('24: ', sum_digs(87243))
