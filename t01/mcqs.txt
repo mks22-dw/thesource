@@ -1,0 +1,1041 @@
+
+=======================
+Question 0.a:
+Which of the following lines of code will
+not print something, if x = 5? 
+skill: 6, 5
+Options:
+A) if x > 0:
+    print("positive")
+B) if x % 2 == 0:
+    print("even")
+C) if x > 10:
+    print("big number")
+   else:
+    print("small number")
+D) if x % 15 == 0:
+    print("fizzbuzz!")
+   elif x % 3 == 0:
+    print("fizz")
+   elif x % 5 == 0:
+    print("buzz")
+Answer B
+=======================
+Question 0.b:
+what does this function return 
+def is_special(n):
+    count = 1
+    total = 0
+    while count <= n:
+        if count % 2 == 0 or count == 3:
+            total += 1
+        count += 1
+    return total > 2
+print(is_special(5))
+skill: 5 6 12 
+Options:
+A) True
+B) False
+C) 3
+D) 2
+Answer A
+=======================
+Question 1.a:
+"def foo(b):
+    count = 0
+    while b > 0:
+        b -= 2
+        count += 1
+    return count
+
+print(foo(7))"
+
+skill: 12
+Options:
+
+A)2
+B)3
+C)4
+D)5
+
+Answer C
+=======================
+Question 1.b:
+skill:
+Options:
+
+Answer
+=======================
+Question 2.a:
+Which of the following will produce the line:
+hellohellohello
+
+skill: 9
+Options:
+A) "hello" * 3
+B) return "hello" * 3
+C) print ("hello" *3 )
+D) print: ("hellohellohello")
+
+Answer: C
+=======================
+Question 2.b:
+What is the most effective way to increase the output options based in condiitonals 
+skill: 
+Options:
+A) Stack elif statements
+B) print ("output statement 1 + 1")
+C) Write a new function for the conditional
+D) print ("output statement 1, output statement 2") in the same if statement
+
+Answer: A
+=======================
+Question 3.a:
+: What can you put after "while" in a while loop?
+ skill: 12
+ Options:
+ A) a conditional statement
+ B) True or False
+ C) n = 2
+ D) boolean values
+ Answer: A
+=======================
+Question 3.b:
+: Which of the following is not used in conditional statements?
+ skill: 6
+ Options:
+ A) else
+ B) while
+ C) elif
+ D) if
+
+ Answer: B
+=======================
+Question 4.a:
+What does elif do?
+skill: 6
+Options: 
+a) Runs code if the corresponding "if" function is false
+b) Runs code if the corresponding "if" function is false and a condition is met
+c) Runs code if a condition is met
+d) Runs code repeatedly while a condition is met
+Answer: B
+=======================
+Question 4.b:
+Which always returns a float value?
+skill: 9
+Options:
+a) +
+b) //
+c) /
+d) **
+Answer: C
+=======================
+Question 5.a:
+: How many times will it print out "Crate"?
+ def function()
+    a = 10
+    b = -1
+    while (a > b and (a < 25)):
+        a = a + b
+        b = b + a
+        print("Crate")
+        
+ skill: 5 6 9 12
+ Options:
+ a) forever
+ b) twice
+ c) once
+ d) zero
+ 
+ Answer
+ b) twice
+=======================
+Question 5.b:
+: what will this statement return
+ 
+ (100 + 230 == True)
+ 
+ skill: 9
+ Options:
+    a) False
+    b) None
+    c) error
+    d) True
+ Answer
+    a) False
+=======================
+Question 6.a:
+Which expression evaluates to True?
+skill:5
+
+Options:
+A) 5 < 3
+B) 7 == 7
+C) 4 != 4
+D) 10 <= 2
+
+Answer: B
+=======================
+Question 6.b:
+What will the following code print?
+
+x = 8
+if x > 10:
+    print(A)
+elif x > 5:
+    print(B)
+else:
+    print(C)
+
+skill:6 
+
+Options:
+A) A
+B) B
+C) C
+D) It will cause an error
+
+Answer: D
+=======================
+Question 7.a:
+skill: 7
+Which of the following does not create a variable?
+Options:
+a) s='hello'
+b) def foo(x):
+c) def x
+d) p = 10
+
+Answer d)
+=======================
+Question 7.b:
+Which of the following operators will always return an integer?
+skill: 9
+Options:
+a) //
+b) *
+c) /
+d) none of the above
+
+Answer d)
+=======================
+Question 8.a:
+Which of the following is a valid Boolean value?
+skill: Working with Boolean Values
+Options:
+a) True
+b) false
+c) true
+d) None of the above
+
+Answer
+a) True
+=======================
+Question 8.b:
+Which of the following statements cannot be used in tandem with 'if'?
+skill: Using Conditional Statements
+Options:
+a) else
+b) elf
+c) elif
+d) None of the above
+
+Answer
+b) elf
+=======================
+Question 9.a:
+What does this return?
+x = 6
+if x = 6:
+    print ('x is 6')
+skill: 5, 6
+Options:
+A) 'x is 6'
+B) x is 6
+C) Nothing
+D) An error message
+
+Answer: D
+=======================
+Question 9.b:
+Why?
+skill: 5, 6
+Options:
+A) Because the : is unnecesary 
+B) Because print only works with numbers
+C) Because = is not a boolen operator
+D) Because Thonny is wrong
+
+Answer: C
+=======================
+Question 10.a:
+: Which of the following expressions will NEVER produce an int value?
+ skill: 9
+ Options:
+
+A)x ** y
+B)x // y
+C)x / y
+D)x - y
+ Answer
+x / y
+=======================
+Question 10.b:
+:True or false: you need a semicolon after while loops and if statements.
+ skill: 6
+ Options:
+
+A) True
+B) False
+ Answer
+False
+=======================
+Question 11.a:
+What is the value of the expression:
+
+not ((4 >= 4 and 3 != 3) or (2 * 3 == 6 and not False))
+
+skill: 5
+Options:
+A) True
+B) False
+C) 0
+D) It causes an error
+
+Answer: A
+=======================
+Question 11.b:
+What will this code print?
+
+x = 10
+if x > 5:
+    print("A")
+elif x > 8:
+    print("B")
+else:
+    print("C")
+
+skill: 6 
+Options:
+A) A
+B) B
+C) C
+D) Nothing
+
+Answer: A
+=======================
+Question 12.a:
+: How do elif and if differ?
+ skill: 5, 6
+ Options:
+ A) Elif eliminates the boolean value needed
+ B) There is no difference
+ C) Elif is a conditional that works like else but only for a certain case
+ D) Elif is the same as else and works on what if does not
+
+ Answer: C
+=======================
+Question 12.b:
+: What is returned when a float is added to an int?
+ skill: 9
+ Options:
+ A) Float
+ B) Int
+ C) String
+ D) NoneType
+
+ Answer: A
+=======================
+Question 13.a:
+: what's the difference between elif and else?
+ skill: 6
+ Options:
+ a. Else is evaluated before elif
+ b. Else provides another conditional statement to check if the ones before are false, and elif doesn't check a conditional, it provides instructions on what to do if all the stuff before it is false
+ c. Elif takes multiple conditional statements and if they are all true, else provides instructions on what to do next
+ d. Elif provides another conditional statement to check if the ones before are false, and else doesn't check a conditional, it provides instructions on what to do if all the stuff before it is false
+
+ Answer d
+=======================
+Question 13.b:
+: which will return "true" in Python?
+ skill: 5
+ Options:
+ a. (5 > 2) and (5 > 1)
+ b. (5 < 2) or (48 == (12 * 4))
+ c. ((1 + 2) == 4) and ((2 + 2) == 5)
+ d. None of the above because Python returns "True"
+
+ Answer d
+=======================
+Question 14.a:
+What is the % in python equivalent to in racket?
+skill: 9
+Options:
+A. quotient
+B. remainder
+C. modulo
+D. lambda
+
+Answer C
+=======================
+Question 14.b:
+Which of the following is true about Python?
+skill: 5 6 9 12
+Options:
+
+A. You must use a colon for EVERY built-in operator
+B. Indents don't affect the syntax of the python code
+C. = is an equality operator, and == is to assign a value
+D. print and return are the same thing
+
+Answer
+A
+=======================
+Question 15.a:
+Which conditional structure does not evaluate a boolean condition?
+skill: 5, 6
+Options:
+A) elif
+B) while
+C) if
+D) else
+
+Answer: D) else
+=======================
+Question 15.b:
+What data type is x if x = 12 // 5
+skill: 9
+Options:
+A) float
+B) int
+C) str
+D) list
+
+Answer: B) int
+=======================
+Question 16.a:
+What is correct syntax for using if and else?
+skill:6
+Options:
+A) if boolean:
+      random code
+      else boolean:
+           random code
+B) if boolean:
+      random code
+   else:
+       random code
+C) if boolean:
+      random code
+   else boolean:
+       random code
+D) ifelse boolean:
+      random code
+   else:
+       random code
+Answer
+B
+=======================
+Question 16.b:
+which while loop will loop 8 times if x = 0?
+skill:12
+Options:
+A) while x < 8:
+        x = x + 1
+B) while x < 9:
+        x+= 1
+C) while x < 8:
+        x-= 1
+D) while x < 16:
+        x = x + 3
+Answer
+A
+=======================
+Question 17.a:
+Which of the following will always return an error if x = 3.0?
+skill:9
+Options:
+A) x * 3
+B) int(x)
+C) 'hello' * x
+D) x + 7
+
+Answer: C
+
+=====================
+MC Question1:
+Which of the following is true about if statements but not elif statements?
+skill:6
+Options:
+A) They can be used with boolean values
+B) They will continue to evaluate the condition that follows, regardless of whether they return true or false.
+C) They can be placed inside a while block
+D) When a condition returns true, the function ends without checking the conditions that come after it.
+
+Answer: B
+
+=====================
+Programming question: 
+skill:12
+Write a function that will return the sum of all even digits in a number, called even_sum(n).
+
+Possible solution:
+=====================
+"""
+
+def even_sum(n):
+    total = 0
+    while n > 0:
+        if ((n % 10) % 2) == 0:
+            total = total + (n % 10)
+            n = n // 10
+        else:
+            n = n // 10
+    return tota
+=======================
+Question 17.b:
+wing will always return an error if x = 3.0?
+skill:9
+Options:
+A) x * 3
+B) int(x)
+C) 'hello' * x
+D) x + 7
+
+Answer: C
+
+=====================
+MC Question1:
+Which of the following is true about if statements but not elif statements?
+skill:6
+Options:
+A) They can be used with boolean values
+B) They will continue to evaluate the condition that follows, regardless of whether they return true or false.
+C) They can be placed inside a while block
+D) When a condition returns true, the function ends without checking the conditions that come after it.
+
+Answer: B
+
+=====================
+Programming question: 
+skill:12
+Write a function that will return the sum of all even digits in a number, called even_sum(n).
+
+Possible solution:
+=====================
+"""
+
+def even_sum(n):
+    total = 0
+    while n > 0:
+        if ((n % 10) % 2) == 0:
+            total = total + (n % 10)
+            n = n // 10
+        else:
+            n = n // 10
+    return tota
+=======================
+Question 18.a:
+Which function does not serve as a conditonal statement, or part of one?
+skill: 6
+Options:
+A: if
+B: elif
+C: while
+D: else
+Answer
+c: While
+=======================
+Question 18.b:
+What does the function while do to a block of code?
+skill: 12
+Options:
+A: Loops the code until the procedure is met.
+B: Repeats the code for a infinite amount of time.
+C: Changes code if a procedure is met.
+D: Creates a new variable that will meet a procedure.
+Answer
+A: Loops the code until a procedure is met.
+=======================
+Question 19.a:
+Which boolean expression is TRUE when x = 5 and y = 8?
+skill: 5 (Working with Boolean Values)
+Options:
+A) (x > y) and (x == 5)
+B) (x < y) and (x == 5)
+C) (x >= y) or (y < 8)
+D) (x != 5) or (y == 7)
+
+Answer: B
+=======================
+Question 19.b:
+What is printed by this code?
+
+s = "stuy"
+n = 3
+if len(s) == n:
+    print("A")
+elif len(s) > n:
+    print("B")
+else:
+    print("C")
+
+skill: 6 (Using Conditional Statements) + 9 (Data Types)
+Options:
+A) A
+B) B
+C) C
+D) Nothing prints
+
+Answer: B
+=======================
+Question 20.a:
+In python, which of the following gives the boolean value of true?
+skill: 2
+Options:
+A) True
+B) x == True (x used to be a number)
+C)
+
+Answer: A
+=======================
+Question 20.b:
+skill:
+Options:
+
+Answer: B
+=======================
+Question 21.a:
+def piecewise(x, y, z):
+    if x < 0:
+        return -2 * x * z
+    elif x == -1 and x > y:
+        return x / y
+    elif x + y < 1:
+        return x // y
+    else:
+        return x != y
+
+What is the data type that piecewise(-1, -3, '5') will return?
+
+skill: 6 9
+Options:
+A) boolean
+B) float
+C) integer
+D) string
+
+Answer: D
+=======================
+Question 21.b:
+# isPrime takes in an integer and returns whether it is prime
+def isPrime(num):
+    fxr = 2
+    result = True
+    while fxr <= num ** 0.5:
+        result = _?_ result
+        fxr += 1
+    return result
+
+Which choice best completes the function?
+
+skill: 5 12
+Options:
+A) (num % fxr != 0) and
+B) (num % fxr != 0) or
+C) (num % fxr == 0) and
+D) (num % fxr == 0) or
+
+Answer: A
+=======================
+Question 22.a:
+Considering the following function, what would print(boolean(50)) reaturn?
+def boolean(n):
+    if n > 20:
+        return n % 5 == 0 and not n % 2 == 0
+skill: 5, 6
+Options:
+A) True
+B) False
+C) None
+D) Error
+
+Answer: B
+=======================
+Question 22.b:
+If a variable is created inside of a function, can it be used outside of it? If a variable is created outside of any functions, can it be used inside of one?
+skill: 9
+Options:
+A) No, no
+B) Yes, yes
+C) Yes, no
+D) No, yes
+
+Answer: D
+=======================
+Question 23.a:
+What is true about % in Python?
+skill: 9
+Options:
+A) it always returns a floating number
+B) it always returns an integer
+C) it only returns a floating number if both inputs are floating number
+D) if one input is a floating number, it returns a floating number
+
+Answer: D
+=======================
+Question 23.b:
+What is considered a boolean value in Python?
+skill: 5
+Options:
+A) True
+B) true 
+C) false
+D) #f
+
+Answer: A
+=======================
+Question 24.a:
+What is the result of the expression (5 > 3) and (10 == 2 * 5)?
+skill: 5. Working with Boolean Values
+Options:
+A) True
+B) False
+C) 10
+D) Error
+
+Answer: A
+=======================
+Question 24.b:
+stion1:
+Which of the following data types would you use to store a person's name?
+skill: 9. Data Types
+Options:
+A) int
+B) float
+C) str
+D) bool
+
+Answer: C
+=======================
+Question 25.a:
+What is the difference between = and ==?
+skill: 5
+Options:
+A) = sets a variable's value, and == is a boolean operator.
+B) = is a boolean operator, and == sets a variable's value.
+C) = sets a boolean's value, == is a variable operator.
+D) = is a variable operator, and == sets a boolean's value.
+Answer: A
+=======================
+Question 25.b:
+What does elif do?
+skill: 6
+Options:
+A) elif is another word for the and "boolean" operator.
+B) elif is another word for "if".
+C) elif tests another condition if the previous condition was false.
+d) the functions under elif happen if the condition in the "if" statement was false.
+Answer: C
+=======================
+Question 26.a:
+What is the result of the following code? (Printed statements in quotes; space is the same as newline)
+
+x = 0
+while x < 10:
+    if x % 2 == 0:
+        print("2")
+    elif x % 3 == 0:
+        print("3")
+    else:
+        x += 1
+    
+skill: 6 12
+Options:
+A) "2 2 2 2" in an infinite loop
+B) "2 3 4 6 8 9"
+C) "2 4 6 8"
+D) "2 3 4 6 8 9 10"
+Answer: A
+=======================
+Question 26.b:
+What is the type of the result of the line of code below?
+
+(24.0 // 7) * 7 * "shrubbery"
+
+skill: 9
+Options:
+A) That will be difficult to determine because Python threw you an error.
+B) String
+C) Float
+D) Integer
+Answer: A
+=======================
+Question 27.a:
+Which of these statements about Python's int and float data types is true?
+skill: 9
+Options:
+A) When adding an int and a float, Python keeps the result as an int when it determines that
+the fractional part of the result is 0.
+B) Unless Python can determine that the result is a whole number, dividing two integers using
+/ will produce a float.
+C) The size of the integer used dictates the value type produced by multiplying an int and a
+float together.
+D) None of the above statements are true.
+
+Answer: D
+=======================
+Question 27.b:
+Consider the function foo, defined below.
+
+def foo(n):
+    total_sum = 0
+    x = 1
+    while x <= n and (x % 3 != 0):
+        if x % 2 == 0:
+            total_sum = total_sum + x
+        else:
+            total_sum = total_sum - x
+        x = x + 1
+    return total_sum
+    
+If a user types print(foo(7)) with foo defined as above, what will the shell display?
+
+skill: 5, 6, and 12
+Options:
+A) 1
+B) -1
+C) 2
+D) An infinite loop.
+
+Answer: A
+=======================
+Question 28.a:
+What will not return an Integer
+skill: 9
+Options:
+A) int 4
+B) 10 // 3
+C) 4 * 5
+D) 10 + 23
+
+Answer: B
+=======================
+Question 28.b:
+How many times will the word "Hello" be printed?
+i = 1
+while i < 4:
+    print("Hello")
+    i = i + 1
+
+skill: 6
+Options:
+A) 2
+B) 3
+C) 4
+D) 5
+
+Answer: B
+=======================
+Question 29.a:
+If you called a function that returned the value 5 in the code, what would show up in the shell?
+skill: 7
+Options:
+a) 5
+b) 10
+c) "5"
+d) None of the above
+
+Answer D
+=======================
+Question 29.b:
+Which of the following is a valid variable definition?
+skill: 7
+Options:
+a) m = def(test(x))
+b) def return(x)
+c) m = test(x)
+d) def x
+
+Answer C
+=======================
+Question 30.a:
+Which one doesn't print 1?
+skill: 6
+Options:
+A) print (1)
+B) def hmm (x):
+    y = x - 9
+    return y
+    print (y)
+   hmm (10)
+C) def go (x):
+    z = 10 - x
+    y = 2 - (x ** 0)
+    print (z - y)
+   go (8)
+D) They all print 1.
+
+Answer: B
+=======================
+Question 30.b:
+return(25 // -2.0)
+What is the value returned?
+skill: 9
+Options:
+A) -12.5
+B) -12.0
+C) -13
+D) None of above
+
+Answer: D (-13.0 is returned.)
+=======================
+Question 31.a:
+Which of the following returns a floating point number?
+skill: 9
+Options:
+a. int(4.0)
+b. 5/7
+c. 14//7
+d. 2**4
+Answer
+b.
+=======================
+Question 31.b:
+What does the following function return?
+def foo(x):
+    if x > 5:
+        return 6
+    elif x == 5:
+        return 5
+    else:
+        return 4
+foo(0)
+skill:5,6
+Options:
+a. 6
+b. 5
+c. 4
+d. none of the above
+
+Answer
+c.
+=======================
+Question 32.a:
+Which of the following is true?
+Skill: 9
+Options:
+A) You can use print more than once in a function
+B) You can have more than one return value in a function
+C) Print returns a value
+D) You can only use print once in a function
+
+Answer: A
+=======================
+Question 32.b:
+Which of the following is true?
+skill: 6
+Options:
+A) The if function contains instructions for when the boolean is true or false
+B) You can use multiple else functions within an if function
+C) You can use an elif function without an if function
+D) A syntactical indent is needed after the if, elif, and else functions
+
+Answer: D
+=======================
+Question 33.a:
+What value type does the / arithmetic operator return?
+skill: 9
+Options:
+A) If input types are the same, returns their same type
+B) Always returns a float
+C) Always returns an integer
+D) None of the above
+
+Answer: B
+=======================
+Question 33.b:
+What is print used for?
+skill: 9
+Options:
+A) To allow a returned value to be stored in a variable
+B) To send a value back from a function to the caller
+C) To display an output for the user
+D) To signal the end of the function
+
+Answer: C
+=======================
+Question 34.a:
+Which is not a data type in python?
+skill: 9
+Options:
+A) Bool
+B) Str
+C) Dig
+D) Int
+
+Answer: C
+=======================
+Question 34.b:
+What is wrong with the syntax of this program:
+def get_sum(n)
+    sum = 0
+    while n > 0:
+        dig = n % 10
+        sum += dig
+        n = n // 10
+    return sum
+skill: 12
+Options:
+A) += isn't valid syntax
+B) / should be //
+C) else should be indented
+D) missing colons
+
+Answer: D
+=======================
+Question 35.a:
+What is the value of the expression 7 // 2 in Python?
+skill: 9
+Options:
+A) 3.5
+B) 4
+C) 3
+D) 2
+
+Answer: C
+=======================
+Question 35.b:
+What will the boolean expression (5 > 3) and (2 > 4) evaluate to?
+skill: 6
+Options:
+A) True
+B) False
+C) 5
+D) Error
+
+Answer: B
+=======================
+Question 36.a:
+Which of the following is not a comparison operator?
+skill:5
+Options:
+A) >=
+B) !=
+C) =
+D) <
+
+Answer: C
+=======================
+Question 36.b:
+Which is not a value type?
+skill:9
+Options:
+A) Float
+B) Number
+C) String
+D) Boolean
+
+Answer: B

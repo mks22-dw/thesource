@@ -1,0 +1,403 @@
+
+=======================
+Question 0:
+Write a function that returns the factorial
+of an integer 
+skill: 12, 6, 9 
+Description
+
+
+def factorial (n) :
+    count = 2
+    total = 1
+    while count <= n:
+        total *= count 
+        count += 1
+    return total
+=======================
+Question 1:
+Write a function that counts how many even integers are between (0,n].
+skill: 6, 12
+
+
+=======================
+Question 2:
+skill: 5, 6, 12
+Write a program that will find the sum of all digits of an integer than are less than 5. 
+
+
+def small_digits(x):
+    smalls = 0
+    while x > 0:
+        if x % 10 < 5:
+            smalls = smalls + x % 10
+        x = x // 10
+    return smalls
+=======================
+Question 3:
+:
+ skill:
+ Description:
+
+
+ 
+=======================
+Question 4:
+Write a function that returns whether a number is prime or not
+skill: 12
+Description 
+The function should return true if it is and false if it isn't
+
+=======================
+Question 5:
+: Write code that will find the LCM of a number
+ skill: 6 12
+ Description
+ No description needed
+ 
+ 
+
+def gcf(a, b):
+    while (a != 0 and b != 0):
+        if (a > b):
+            a = a%b
+        else:
+            b = b%a
+    if (a == 0):
+        return b
+    else:
+        return a
+
+def lcm(a, b):
+    return a * b // gcf(a, b)
+=======================
+Question 6:
+skill: 9,12
+
+Write a function called f(n) that takes a positive integer n and returns the factorial of that number.
+
+
+=======================
+Question 7:
+skill: 6
+Description
+Create a function that will tell you which numbers are divisble by any 2 numbers that you provide, and something else if it is divisble by both. If a number is divisble by non of the 2 numbers skip it.
+
+def fizz_what (limit, fizz_num, buzz_num):
+    x=1
+    while 0 < x < limit:
+        if x % fizz_num == 0 and x % buzz_num == 0:
+            print(x, 'fizzbuzz!')
+        elif x % fizz_num == 0 :
+            print(x, 'fizz')
+        elif x % buzz_num == 0:
+            print(x, 'buzz')
+        x=x+1
+=======================
+Question 8:
+Given three numbers, develop a function that finds the product of their factorials.\
+skill: Iteration
+Description
+
+Given three numbers x, y, z
+Find x!*y!*z!
+
+
+def integer_sum_3(x, y, z):
+    lcm = 1
+    while x > 1:
+        lcm = lcm * x
+        x = x - 1
+    while y > 1:
+        lcm = lcm * y
+        y = y - 1
+    while z > 1:
+        lcm = lcm * z
+        z = z - 1
+    print(lcm)
+=======================
+Question 9:
+skill:
+Write a function that returns the area of a square
+if the sides are less than 10, and perimiter of the
+square if the sides are 10 or more. It has one
+parameter, x.
+
+
+=======================
+Question 10:
+:Write a function named "divicheck" that checks if a number (n) is divisible by 4 and 6. If yes, print "True". If not, print "False"
+ skill:6
+
+ 
+=======================
+Question 11:
+skill: 12
+
+Write a function called count_evens(n) that takes in a positive integer n.
+The function should return how many even numbers are between 1 and n (inclusive).
+
+
+Example:
+count_evens(6) → 3   
+
+
+=======================
+Question 12:
+: Create a function that returns True if a number is prime and False if it is not.
+ skill: 5, 6,
+
+
+ 
+=======================
+Question 13:
+:
+ skill: 12
+ Description
+ If my work sessions consist of in 60 minutes of being productive and 5 minutes of power nap. I start working at 8am. How many consecutive work sessions do I need to complete to end exactly on the start of an hour?
+
+ 
+=======================
+Question 14:
+Write a function that returns the square of any number
+skill: 9
+Description
+
+Must include atleast 2 test cases and outputs.
+
+
+
+=======================
+Question 15:
+skill: 5, 6, 12
+Write a function that will return the greatest common factor of two different positive integers. x is the larger integer, y is the smaller integer.
+
+
+=======================
+Question 16:
+write a function that checks if a number is a multiple of 3 and checks if it's a multiple of 4. If it is not a multiple of 3 then print "it is not a multiple of 3"
+skill:6
+Description
+
+
+def func34(x):
+    if x % 3 == 0:
+        return x % 4 == 0
+    else:
+        print('it is not a multiple of 3')
+=======================
+Question 17:
+or if x = 3.0?
+skill:9
+Options:
+A) x * 3
+B) int(x)
+C) 'hello' * x
+D) x + 7
+
+Answer: C
+
+=====================
+MC Question1:
+Which of the following is true about if statements but not elif statements?
+skill:6
+Options:
+A) They can be used with boolean values
+B) They will continue to evaluate the condition that follows, regardless of whether they return true or false.
+C) They can be placed inside a while block
+D) When a condition returns true, the function ends without checking the conditions that come after it.
+
+Answer: B
+
+=====================
+Programming question: 
+skill:12
+Write a function that will return the sum of all even digits in a number, called even_sum(n).
+
+
+=====================
+"""
+
+def even_sum(n):
+    total = 0
+    while n > 0:
+        if ((n % 10) % 2) == 0:
+            total = total + (n % 10)
+            n = n // 10
+        else:
+            n = n // 10
+    return tota
+=======================
+Question 18:
+skill: 5,6,12
+Description
+Write a function which returns the biggest number in a limit(limit) which is divisible
+by (n) and (x). If no number is found, return 0.
+
+=======================
+Question 19:
+skill: 12, 5, 9
+Description:
+Write a function count_vowels(text) that returns the number of vowels in a string.
+
+Details:
+text is a string
+Count both uppercase and lowercase vowels: a, e, i, o, u
+Use iteration (a while loop is fine)
+Return an integer count
+
+
+=======================
+Question 20:
+skill: 5, 9, 11
+Description: thingy(number, x, y)
+    loops from [1, number]
+    if a number is multiple of x and y, and it to counter
+    all numbers in the counter should be added together
+    return the final counter
+
+
+=======================
+Question 21:
+skill: 12
+
+Write a function without recursion taking a positive integer argument and returns the digital root, which is the value creatd by repeatedly summing the digits
+Ex (dr stands for digital root): dr(627963) = dr(6 + 2 + 7 + 9 + 6 + 3) = dr(33) = dr(3 + 3) = dr(6) = 6; the digital root of 627963 is 6
+
+
+=======================
+Question 22:
+Write a function that returns the sum of all odd numbers below n.
+skill: 6, 12
+
+
+=======================
+Question 23:
+Write a function that prints the largest digit in a number
+skill: 5, 6, 12
+Description
+
+
+def largest_dig (x):
+    max = 0
+    digit = 0
+    while x > 0:
+        digit = x % 10
+        if digit > max:
+            max = digit
+        x = x // 10
+    print (max)
+=======================
+Question 24:
+estion:
+skill: 6. Using Conditional Statements
+Description: 
+Write a function called 'check_grade' that takes an integer 'score' 
+as a parameter. If the score is 70 or higher, return the string "Pass". 
+Otherwise, return the string "Fail".
+
+
+=======================
+Question 25:
+Write an iterative function that returns the sum of the square roots of every number from [1, limit]
+skill: 12
+
+
+=======================
+Question 26:
+skill: 5 6 12
+Description
+Print the non-prime numbers from 2 to a given limit, inclusive.
+
+=======================
+Question 27:
+skill: 5, 6, and 12
+Write a function even_product that takes in two integer parameters a and b, and returns the
+product of all of the even integers from a up to and including b (in other words, in the
+interval [a, b]). Assume that a <= b. Below are some test cases for even_product.
+
+even_product(-6, -2) --> -48
+even_product(1, 5) --> 8
+even_product(3, 5) --> 4
+even_product(5, 5) --> 1
+even_product(5, 10) --> 480
+even_product(10, 19) --> 483840
+
+
+=======================
+Question 28:
+skill: 
+Write a function called calculate_area that takes two parameters: 
+length and width. It should calculate and return the area of 
+a rectangle. 
+
+
+=======================
+Question 29:
+Create a function called factorials with number [n] that prints the closest integer factorial to n
+and the percent that n is of the next factorial.
+skill:
+Description
+
+
+=======================
+Question 30:
+skill: 12
+Write the python code for the following example.
+countdown (5)
+5 !!
+4 !!
+3 !!
+2 !!
+1 !!
+Blastoff!!!
+
+
+=======================
+Question 31:
+Write a function for the  area of a rectangular prism with sides l, w, and h, only if l, w, and h are > 0. (A=lwh)
+skill:5,6 
+
+
+
+def area(l,w,h)
+    if l == 0 or w == 0 or h == 0:
+        print('no')
+    else:
+        return (l * w * h)
+=======================
+Question 32:
+skill: 12
+Write a function that calculates the factorial of a parameter, n
+
+
+=======================
+Question 33:
+skill: 5, 12
+Write a function, num_digs, that returns the number of digits in a positive integer.
+
+
+=======================
+Question 34:
+skill: 5, 9, 12
+Description
+Write a function factor_tree that takes a positive integer n and prints its prime factorization 
+
+=======================
+Question 35:
+skill: 9, 12
+
+Write a function called sum_to_n that takes a positive integer n.
+The function should use a while loop to compute and return the sum
+of all integers from 1 up to n.
+
+Example:
+sum_to_n(4) returns 10 because 1 + 2 + 3 + 4 = 10.
+
+
+=======================
+Question 36:
+skill:12
+Write a function that returns phi(n), the number of numbers relatively prime to n.
+Note that 1 is coprime to itself, so phi(1) = 1. Assume all inputs are positive integers.
+
