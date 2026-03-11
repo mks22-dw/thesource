@@ -17,3 +17,7 @@ def upstring(s):
         new_s+= upcase(s[c])
         c+= 1
     return new_s
+
+
+print(f"hello: {upstring('hello')}")
+print(f"""What's up: {upstring("What's up")}""")
