@@ -5,9 +5,9 @@ def upcase(c):
         return chr(new_c)
     else:
         return c
-print(upcase('q'))
-print(upcase('C'))
-print(upcase('3'))
+print(f' q: {upcase('q')}')
+print(f' C: {upcase('C')}')
+print(f' 3: {upcase('3')}')
 
 
 def upstring(s):
@@ -21,5 +21,5 @@ def upstring(s):
         c+= 1
     return new_s
 
-print(upstring('hello'))
-print(upstring("What's up?"))
+print(f' hello: {upstring('hello')}')
+print(f" What's up: {upstring("What's up?")}")
