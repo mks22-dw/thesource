@@ -1,0 +1,1020 @@
+
+=======================
+Question 0:
+Programming question: Write a function that returns only the characters
+in the string that are encoded with an even number.
+skill:12, 29 
+Description
+The function should return a string with only character's that have
+an even number as their utf-8 encoding value,assume the string only
+contains one word. The encoding for 
+(hint use the ord ()function)
+example evenstr('abcdef')-->'bdf'
+Possible solution:
+=======================
+"""
+
+def scramblechr (string):
+    new = ""
+    c = 0
+    shift = ord('a')-ord('A')
+    while c < len (string):
+        if c % 2 == 0 or c == 0:
+            if string[c] >= 'a' and string[c]<= 'z':
+                new += chr (ord(string[c]) - shift)
+            else:
+                new += string[c]
+        else:
+            if string[c] >= 'A' and string[c]<= 'Z':
+                new += chr (ord(string[c]) + shift)
+            else:
+                new += string[c]
+        c+=1
+    return new
+            
+
+
+def evenstr (string):
+    new= ""
+    for c in string:
+        if ord (c) % 2 == 0:
+            new += c
+    return new
+=======================
+Question 1:
+Programming question:
+String Pyramid Builder
+Write a function string_pyramid(word) that prints a "growing" version of the word.
+
+Input: "CODE"
+
+Expected Output:
+
+C
+CO
+COD
+CODE
+
+skill: 12, 29, 33
+Description
+
+Possible solution: 
+=======================
+"""
+def change (s):
+    x = ''
+    for i in s:
+        if i >= 'a' and i <= 'z':
+            x += chr (ord(i) - (ord('a') - ord('A')))
+        elif i >= 'A' and i <= 'Z':
+            x += chr (ord (i) + (ord ('a') - ord ('A')))
+        else:
+            x += i
+    return x
+print (change ("compUTer CLASS 32"))
+print (change ("hELLO wORLD."))
+
+def change_case (x):
+    n =''
+    count = 0
+    d1 = ord ('a') - ord ('A')
+    while count < len(x):
+        if x[count] >= 'a' and x[count] <= 'z':
+            n += chr (ord (x[count]) - d1)
+        elif x[count] >= 'A' and x[count] <= 'Z':
+            n += chr (ord (x[count]) + d1)
+        else:
+            n += x[count]
+        count += 1
+    return n
+print (change_case ("compUTer CLASS 32"))
+print (change_case ("hELLO wORLD."))
+
+def string_pyramid (string):
+    i = 1
+    while i <= len(string):
+        print (string[0:i])
+        i += 1
+print (string_pyramid ("code"))
+=======================
+Question 2:
+Programming question:
+skill:
+Description:
+Create a program called "spacer (word)" that will return a string with a space between all letters in a string without producing double spaces using a for loop. . 
+
+Possible solution:
+def splitspacer (word):
+    newword = ''
+    for l in word:
+        if l != ' ':
+            newword += l
+            newword += ' '
+    return newword
+=======================
+"""
+=======================
+Question 3:
+Programming question:
+skill: 
+Description
+
+Possible solution:
+=======================
+"""
+=======================
+Question 4:
+Programming question: Write a function that splits a string into increments of three characters.
+skill: 33
+Description
+The resulting string should be the same as the input, except split into increments of three characters.
+Possible solution:
+def split_three(s):
+    x = ""
+    i = 0
+    while i < len(s):
+        count = 0
+        while count < 3 and i < len(s):
+            x = x + s[i]
+            i = i + 1
+            count = count + 1
+        if i < len(s):
+            x = x + ' '
+    return x
+=======================
+"""
+=======================
+Question 5:
+Programming question: Write a function that takes in a string and returns the same string where every character "a" except the letters "b" using for loops
+skill: 5 12 29
+Description
+
+
+Possible solution:
+def func(s):
+    answer = ""
+    for x in s:
+        if (x == "b"):
+            x += "b"
+        else:
+            x += "a"
+    returns
+=======================
+"""
+=======================
+Question 6:
+"""
+def count_digits(n):
+    count = 0
+    while n > 0:
+        n = n // 10
+        count += 1
+    return count
+
+"""
+=======================
+Programming question:
+skill:12,29
+Description:
+Write a function called count_letter(s, target) that counts how many times a specific character (target) appears in a string s.
+Example:
+count_letter("banana", "a") --> 3
+
+Possible solution:
+=======================
+"""
+def count_letter(s, target):
+    count = 0
+    i = 0
+    while i < len(s):
+        if s[i] == target:
+            count += 1
+        i += 1
+    return count
+=======================
+Question 7:
+Programming question:
+skill:
+Description
+
+Possible solution:
+=======================
+"""
+=======================
+Question 8:
+Programming question:
+skill:5, 12
+Description
+Take a 2 numbers and find the sum of the first number to the power of every interger from 1 to the second number.
+Possible solution:
+    def sum_power(n, x):
+        c=0
+        y=0
+        while c<= x:
+            y+=(n ** c)
+            c+=1
+        print(y)
+=======================
+"""
+=======================
+Question 9:
+Programming question:
+skill: Working with Boolean Values, Strings
+Description:
+Create a function which outputs "True" if the inputted string has any e's or a's
+and "False" if it doesn't
+
+Possible solution:
+
+def eafinder(x):
+    a = x.find('e')
+    b = x.find('a')
+    if a != -1 or b != -1:
+        return True
+    else:
+        return False
+=======================
+"""
+=======================
+Question 10:
+Programming question: Use the previous code to return
+a string with multiple words, with the spaces mapped out.
+
+change_words('he hasent yet') --> 'h2 h1s2nt y2t'
+skill: 29, 33
+Description
+
+Possible solution:
+def change_words(s):
+    new_s = ''
+    space = s.find(' ')
+    while space != -1:
+        new_s += change(s[: space]) + ' '
+        s = s[space + 1:]
+        space = s.find(' ')
+    return new_s + change(s)
+=======================
+"""
+=======================
+Question 11:
+Programming question: Write a function called has_digits that takes 1 string as its parameter. It should return True if
+at least 1 numeric character (0-9) is present, and False if it's not. 
+skill: 29, 12, 5
+Description
+
+Possible solution:
+def has_digits (s):
+    for c in s:
+        if c >= "0" and c <= "9":
+            return True
+    return False
+print(has_digits ("He11o"))
+print(has_digits ("Heiio"))
+=======================
+"""
+=======================
+Question 12:
+Programming question:
+skill: 33
+Write a function called middle_three(s) that takes a string s
+and returns the middle three characters of the string.
+You can assume the string will always have an odd length ≥ 3.
+
+Example:
+middle_three("crown") → "row"
+
+Possible solution:
+def middle_three(s):
+    mid = len(s) // 2
+    return s[mid-1 : mid+2]
+=======================
+"""
+=======================
+Question 13:
+Programming question:
+skill:
+Description
+
+Possible solution:
+=======================
+"""
+=======================
+Question 14:
+Programming question:
+skill: 33
+Description
+Use slicing to return 'ceg' if the string 'abcdefghjikl'
+is put as the argument
+
+Possible solution:
+=======================
+"""
+
+def capitalize(s):
+    result = ''
+    diff = ord('a') - ord('A')
+    for i in s:
+        if i >= 'a' and i <= 'z':
+            result += chr(ord(i) - diff)
+        else:
+            result += i
+    return(result)
+
+def slicer(s):
+    return(s[s.find('c'):1 + s.find('g'):2])
+=======================
+Question 15:
+Programming question:
+skill: 5, 12, 29, 33
+Description:
+Write a function that tests if a string is a palindrome; if the string is the same backward, return True, otherwise, return False.
+The string to be checked may include spaces and its characters may be of different cases.
+Assume the string doesn't include numbers or punctuation.
+
+Possible solution(s):
+
+def palindrome_check(s):
+    space_out = ''
+    c = 0
+    while c < len(s):
+        if s[c] != ' ' and s[c] >= 'a' and s[c] <= 'z':
+            space_out += s[c]
+        elif s[c] != ' ' and s[c] >= 'A' and s[c] <= 'Z':
+            diff = ord('a') - ord('A')
+            converted = ord(s[c]) + diff
+            space_out += chr(converted)
+        c += 1
+    backwards = space_out[::-1]
+    c = 0
+    while c < len(backwards):
+        if backwards[c] == space_out[c]:
+            c += 1
+        else:
+            return False
+    return True
+    
+def palindrome_check(s):
+    space_out = ''
+    for c in s:
+        if c != ' ' and c >= 'a' and c <= 'z':
+            space_out += c
+        elif c != ' ' and c >= 'A' and c <= 'Z':
+            diff = ord('a') - ord('A')
+            converted = ord(c) + diff
+            space_out += chr(converted)
+    backwards = space_out[::-1]
+    c = 0
+    for character in backwards:
+        if character == space_out[c]:
+            c += 1
+        else:
+            return False
+    return True
+=======================
+"""
+=======================
+Question 16:
+Programming question:
+skill: 5, 9, 12, 29, 33
+Description
+Write a function that returns the first number/integer in a string, s, and none if there is none.
+
+Possible solution:
+=======================
+"""
+
+def last_char(s):
+    first_word = s[: s.find(' ')]
+    return first_word[-1]
+print(last_char('the clone wars'))
+print(last_char('way down hadestown'))
+
+def first_int(s):
+    for c in s:
+        if '0' <= c <= '9':
+            return c
+    return 'none'
+print(first_int("i've got 20!"))
+print(first_int('but who cares? no big deal'))
+=======================
+Question 17:
+Programming question: write a function that doubles a string and encodes every third letter of that new string into numbers and returns that new string with every third letter encoded.
+skill: 29, 12
+Description
+assume all letters are lowercase
+'a' maps to 0 'b' maps to 1 and 'k' maps back to '0' (loops around from 9 to 0)
+Possible solution:
+def half_third(string):
+    new_string = 2*string
+    counter = 1
+    return_string = ''
+    while counter - 1 < len(new_string):
+        if counter % 3 == 0:
+            return_string+= chr(((ord(new_string[counter - 1]) - ord('a')) % 10) + ord('0'))
+        else:
+            return_string+= new_string[counter - 1]
+        counter+= 1
+    return return_string
+=======================
+"""
+=======================
+Question 18:
+t?
+
+Options:
+A) Iterates based on a boolean condition
+B) Uses a counter
+C) Iterates over every element of a condition
+D) Slices a string
+
+Answer: C
+
+===================
+
+MC Question1: Which of the following will:
+-Start at the beginning of a string
+-Increment by steps of 2
+-End at position 8
+
+Options:
+A) name[8:2:]
+B) name[:2:8]
+C) name[:2:]
+D) name[:8:2]
+
+Answer: D
+
+===================
+
+Programming Question:
+Return a list:
+-Change all capital letters to their rot13 equivalent
+-Keep lowercase letters as they are
+-If there is a ')', add a newline
+
+(Keep in mind the uses of for loops and while loops)
+
+skill: 5,9,12,29
+
+Possible Solution:
+===================
+"""
+
+#for loop:
+def newstring(full):
+    newfull = ''
+    diff = ord('N') - ord('A')
+    for x in full:
+        if x >= 'A' and x <= 'Z':
+            if ord(x) + diff > ord('Z'):
+                newx = chr(ord(x) - diff)
+            else:
+                newx = chr(ord(x) + diff)
+            newfull += newx
+        elif x == ')':
+            newfull += '\n'
+        else:
+            newfull += x
+    return newfull
+print(newstring("HI ho)W are) YoU?)"))
+
+#while loop:
+def newstring2(full):
+    x = 0
+    newfull = ''
+    diff = ord('N') - ord('A')
+    while x < len(full):
+        if full[x] >= 'A' and full[x] <= 'Z':
+            if ord(full[x]) + diff > ord('Z'):
+                newx = chr(ord(full[x]) - diff)
+            else:
+                newx = chr(ord(full[x]) + diff)
+            newfull += newx
+            x += 1
+        elif full[x] == ')':
+            newfull += '\n'
+            x += 1
+        else:
+            newfull += full[x]
+            x += 1
+    return newfull
+print(newstring2("HI ho)W are) YoU?)"))
+=======================
+Question 19:
+Programming question: write a function
+skill: 9, 12, 29
+Description
+accepts a string with only uppercase and lowercase letters; use for not while
+if a character is uppercase change it into lowercase
+if a character is lowercase change it into uppercase
+
+Possible solution:
+=======================
+"""
+
+def change(s):
+    thing = ord('a') - ord('A')
+    string = ''
+    for char in s:
+        if char <= 'z' and char >= 'a':
+            string = string + chr(ord(char) - thing)
+        else:
+            string = string + chr(ord(char) + thing)
+    return string
+=======================
+Question 20:
+"""
+def collatz_length(n):
+    num = n
+    length1 = 0
+    while num != 1:
+        if num % 2 == 0:
+            num //= 2
+        else:
+            num = 3 * num + 1
+        length1 += 1
+    num = n
+    length2 = 0
+    while num != 1:
+        if num % 2 == 0:
+            num //= 2
+        else:
+            num = (3 * num + 1) // 2
+        length2 += 1
+    if length1 < length2:
+        return length2 - length1
+    else:
+        return length1 - length2
+
+"""
+=======================
+Programming question:
+skill: 12 29
+Given a string of just digits, write a function that returns a new string such that
+
+the output's 1st character is 0,
+the output's 2nd character is the output's 1st charcter + the input's 1st character,
+the output's 3rd character is the output's 2nd charcter + the input's 2nd character,
+etc until the length of the output is 1 higher that of the input
+
+if a sum is greater than 9, take the remainder mod 10
+
+For example, this function would turn '1111' --> '01234' and '1583' --> '01647'
+
+Possible solution:
+=======================
+"""
+def running_total(string):
+    return_string = '0'
+    for character in string:
+        last_number = ord(return_string[-1]) - ord('0')
+        input_number = ord(character) - ord('0')
+        new_value = (last_number + input_number) % 10
+        return_string += chr(new_value + ord('0'))
+    return return_string
+=======================
+Question 21:
+Programming question: Write a function that returns if true if the string is a palindrome (a valid word from left to right and right to left, e.g. racecar) and false otherwise.
+skill: 5, 9, 12, 29, 33
+Description
+
+Possible solution: below
+=======================
+"""
+
+def vowels(s):
+    count = 0
+
+    for c in s:
+        if c == 'a' or c == 'e':
+            count += 1
+    return count
+
+def palindrome(s):
+    if s == s[::-1]:
+        return True
+    else:
+        return False
+=======================
+Question 22:
+Programming question:
+skill:
+Description
+
+Possible solution:
+=======================
+"""
+=======================
+Question 23:
+Programming question:
+skill:12
+Write a function called 'find_first_negative' that takes a list 
+of numbers and returns the first negative number it finds. If no 
+negative number exists, return None. Use a while loop or a 
+for loop with a break to control the iteration.
+
+Possible solution:
+=======================
+"""
+
+def shift_text(text):
+    result = ""
+    for char in text:
+        result += chr(ord(char) + 1)
+    return result
+
+def find_first_negative(numbers):
+    for num in numbers:
+        if num < 0:
+            return num
+    return None
+=======================
+Question 24:
+Programming question: Write a function that takes every other letter of a string, puts them together, and then moves them to the end of the string.
+skill: 33
+Description
+
+Possible solution:
+=======================
+"""
+def every_other(s):
+    s0 = s[::2]
+    s1 = s[1::2]
+    s2 = s0 + s1
+    return s2
+=======================
+Question 25:
+Programming question:
+skill: 5, 12, 29, 33
+Description
+Write a function taking a string and a key that replaces every other character of the string with that key.
+Example: print(even_replace('a!bc@234', '/')) --> '/!/c/2/4'
+Possible solution:
+=======================
+"""
+
+def even_punc(string):
+    half_string = string[::2]
+    result = ''
+    for char in half_string:
+        upcase = char >= 'A' and char <= 'Z'
+        lowcase = char >= 'a' and char <= 'z'
+        if not upcase and not lowcase:
+            result += char
+    return result
+
+def even_replace(string, key):
+    pos = 0
+    result = ''
+    while pos < len(string):
+        if pos % 2 == 0:
+            result += key
+        else:
+            result += string[pos]
+        pos += 1
+    return result
+=======================
+Question 26:
+=======================
+Programming question:
+skill: 5, 12, 29, and 33
+Write a function appears_at_the_end(a, b) that returns True if either of strings a or b appears at
+the very end of the other string, without regard to any case differences between a and b's characters
+(more clearly, uppercase and lowercase versions of the same letter should be considered identical when
+inside a and b). The function returns False otherwise. You are permitted to use one or more helper
+function(s) to make your solution more readable. Below are some test cases for appears_at_the_end.
+
+print(appears_at_the_end('Xyabc', 'abc')) --> True
+print(appears_at_the_end('abc', 'XyAbC')) --> True
+print(appears_at_the_end('abc', 'abxabc')) --> True
+print(appears_at_the_end('abc', 'xyz')) --> False
+print(appears_at_the_end('aba', 'axxaba')) --> True
+
+Possible solution:
+=======================
+"""
+    
+# First programming question solution
+
+def word_count(text, word):
+    index = 0
+    total_count = 0
+    
+    while index <= len(text) - len(word):
+        if text[index : (index + len(word))] == word:
+            total_count = total_count + 1
+            
+        index = index + 1
+        
+    return total_count
+
+print(word_count('aaaa', 'aa')) 
+print(word_count('banana', 'ana')) 
+print(word_count('abcabcabc', 'abc')) 
+print(word_count('mississippi', 'issi')) 
+print(word_count('xxxxx', 'xx'))
+
+# Second programming question solution 
+
+def lowercase_string(string):
+    index = 0
+    lower_string = ''
+    
+    while index < len(string):
+        diff = ord('a') - ord('A')
+        
+        if 'A' <= string[index] <= 'Z':
+            lower_string = lower_string + chr(ord(string[index]) + diff)
+        
+        else:
+            lower_string = lower_string + string[index]
+        
+        index = index + 1
+        
+    return lower_string
+        
+def appears_at_the_end(a, b):
+    s0 = lowercase_string(a)
+    s1 = lowercase_string(b)
+    
+    if s1[len(s1) - len(s0) : len(s1)] == s0 or s0[len(s0) - len(s1) : len(s0)] == s1:
+        return True
+    
+    else:
+        return False
+    
+print(appears_at_the_end('Xyabc', 'abc'))
+print(appears_at_the_end('abc', 'XyAbC'))
+print(appears_at_the_end('abc', 'abxabc'))
+print(appears_at_the_end('abc', 'xyz'))
+print(appears_at_the_end('aba', 'axxaba'))
+=======================
+Question 27:
+Programming question: Write a function that takes in a string with letters A-P that returns its corresponding order in the alphabet in hexadecimal form. Allow it to work with both uppercase and lowercase characters. If a letter is not a letter A-P, it should map to a null string.
+'A' -> '0'
+'B' -> '1'
+...
+'K' -> 'a'
+...
+'O' -> 'e'
+'P' -> 'f'
+'Z' -> ''
+'hEY' -> '74'
+
+
+skill: 5 12 29
+Description
+
+Possible solution:
+=======================
+"""
+
+def remove_newline (s):
+    str_initial = s
+    str_final = ''
+    index = str_initial.find('\n')
+    print(index)
+    
+    while (index != -1):
+        str_final += str_initial[:index] + ' '
+        str_initial = str_initial[index+1:]
+        index = str_initial.find('\n')
+    
+    str_final += str_initial
+    
+    return str_final
+
+def convert_str (s):
+    diff_upper_num = ord('A') - ord('0')
+    diff_upper_lower = ord('a') - ord('A')
+    diff_other = ord('P') - ord('f')
+    str_final = ''
+    
+    for char in s:
+        
+        if (char >= 'a') and (char <= 'p'):
+            char = chr( ord(char) - diff_upper_lower) 
+        
+        if (char >= 'A') and (char < 'K'):
+            str_final += chr( ord(char) - diff_upper_num) 
+        elif (char >= 'K') and (char <= 'P'):
+            str_final += chr( ord(char) - diff_other) 
+            
+    return str_final
+=======================
+Question 28:
+Programming question:
+skill: 29 
+Write a function that takes a singular string input and returns
+a string of the index of each of the characters in the string.
+
+Possible solution:
+=======================
+"""
+def index(s):
+    final = ""
+    i = 0
+    while i <= len(s):
+        final += ord
+        i += 1
+    return final
+
+print(index('hello'))
+=======================
+Question 29:
+"""
+def rev (phrase):
+    revphrase = phrase[::-1]
+    space = revphrase.find(' ')
+    done = ''
+    while space != -1:
+        revword = revphrase[:space]
+        done += revword[::-1] + ' '
+        revphrase = revphrase[space+1:]
+        space = revphrase.find(' ')
+    done += revphrase[::-1]
+    return done
+print(rev ('hello hi done bye'))
+
+"""
+Programming question:
+skill: 12, 29, 33
+Description
+Write a function that inputs a string of characters and outputs the
+odd-value characters, then the even-value characters.
+switch ('aAbBcC') -> 'abcABC'
+switch ('1234567') -> '1357246'
+
+Possible solution:
+=======================
+"""
+def switch (phrase):
+    sorted = ''
+    for odd in phrase[::2]:
+        sorted += odd
+    for even in phrase[1::2]:
+        sorted += even
+    return sorted
+print(switch ('1234567'))
+print(switch ('aAbBcC'))
+=======================
+Question 30:
+Programming question:
+skill: 9 29 12
+Description
+Write a function that returns true if the string if longer than 5 characters, and false otherwise
+Possible solution:
+def more5(s):
+    i = 0
+    while i < len(s):
+        i += 1
+    return i > 5
+=======================
+"""
+=======================
+Question 31:
+Programming question:
+skill: 12, 29
+Write a function that returns the number of times a vowel is used in a string.
+
+Possible solution:
+=======================
+"""
+def last_char(s):
+    s = s[::-1]
+    if s[0] >= 'a' and s[0] <= 'z':
+        return s[0]
+    else:
+        s = s[::-1]
+        return s
+
+def vowel_finder(s):
+    count = 0
+    for x in s:
+        if x == 'A' or x == 'a':
+            count += 1
+        elif x == 'E' or x == 'e':
+            count += 1
+        elif x == 'I' or x == 'i':
+            count += 1
+        elif x == 'O' or x == 'o':
+            count += 1
+        elif x == 'U' or x == 'u':
+            count += 1
+        else:
+            count = count
+    return count
+=======================
+Question 32:
+Programming question:
+skill: 5, 12, 29, 33
+Write a function that takes a string (s), and returns a new string where the first half stays the same
+and the second half is the reverse of the first half.
+mirror_half('abcd') --> 'abba'
+mirror_half('hello') --> helleh'
+
+Possible solution:
+=======================
+"""
+def shift_letters(s, shift):
+    new_s = ''
+    for c in s:
+        if 'a' <= c <= 'z':
+            new_val = ord(c) + shift
+            if new_val > ord('z'):
+                while new_val > ord('z'):
+                    new_val -= 26
+            new_s += chr(new_val)
+        else:
+            new_s += c
+    return new_s
+
+
+def mirror_half(s):
+    half = len(s) // 2
+    if len(s) % 2 == 0:
+        first = s[:half]
+    else:
+        first = s[:half + 1]
+    reversed = ''
+    for c in first[::-1]:
+        reversed += c
+    return first + reversed
+=======================
+Question 33:
+Programming question:
+write a function that reverses every word in the
+list seprarated by spaces but retains their order
+skill: 5, 9, 12, 29, 33
+Description
+
+Possible solution:
+=======================
+"""
+
+def count_chr(s, c):
+    x = 0
+    v = 0
+    while x < len(s):
+        if s[x] == c:
+            v += 1
+        x += 1
+    percen = v / len(s)
+    return v, percen
+=======================
+Question 34:
+Programming question:
+skill: 33
+Description
+Given the following secret message as a string: "###peels_ot_og###",
+decode the message. The code should return the string "go to sleep"
+
+Possible solution:
+secret = "###peels_ot_og###"
+
+decoded_msg = secret[-4:2:-1]
+print(decoded_msg)
+
+=======================
+"""
+=======================
+Question 35:
+"""
+
+def count_vowels(s):
+    count = 0
+    for ch in s:
+        if ch == 'a' or ch == 'e' or ch == 'i' or ch == 'o' or ch == 'u':
+            count += 1
+    return count
+=======================
+Question 36:
+"""
+
+def sqrtstring(s):
+    intval = 0
+    c = 0
+    for i in s[::-1]:
+        intval += (10**c) * (1-ord('1')+ord(i))
+        c += 1
+    return(intval**0.5)
+
+"""     
+=======================
+Programming question:
+skill:29
+Write a function that maps a string of
+a number from 1 - 26 to its corresponding
+letter.
+Ex: "5" >> E
+Possible solution:
+=======================
+"""
+
+def letternumber(s):
+    intval = 0
+    c = 0
+    for i in s[::-1]:
+        intval += (10**c) * (1-ord('1')+ord(i))
+        c += 1
+    return(chr(ord("A")-1+intval))

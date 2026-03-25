@@ -1,0 +1,574 @@
+
+=======================
+Question 0:
+Create a function that makes each character
+in a string either capital or lowercase, based on its index.
+skill:5, 12, 29
+Description
+Assume the string only contains letters, if the index is odd make
+the letter lowercase, if it is even or 0 make the letter capital.
+Assume the string only contains one word. Encoding for 'a' is higher than
+the encoding for 'A'
+
+
+=======================
+Question 1:
+Using a for or while loop, write a function change_case that changes the case of all the letters in the string and leaves any other non-letter character alone.
+The input "hELLO wORLD." should output "Hello World."
+The input "compUTer class 32" should output "COMPutER CLASS 32"
+skill: 5, 9, 12, 29, 33
+Description
+
+
+=======================
+Question 2:
+skill:
+Description
+Create a program called "spacer (word)" that will return a string with a space between all letters in a string without producing double spaces using a while loop. . 
+
+
+def spacer (word):
+    newword= ''
+    l = 0
+    while l < len(word):
+        if word[l] != ' ':
+            newword += word[l]
+            newword += ' '
+            l += 1
+        else:
+            l += 1
+    return newword
+=======================
+Question 3:
+skill:
+Description:
+rot13
+
+
+=======================
+Question 4:
+Write a function that returns the uppercase version of a string. 
+skill: 29
+Description
+The resulting string should have all lowercase letters uppercase. If the string contains a character that isn't a lowercase letter, have it stay the same in the resulting string.
+
+def uppercase(s):
+    x = ""
+    i = 0
+    for c in s:
+        ch = s[i]
+        if ord(ch) >= 97 and ord(ch) <= 122:
+            x = x + chr(ord(ch) - 32)
+        else:
+            x = x + ch
+        i = i + 1
+    return x
+=======================
+Question 5:
+Write a function that finds any characters "a"
+and uses slicing to print out it with the
+two characters surrounding it reversed
+skill: 5 12 29 33
+Description
+
+
+def func(s):
+    while (s.find("a") != -1):
+        print(s[s.find("a") + 1: s.find("a") - 2: -1])
+        s = s[s.find("a") + 1::]
+=======================
+Question 6:
+skill:12
+Description:
+Write a function called count_digits(n) that counts how many digits are in a positive integer n.
+Example:
+count_digits(12345) --> 5
+
+
+=======================
+Question 7:
+write a function that takes a string and outputs every other letter of the word in the string in reverse.
+skill:12, 29, 33
+Description
+
+def
+=======================
+Question 8:
+skill:5,12
+Description
+Write a function that will take a number and return true if it is prime, if not then it returns false.
+
+def if_prime(n):
+    x=1
+    while x<= n:
+        if n == 1:
+            return(False)
+        elif x==n:
+            return(True)
+        elif n % x ==0:
+            return(Flase)
+        else:
+            x+=1
+=======================
+Question 9:
+skill: Slicing, Strings, Iteration
+Description:
+Create a function that slices a string when it finds an "e" or an "a"
+and that replaces that "e" or "a" with an "i". If the E/A is capitalized replace it with a
+capital "I", else replace the e/a with a lowercase "i".
+
+
+
+def easlicer(x):
+    a = x.find('e')
+    b = x.find('a')
+    A = x.find('E')
+    B = x.find('A')
+    while a != -1 and b != -1 and A != -1 and B != -1:
+        if a != -1:
+            start = x[:a]
+            end = x[a+1:]
+            x = start + "i" + end
+            a = x.find('e')
+        elif b != -1:
+            start = x[:b]
+            end = x[b+1:]
+            x = start + "i" + end
+            b = x.find('a')
+        elif A != -1:
+            start = x[:A]
+            end = x[A+1:]
+            x = start + "I" + end
+            A = x.find('E')
+        elif B != -1:
+            start = x[:B]
+            end = x[B+1:]
+            x = start + "I" + end
+            B = x.find('E')
+    return x
+=======================
+Question 10:
+Write a program that takes in a list
+and returns the list, with a, e, and i mapped out
+in this way:
+a--> 1
+e --> 2
+i --> 3
+
+change('hasent') --> 'h1s2nt'
+skill: 12, 29
+
+
+def change(s):
+    new_s = ''
+    for c in s:
+        if c == 'a':
+            new_s += '1'
+        elif c == 'e':
+            new_s += '2'
+        elif c == 'i':
+            new_s += '3'
+        else:
+            new_s += c
+    return new_s
+=======================
+Question 11:
+Write a function called lowcase that has 1 string as its parameter. It should return a string with all the letters
+lowercased. If a character is already capital or is not a letter, it should return itself. 
+skill: 29, 12, 9, 5
+
+
+
+def lowcase (x):
+    dist = ord("a") - ord("A")
+    if x >= "A" and x <= "Z":
+        new_x = ord(x) + dist
+        return chr(new_x)
+    else:
+        return x
+print( lowcase('A'))
+print(lowcase('3'))
+=======================
+Question 12:
+skill: 12, 29, 33
+Write a function called remove_vowels(s) that takes a string s
+and returns a new string with all vowels removed.
+
+Example:
+remove_vowels("Hello World") → "Hll Wrld"
+
+
+def remove_vowels(s):
+    result = ""
+    for c in s:
+        if c != 'a' and c != 'e' and c != 'i' and c != 'o' and c != 'u' and c != 'A' and c != 'E' and c != 'I' and c != 'O' and c != 'U':
+            result += c
+    return result
+=======================
+Question 13:
+skill:
+Description
+
+
+=======================
+Question 14:
+skill: 12
+Use a for loop to capitalize all lowercase letters in a string
+(do nothing to non lowercase letters)
+
+
+=======================
+Question 15:
+skill: 29, 12, 5
+Description:
+Write a function that takes a string and returns a new string that contains every second character of the original string.
+
+Possible solution(s):
+
+def seconds(s):
+    c = 1
+    new_string = ''
+    while c < len(s):
+        new_string += s[c]
+        c += 2
+    return new_string
+
+def seconds(s):
+    new_string = ''
+    index = 0
+    for c in s:
+        if index % 2 == 0:
+            new_string += c
+        index += 1
+    return new_string
+=======================
+Question 16:
+skill: 5, 9, 29, 33
+Write a function returning the last character of the first word in a string, s.
+
+
+=======================
+Question 17:
+Write a function that generates an img tag in html but with all lowercase letters made uppercase, with the src and alt as parameters
+skill: 29, 12, 5
+Description
+
+
+def img(src, alt):
+    tag = f'<img src="{src}" alt="{alt}">'
+    difference = ord('a') - ord('A')
+    for c in tag:
+        if c >= 'a' and c <= 'z':
+            up_tag+= chr(ord(c) - difference)
+        else: 
+            up_tag+= c
+    return up_tag
+=======================
+Question 18:
+t?
+
+Options:
+A) Iterates based on a boolean condition
+B) Uses a counter
+C) Iterates over every element of a condition
+D) Slices a string
+
+Answer: C
+
+===================
+
+MC Question1: Which of the following will:
+-Start at the beginning of a string
+-Increment by steps of 2
+-End at position 8
+
+Options:
+A) name[8:2:]
+B) name[:2:8]
+C) name[:2:]
+D) name[:8:2]
+
+Answer: D
+
+===================
+
+Programming Question:
+Return a list:
+-Change all capital letters to their rot13 equivalent
+-Keep lowercase letters as they are
+-If there is a ')', add a newline
+
+(Keep in mind the uses of for loops and while loops)
+
+skill: 5,9,12,29
+
+Possible Solution:
+===================
+"""
+
+#for loop:
+def newstring(full):
+    newfull = ''
+    diff = ord('N') - ord('A')
+    for x in full:
+        if x >= 'A' and x <= 'Z':
+            if ord(x) + diff > ord('Z'):
+                newx = chr(ord(x) - diff)
+            else:
+                newx = chr(ord(x) + diff)
+            newfull += newx
+        elif x == ')':
+            newfull += '\n'
+        else:
+            newfull += x
+    return newfull
+print(newstring("HI ho)W are) YoU?)"))
+
+#while loop:
+def newstring2(full):
+    x = 0
+    newfull = ''
+    diff = ord('N') - ord('A')
+    while x < len(full):
+        if full[x] >= 'A' and full[x] <= 'Z':
+            if ord(full[x]) + diff > ord('Z'):
+                newx = chr(ord(full[x]) - diff)
+            else:
+                newx = chr(ord(full[x]) + diff)
+            newfull += newx
+            x += 1
+        elif full[x] == ')':
+            newfull += '\n'
+            x += 1
+        else:
+            newfull += full[x]
+            x += 1
+    return newfull
+print(newstring2("HI ho)W are) YoU?)")
+=======================
+Question 19:
+write a function
+skill: 
+Description
+takes a string of words and changes every other word (seperated by spaces into "hello"
+ex: thingy('hi whats up guys')
+---> 'hi hello up hello'
+
+
+
+def thingy(s):
+    counter = 1
+    space = s.find(' ')
+    string = ''
+    while space != -1:
+        word = s[:space]
+        if word != '':
+            if counter % 2 == 0:
+                string += 'hello '
+            else:
+                string += word + ' '
+            counter += 1
+        s = s[space + 1:]
+        space = s.find(' ')
+    if s != '':
+        if counter % 2 == 0:
+            string += 'hello'
+        else:
+            string += s
+    return string
+=======================
+Question 20:
+skill: 12
+Define a function that inputs a positive integer n and outputs the absolute value of
+the difference between how many steps it takes to reach 1 from this algorithm:
+
+if n is even, divide n by 2
+if n is odd, multiply n by 3 and add 1
+
+...and this algorithm:
+
+if n is even, divide n by 2
+if n is odd, multiply n by 3, add 1, and then divide everything by 2
+
+
+=======================
+Question 21:
+Write a function that returns the number of times a or e appears in a string s.
+skill: 5, 9, 12, 29
+Description: You may assume that the string is all letters (capital and lowercase).
+
+ below
+=======================
+Question 22:
+skill: 5, 12, 29, 33
+Write a function that takes in a string and cut's out all vowels.
+For example, if you input 'hello', it will return 'hll'
+
+
+=======================
+Question 23:
+skill:29
+Write a function called 'shift_text' that takes a string and 
+returns a new string where every character has been shifted 
+to the next character in the Unicode sequence (e.g., 'a' becomes 'b').
+
+
+=======================
+Question 24:
+Write a function that returns the sum of the digits of the UTF-8 values of the character in a string.
+skill: 9, 12, 29
+Description
+
+
+"""
+def sum_utf(s):
+    c = 0
+    new_s = ""
+    while c < len(s):
+        new_s += str(ord(s[c]))
+        c += 1
+    d = 0
+    sum = 0
+    while d < len(new_s):
+        sum += int(new_s[d])
+        d += 1
+    return sum
+"""
+=======================
+Question 25:
+skill: 5, 12, 29, 33
+Description
+Write a function taking a string that returns every other character of the string that is not a letter.
+Example: print(even_punc('a!bc@234')) --> '@3'
+
+=======================
+Question 26:
+skill: 5, 12, 29, and 33
+Write a function word_count(text, word) that returns the number of times word appears in text,
+counting any overlapping occurrences of word in text. It may be assumed that text and word are
+strings. Below are some test cases for word_count.
+
+print(word_count('aaaa', 'aa')) --> 3
+print(word_count("banana", 'ana')) --> 2
+print(word_count('abcabcabc', 'abc')) --> 3
+print(word_count('mississippi', 'issi')) --> 2
+print(word_count('xxxxx', 'xx')) --> 4
+
+
+=======================
+Question 27:
+Write a function that converts all newlines in a string into a space and returns that string.
+'hello\nthere\npeople' -> 'hello there people'
+
+skill: 12 29 33
+Description
+
+
+=======================
+Question 28:
+skill: 29 33
+Write a function that returns the inputted string
+omitting the first character.
+
+
+=======================
+Question 29:
+skill: 12, 29, 33
+Description
+Write a function, rev, with an input of a string of any amount of words
+and an output of the words in the reverse order.
+rev ('hello hi done bye') -> 'bye done hi hello'
+
+
+=======================
+Question 30:
+skill: 29
+Description
+Write a function that takes two letters and returns the difference in UTF-8 encoding
+
+def dif(a,b):
+    return ord(b) - ord(a)
+=======================
+Question 31:
+skill: 29, 33
+Write a function that returns the last character of a string, if it's lowercase. If it's not, return the original string.
+
+
+=======================
+Question 32:
+skill: 5, 9, 12, 29
+Write a function that takes a string of lowercase letters (s) and an integer (shift), and shifts every letter
+forward in the alphabet by shift. Symbols stay the same, and if a character goes past 'z', it should
+wrap around to 'a'.
+shift_letters('abc', 2) --> 'cde'
+shift_letters('xyz', 3) --> 'abc'
+shift_letters('hello!', 1) --> 'ifmmp!'
+
+=======================
+Question 33:
+write a function that returns the number
+of occurences of a character in a string
+as well as its percentage of the entire string
+skill: 5, 9, 29, 33
+Description
+
+
+def reverse(s):
+    new = ''
+    x = 0
+    space = s.find(' ')
+    while x < len(s):
+        if s[x] != ' ':
+            word = s[:space]
+            word = word[::-1]
+            new += word + ' '
+            s = s[space+1:]
+            space = s.find(' ') + len(word)
+        x += 1
+    return new
+=======================
+Question 34:
+skill: 5, 12, 29
+Description
+Write a function (low_username) that takes in a string (user) consisting of only uppercase letters, lowercase letters, and spaces.
+- If username contains a space, the function shuold return the string: "Invalid Username. Please try again."
+- Otherwise, a new string should be returned inwhich all the uppercase letters from username are removed while the lowercase letters remain.
+
+Possible test cases:
+print(low_username("Hello World")) --> "Invalid Username. Please try again."
+print(low_username("hello")) --> "hello"
+print(low_username("HelloWorld")) --> "elloorld"
+
+
+
+
+def low_username(user):
+    space = False
+    for char in user:
+        if char == " ":
+            space = True
+    if space:
+        return "Invalid Username. Please try again."
+        
+    ans = ""
+    for char in user:
+        if char >= 'a' and char <= 'z':
+            ans += char
+    return ans
+    
+print(low_username("Hello World"))
+print(low_username("hello"))
+print(low_username("HelloWorld"))
+=======================
+Question 35:
+skill: 12
+Write a function called count_vowels(s) that takes a string and returns the number of vowels (a, e, i, o, u) in the string.
+You must use iteration to go through the string.
+
+
+=======================
+Question 36:
+skill:12
+Write a function that takes a string of
+integers, and returns the value of its
+square root.

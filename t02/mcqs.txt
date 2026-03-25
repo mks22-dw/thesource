@@ -1,0 +1,1091 @@
+
+=======================
+Question 0.a:
+What string will be printed when this is ran:
+print ('hello world!'[:'hello world!'.find(' '):-1])
+skill:29; 33
+Options:
+A)hello
+B)olleh
+C)!dlrow
+D)An error occurs because you cant splice a string
+with a negative number as the step.
+Answer: C
+=======================
+Question 0.b:
+which of the following lines of code will not print/
+return something if x is an odd integer
+skill:5 
+Options:
+A) if x % 2 == 0:
+    return 'even'
+B) if x % 2 != 0:
+    return 'odd'
+C)if x % 2 == 0:
+    return 'even'
+  else:
+    return 'odd'
+D)if x == 0:
+    return 'zero'
+  if x % 2 == 0:
+    return 'even'
+  else:
+    return 'odd'
+
+Answer A
+=======================
+Question 1.a:
+For which of the following scenarious would using the for loop be the BEST choice?
+skill: 12
+Options:
+A) using a to_int function to convert only the numbers in a string to real numbers that should be added
+B) A function that takes in a string and returns the ascii value for the last 10 letters of the string in reverse order
+C) A function that takes two parameters, a and b, where a is a string with any amount of spaces and b signals how many of the first few spaces should be removed.
+D) A function that iterates over a 10 character string and returns only non-letter values back
+
+
+Answer D
+=======================
+Question 1.b:
+g):
+    n = ""
+    
+    if len(string) > 0:
+        n += string[0]
+    
+    space = string.find(" ")
+    
+    while space != -1:
+        if space + 1 < len(string):
+            n += string[space + 1]
+            string = string[space + 1:]
+        space = string.find(" ")
+    
+    return n
+
+print(foo("Python is fun"))
+skill: 5, 12
+Options:
+    A) Returns the first letter after each space character in a string
+    B) Returns only words that have a space character right before them
+    C) Returns the first letter of every word in the string
+    D) Returns all the words without any space characters within
+Answer C
+=======================
+Question 2.a:
+Assuming s = 'hello', which of the following will produce the string 'olh'?
+skill: 33
+Options:
+A) print (s[::1])
+B) print (s[::-1])
+C) print (s[::-2])
+D) print (s[::2])
+Answer: C
+=======================
+Question 2.b:
+If s = 'hello', what will s[0::-3] produce? 
+skill: 29
+Options:
+A) h
+B) oe
+C) l
+D) hl
+Answer: B
+=======================
+Question 3.a:
+String Slicing generates new strings based on existing ones.
+
+What does 'st' in the following do?
+
+s[b:e:st]
+
+skill: 33
+Options:
+A) Refers to the beginning of the string
+B) Refers to the end of the string
+C) The total count of the string
+D) Refers to how you're moving
+
+Answer: D
+=======================
+Question 3.b:
+Which of the following will never return both an int and a float?
+skill: 9
+Options:
+A) Exponent
+B) Division
+C) Modulo
+D) Floor Division
+
+Answer: B
+=======================
+Question 4.a:
+What does s.find('c') do?
+skill: 29
+Options:
+A) Returns the amount of times 'c' appears in s
+B) Returns the position of 'c' in s or -1 if it doesn't appear in s
+C) Returns the position of 'c' in s or 1 if it doesn't appear in s
+D) Returns a boolean value depending if 'c' is or isn't in s
+Answer: B
+=======================
+Question 4.b:
+In the line of code s[x:y:z] what does z represent?
+skill: 33
+Options:
+A) The string
+B) The start value
+C) The end value
+D) The step value
+Answer: D
+=======================
+Question 5.a:
+Which one of these is invalid slicing syntax? Assume s = "abcdefg"
+skill: 33
+Options:
+s[0:10:-1]
+s[0:-1]
+s[-1:10]
+s[23:-1]
+None of the above
+Answer
+
+None of the above
+=======================
+Question 5.b:
+What is the value of x?
+def func():
+    print("abcdefg")
+
+a = func
+x = a()
+
+skill: 9
+Options:
+
+None
+"abcdefg"
+func()
+None of the above, error
+
+Answer
+None
+=======================
+Question 6.a:
+Which of the following expressions evaluates to False?
+skill:5
+Options:
+A) 10 >= 10 and 5 < 6
+B) 3 != 4 or 2 > 5
+C) not (7 == 7)
+D) (8 > 3) and (2 < 9)
+
+Answer: C
+=======================
+Question 6.b:
+What is the result of the following expression?
+"python"[::2]
+skill:33
+Options:
+A) "pto"
+B) "yhn"
+C) "pto"
+D) "phn"
+
+Answer: A
+=======================
+Question 7.a:
+What does s[::-1] do?
+skill:33
+Options:
+a. returns -1
+b. returns the string
+c. reverses the string
+d. splits the string into 3 parts
+
+Answer
+c
+=======================
+Question 7.b:
+What returns 'eh'?
+skill:33
+Options:
+a. s='hello'
+    s[::-1]
+b.s='hello'
+    s[:e:h]
+c. s='hello'
+    s=[::2]
+d. s='hello'
+    s[::-2]
+Answer
+d
+=======================
+Question 8.a:
+What is the valu8e of the following python statement:
+9 // 2
+skill: 9
+Options:
+A) 4.0
+B) 4.5
+C) 5
+D) 4
+
+Answer D
+=======================
+Question 8.b:
+What is the value of n after this loop ends?
+n=13
+while n>0:
+    n-=4
+skill: 12
+Options:
+A) 3
+B) -3
+C) 1
+D) 0
+
+Answer B)
+=======================
+Question 9.a:
+When slicing a string, what will "s[c:]" select?
+skill: Strings, Slicing
+Options:
+A. It selects C
+B. It selects all characters before, excluding C
+C. It selects all characters after, excluding C
+D. None of the above
+
+Answer
+D
+=======================
+Question 9.b:
+skill: Iteration
+Options: A for loop is most like a(n):
+A. Infinite while loop
+B. Definite if function
+C. An if function with multiple elif conditions
+D. A definite while loop
+
+Answer
+D
+=======================
+Question 10.a:
+What does c represent in this code:
+for c in s
+skill: 12
+Options:
+A) The whole list
+B) A variable that represents each character of the list, individually
+C) A true or false boolean that determines if it is incorporated
+D) It is part of the code and is not changeable
+
+Answer: B
+=======================
+Question 10.b:
+Which of these is valid python code?
+skill: 5
+Options:
+A) x = 4
+4 == x
+B) if 4 = 4:
+      return 4
+C) for c in s
+       return c
+D) chr(ord(ord('a')))
+Answer: A
+=======================
+Question 11.a:
+Which of the following best describes the function of ord(x)?
+skill:29
+Options:
+A) It takes the integer value of x and prints the corresponding letter.
+B) It returns the integer value of x, where x is a single character string.
+C) It returns a single character.
+D) It reprints the string x.
+Answer
+B) It returns the integer value of x, where x is a single character string.
+=======================
+Question 11.b:
+Which of the following lines of code returns an integer?
+skill:29
+Options:
+A) "8"
+B) chr(x)
+C) ord(n)
+D) return "3"
+Answer
+C) ord(n)
+=======================
+Question 12.a:
+:
+What is the result of the following code?
+word = "python"
+print(word[1:4])
+skill: 33
+Options:
+A) pyt
+B) yth
+C) tho
+D) ytho
+
+Answer: B
+=======================
+Question 12.b:
+What does this code print?
+
+s = "cat"
+result = ""
+
+for c in s:
+    result = c + result
+
+print(result)
+
+skill: 12, 29
+Options:
+A) cat
+B) tac
+C) cta
+D) Error
+
+Answer: B
+=======================
+Question 13.a:
+What would s[:8] return given s = 'banana apple'?
+skill: 33
+Options:
+
+a) 'pple'
+b) 'banana a'
+c) 'banana '
+d) 'banana ap'
+
+Answer
+b)
+=======================
+Question 13.b:
+skill:
+Options:
+
+Answer
+=======================
+Question 14.a:
+What slicing will return 'lowrd' if s = 'hello world'?
+skill: 33
+Options:
+A) s[2::2]
+B) s[2:11:2]
+C) s[2:12:0.5]
+D) s[3:12:0.5]
+Answer: A
+=======================
+Question 14.b:
+What does a for loop do?
+skill: 12
+Options:
+A) Iterates until a boolean condition is true
+B) Repeats a function four times
+C) Iterates over values in a collection
+D) Iterates one character at a time in a string
+
+Answer: C
+=======================
+Question 15.a:
+what is one possible reason for slicing a string?
+skill: 33
+Options:
+a. To make the string into an integer
+b. To extract part of a string
+c. To increase the efficiency of the code
+d. To make the string mutable 
+
+Answer
+b
+=======================
+Question 15.b:
+in which instance would it be more advantageous to use a while loop than a for loop?
+skill: 12
+Options:
+a. Use a for loop when you know that there's a set number of iterations to do, and use a while loop when you don't know how many iterations you have to do
+b. It doesn't matter which one you use
+c. Use a while loop when you know that there's a set number of iterations to do, and use a for loop when you don't know how many iterations you have to do
+d. For loops are better for counting the number of 'c's in a string
+
+Answer
+a
+=======================
+Question 16.a:
+What is the proper way to modify a string?
+skill: 9, 29
+Options:
+A) redefine the string using = (ex: +=)
+B) none, a string is immutable
+C) none, a string is edited another way
+D) directly change the string in print
+
+Answer: B
+=======================
+Question 16.b:
+Which of the following is not best used in comparing strings?
+skill: 5, 9, 29
+Options:
+A) ord(c)
+B) >
+C) ==
+D) none of the above
+
+Answer: A
+=======================
+Question 17.a:
+Which of the following is a loop?
+skill:12
+Options:
+a) while
+b) define
+c) string
+d) chr
+Answer
+a
+=======================
+Question 17.b:
+What is the correct slicing notation
+skill:33
+Options:
+A) string(::)
+b) string[9:5:1]
+c) string[4:7:-2]
+d) string{0:9}
+Answer
+c
+=======================
+Question 18.a:
+In contrast to a while loop, a for loop does what?
+
+Options:
+A) Iterates based on a boolean condition
+B) Uses a counter
+C) Iterates over every element of a condition
+D) Slices a string
+
+Answer: C
+
+===================
+
+MC Question1: Which of the following will:
+-Start at the beginning of a string
+-Increment by steps of 2
+-End at position 8
+
+Options:
+A) name[8:2:]
+B) name[:2:8]
+C) name[:2:]
+D) name[:8:2]
+
+Answer: D
+
+===================
+
+Programming Question:
+Return a list:
+-Change all capital letters to their rot13 equivalent
+-Keep lowercase letters as they are
+-If there is a ')', add a newline
+
+(Keep in mind the uses of for loops and while loops)
+
+skill: 5,9,12,29
+
+Possible Solution:
+===================
+"""
+
+#for loop:
+def newstring(full):
+    newfull = ''
+    diff = ord('N') - ord('A')
+    for x in full:
+        if x >= 'A' and x <= 'Z':
+            if ord(x) + diff > ord('Z'):
+                newx = chr(ord(x) - diff)
+            else:
+                newx = chr(ord(x) + diff)
+            newfull += newx
+        elif x == ')':
+            newfull += '\n'
+        else:
+            newfull += x
+    return newfull
+print(newstring("HI ho)W are) YoU?)"))
+
+#while loop:
+def newstring2(full):
+    x = 0
+    newfull = ''
+    diff = ord('N') - ord('A')
+    while x < len(full):
+        if full[x] >= 'A' and full[x] <= 'Z':
+            if ord(full[x]) + diff > ord('Z'):
+                newx = chr(ord(full[x]) - diff)
+            else:
+                newx = chr(ord(full[x]) + diff)
+            newfull += newx
+            x += 1
+        elif full[x] == ')':
+            newfull += '\n'
+            x += 1
+        else:
+            newfull += full[x]
+            x += 1
+    return newfull
+print(newstring2("HI ho)W are) YoU?)")
+=======================
+Question 18.b:
+hile loop, a for loop does what?
+
+Options:
+A) Iterates based on a boolean condition
+B) Uses a counter
+C) Iterates over every element of a condition
+D) Slices a string
+
+Answer: C
+
+===================
+
+MC Question1: Which of the following will:
+-Start at the beginning of a string
+-Increment by steps of 2
+-End at position 8
+
+Options:
+A) name[8:2:]
+B) name[:2:8]
+C) name[:2:]
+D) name[:8:2]
+
+Answer: D
+
+===================
+
+Programming Question:
+Return a list:
+-Change all capital letters to their rot13 equivalent
+-Keep lowercase letters as they are
+-If there is a ')', add a newline
+
+(Keep in mind the uses of for loops and while loops)
+
+skill: 5,9,12,29
+
+Possible Solution:
+===================
+"""
+
+#for loop:
+def newstring(full):
+    newfull = ''
+    diff = ord('N') - ord('A')
+    for x in full:
+        if x >= 'A' and x <= 'Z':
+            if ord(x) + diff > ord('Z'):
+                newx = chr(ord(x) - diff)
+            else:
+                newx = chr(ord(x) + diff)
+            newfull += newx
+        elif x == ')':
+            newfull += '\n'
+        else:
+            newfull += x
+    return newfull
+print(newstring("HI ho)W are) YoU?)"))
+
+#while loop:
+def newstring2(full):
+    x = 0
+    newfull = ''
+    diff = ord('N') - ord('A')
+    while x < len(full):
+        if full[x] >= 'A' and full[x] <= 'Z':
+            if ord(full[x]) + diff > ord('Z'):
+                newx = chr(ord(full[x]) - diff)
+            else:
+                newx = chr(ord(full[x]) + diff)
+            newfull += newx
+            x += 1
+        elif full[x] == ')':
+            newfull += '\n'
+            x += 1
+        else:
+            newfull += full[x]
+            x += 1
+    return newfull
+print(newstring2("HI ho)W are) YoU?)")
+=======================
+Question 19.a:
+Which of the following should return True?
+skill: 5
+Options:
+A) c+= 2
+B) 2 == 3 - 1
+C) 2 != 3 - 1
+D) 2 = 3 - 1
+
+Answer: B
+=======================
+Question 19.b:
+What does: while x: do?
+skill: 9
+Options:
+A) If x is true, it runs the program until x isn't true
+B) If x is false, it runs the program until x is true
+C) Does a line of code when x is running
+D) Does a line of code when x isn't running
+
+Answer: A
+=======================
+Question 20.a:
+a = '0123456789'
+
+Which of the following options will show
+the one-digit even numbers followed by the one-digit numbers divisible by 3
+
+skill: 29 33
+Options:
+A) a[1:10:2] + a[1:10:3]
+B) a[0:10:2] + a[0:10:3]
+C) a[0:10:2][0:10:3]
+D) a[0:10:2, 0:10:3]
+Answer: B
+=======================
+Question 20.b:
+Which of these will not return True?
+
+skill: 9
+Options:
+A) 'a8a8a8' == 'a8' * 3.0
+B) '''a''' == f"a"
+C) True and (3 + 5 == 8 or not 6 + 3 == 9)
+D) 1.0 == 1
+Answer: A
+=======================
+Question 21.a:
+Which answer choice will return a string backwards with every other letter? 
+skill: 33
+Options: 
+A) s[:2]
+B) s[-1::]
+C) s[::-2]
+D) s[0:2:-1]
+
+Answer: C
+=======================
+Question 21.b:
+Which is a correctly formatted f-string?
+skill: 29
+Options:
+A) (f'This is {name}\'s')
+B) (f"This is {name}'s")
+C) (f'This is {name's}')
+D) none of the above
+
+Answer: A
+=======================
+Question 22.a:
+What does the last number in string slicing represent?
+skill: 33
+Options:
+A) the beginning
+B) the end
+C) the step 
+D) a number
+Answer: C
+=======================
+Question 22.b:
+Which is not true about strings? 
+skill: 29
+Options:
+A) the value of a string can be modified
+B) the variable of a string can be modified 
+C) new strings can be built from other strings
+D) a string is considered a collection
+Answer: A
+=======================
+Question 23.a:
+Given the string s = "PythonIsCool", what is the value of s[1:10:3]?
+skill:33
+Options:
+A) "yos"
+B) "yho"
+C) "yhl"
+D) "Phn"
+
+Answer: B
+=======================
+Question 23.b:
+Which of the following expressions will evaluate to True in Python?
+skill:5 & 9
+Options:
+A) 10 == "10"
+B) type(5.0) == int
+C) 5 > 3 and "cat" < "dog"
+D) not (10 % 2 == 0)
+
+Answer: C
+=======================
+Question 24.a:
+What does the for loop do?
+skill: 12
+Options:
+A) Repeats code as long as a condition is true
+B) Repeats code based on the number of elements in a collection
+C) For is short for forever; it repeats code infinitely
+D) For is not a loop
+Answer: B
+=======================
+Question 24.b:
+Slicing is in the format [B:E:ST]. What is ST?
+skill: 33
+Options:
+A) Stop
+B) Stand
+C) Step
+D) Still
+Answer: C
+=======================
+Question 25.a:
+What is the output of the following when string = 'water in aqueous solution'?
+
+def func(string):
+    pos = len(string) - 1
+    result = ''
+    while pos >= 0:
+        result += string[pos]
+        pos -= 1
+    return result
+    
+skill: 5, 9, 29
+Options:
+A) 'noitulos suoeuqa ni retaw'
+B) 'solution aqueous in water'
+C) 'noitulossuoeuqaniretaw'
+D) ''
+Answer: A
+=======================
+Question 25.b:
+What is the result of the following code when string = '1234567890987654321'?
+def func(string):
+    pos_seven = string.find('7')
+    result = ''
+    while pos_seven != -1:
+        result += string[pos_seven]
+        string = string[pos_seven+1:]
+        pos_seven = string.find('7')
+    return result
+skill: 29, 33
+Options:
+A) '1234567890987654321'
+B) '12345689098654321'
+C) '77'
+D) ''
+
+Answer: C)
+=======================
+Question 26.a:
+A student writes the following loop condition as part of a function:
+
+while count < limit and not finished:
+
+Which of these situations will cause the loop to stop running?
+skill: 5 and 12
+Options:
+A) count is less than limit, and finished is True.
+B) count is less than limit, and finished is False.
+C) count is greater than or equal to limit, and done is False.
+D) Either situations A or C will cause the loop to stop.
+
+Answer: D
+=======================
+Question 26.b:
+As part of a function, a student defines variables a, b, c, d, and e as follows:
+
+a = 3
+b = 2.0
+c = a / b
+d = a // b
+e = (c * d) // 1
+
+What is the value of e?
+skill: 9
+Options:
+A) e is 1
+B) e is 1.0
+C) e is 1.5
+D) None of the above
+
+Answer: B
+=======================
+Question 27.a:
+Which expression will convert the letter 'J' to 'j' ?
+skill: 29
+Options:
+A) chr(ord('J') + (ord('a') + ord('A')))
+B) chr(ord('J') + (ord('a') - ord('A')))
+C) chr(ord('J') - (ord('a') + ord('A')))
+D) chr(ord('J') - (ord('a') - ord('A')))
+
+Answer C
+=======================
+Question 27.b:
+Which expression will return the last six characters of a 12 character string s?
+skill: 33
+Options:
+A) s[5:]
+B) s[6:]
+C) s[:5]
+D) s[:6]
+
+Answer B
+=======================
+Question 28.a:
+Which of the following is not a valid string?
+skill: 29
+Options:
+A) "hello"
+B) "string'
+C) (string)
+D) 'olleh'
+
+Answer: C
+=======================
+Question 28.b:
+Which of the following is not a valid line of code?
+skill: 29 33 
+Options:
+A) s.find(" ")
+B) [:space:::]
+C) (f" q: {upcase('q')}")
+D) print('hello')
+
+Answer: B
+=======================
+Question 29.a:
+What is printed from the following code?
+
+phrase = '12345'
+done = '3'
+for odd in phrase[::2]:
+    if odd == 2:
+        done += '67'
+    elif odd == 3:
+        done += odd
+    done += odd
+print(done)
+
+skill: 5, 9, 12, 29, 33
+Options:
+A) 316723345
+B) 3135
+C) 31335
+D) 3133
+
+
+Answer: B
+=======================
+Question 29.b:
+What is printed from the following code?
+
+fish = 20
+str = 'AAaAbBbbBBbab'
+for char in str:
+    if (char < 'Z') and (char > 'A'):
+        fish -= 1
+    elif (char <'z') and (char > 'a'):
+        fish += 1
+print(fish)
+
+skill: 5, 12, 29
+Options:
+A) 20
+B) 21
+C) 22
+D) 2
+
+
+Answer
+C
+=======================
+Question 30.a:
+Which of the follow reverses a string?
+skill: 33
+Options:
+a. s[1:2:0]
+b. s[0:0]
+c. s[-1:0]
+d. s[::-1]
+Answer: d
+=======================
+Question 30.b:
+Which of the following creates a loop?
+skill: 12
+Options:
+a. for
+b. +
+c. %
+d. len
+
+Answer: a
+=======================
+Question 31.a:
+s='Hello, world!'
+Which of the following would be returned when evaluating s[3:7:]
+skill: 33
+Options:
+A) 'lo, '
+B) 'lo, w'
+C) 'llo,'
+D) 'llo, '
+Answer: A
+=======================
+Question 31.b:
+def foo(x):
+    print(x*2 + 3)   
+y = foo(3)
+What is the value of y?
+skill: 9
+Options:
+A) 12
+B) 9
+C) None
+D) Int
+Answer: C
+=======================
+Question 32.a:
+Let s = 'I love CS!'. What would s[5:1:-1] return?
+skill: 33
+Options:
+A) Error
+B) 'vol '
+C) ' love'
+D) 'evol'
+
+Answer: D
+=======================
+Question 32.b:
+Which of the following is false, regarding the usage of for and while loops?
+skill: 12
+Options:
+A) for loops are designed to iterate over the elements of a collection
+B) while loops are used for conditions                             
+C) while loops are used if you know how many times you need to iterate
+D) while loops track increments
+
+Answer: C
+=======================
+Question 33.a:
+should you use a for or a while loop here: write a function that
+returns the third-to-last charater in a string with a loop count?
+skill: 5, 9, 12
+Options:
+A) while because it's better for looping
+B) for because it's shorter to write
+C) if because there's a condition
+D) elif because there's multiple condition
+Answer A
+=======================
+Question 33.b:
+what is the issue with this code:
+def func(x):
+    n = ''
+    c = 0
+    while c < len(x):
+        n += chr(ord(x[c]) - ord('A'))
+        c += 1
+    return n
+func('A')
+skill: 5, 9, 12, 29
+Options:
+A) various colons are missing
+B) you can't input 'A'
+C) nothing's wrong!
+D) += isn't valid
+Answer B
+=======================
+Question 34.a:
+: Given the following code:
+word = "Compsci"
+ans = word[6:2:-2]
+print(ans)
+
+What is the output of the code?
+
+skill: 33
+Options:
+A) results in an error
+B) sci
+C) is
+D) ps
+
+Answer: C
+=======================
+Question 34.b:
+: Given s = 'abcdefghijklmnopqrstuvwxyz', what does s[::13] return?
+skill: 33
+Options:
+A) abcdefghijklm
+B) amy
+C) an
+D) nopqrstuvwxyz
+
+
+Answer: C
+=======================
+Question 35.a:
+Which of the following is a collection?
+skill: 9
+Options:
+A) integers
+B) floats
+C) booleans
+D) lists
+
+Answer: D
+=======================
+Question 35.b:
+What will the following code print?
+s = "python"
+print(s[1:4])
+skill:33
+Options:
+A) pyt
+B) yth
+C) tho
+D) pyth
+
+Answer: B
+=======================
+Question 36.a:
+Which function returns the unicode value of a single character?
+skill:9
+Options:
+A) chr
+B) str
+C) uni
+D) ord
+
+Answer: D
+=======================
+Question 36.b:
+What will
+s = "hello world"
+s[:6:-1]
+return?
+skill:33
+Options:
+A) "olleh"
+B) "dlrow"
+C) " olleh"
+D) "dlro"
+
+Answer: D
