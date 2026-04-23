@@ -52,7 +52,7 @@ string = ''
 for i in list:
     for value in i:
         string += str(value)
-print(string) 
+print(string)
 skill:
 Options:
 
@@ -339,7 +339,7 @@ What will the following code do?:
 for x in g:
     for r in x:
         g.append(3)
-        
+
 skill: 12, 30
 Options:
 A) Append 3 after every sublist
@@ -528,7 +528,7 @@ Options:
 a) for loops dont exist
 b) while loops have counter variables, which can be used to index a list or string
 c) for loops have a limited number of loops
-d) for loops are better 
+d) for loops are better
 Answer: b
 =======================
 Question 22.a:
@@ -557,7 +557,7 @@ def ooh(g):
         for e in x[::-1]:
             result.append(int(e))
     return result
-    
+
 skill: 12 29 30 33
 Options:
 A) [ [3, 2, 1], [6, 5, 4] ]
@@ -649,7 +649,7 @@ What is the value of x after the following code is run?
 x = '0, 1, 2, 3'
 for e in x:
     if x[e] > 1
-        x[e] += 4    
+        x[e] += 4
 skill:
 Options:
 A) [ 0, 1, 2, 3 ]
@@ -701,7 +701,7 @@ Answer
 D
 =======================
 Question 27.a:
-What does s.split('') return if s = '99 99\n99'
+What does s.split() return if s = '99 99\n99'
 skill: 30
 Options:
 A) ['99', '99', '99']
@@ -792,7 +792,7 @@ Answer
 B
 =======================
 Question 30.b:
-Give g = [1, 2, 3], which of the following would modify g to become [6, 7, 8]. 
+Give g = [1, 2, 3], which of the following would modify g to become [6, 7, 8].
 skill: 30
 Options:
 A) i = 0
