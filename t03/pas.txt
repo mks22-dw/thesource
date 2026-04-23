@@ -1,0 +1,785 @@
+
+=======================
+Question 0:
+Programming question:Write a function that takes in a list of integers
+and returns a string with each integer in the list raised to the power of
+the integer that comes before it in the list, seperated by commas.For the
+first value in the list raise it to the power of the last value in the
+list.
+skill: 12, 30, 29,33
+Description
+For list x=[2,3,4,5] return the string, 32,9,64,625
+Possible solution:
+=======================
+"""
+def sumseries (sequence,term_amt):
+    total = 0
+    d1=sequence[1]-sequence[0]
+    d2=sequence[2]-sequence[1]
+    r1=sequence[1]/sequence[0]
+    r2=sequence[2]/sequence[1]
+    if d1 == d2:
+        total = (term_amt*(2*sequence[0]+(d1*(term_amt-1))))/ 2
+    elif r1 == r2:
+        total= (sequence[0]*(1-r1**term_amt))/(1-r1)
+    else:
+        total = False
+    return total
+def exptlist (g):
+    x = 0
+    original=g[:]
+    while x < len (g):
+        g[x]=original[x] ** original[x-1]
+        x+=1
+    return g
+=======================
+Question 1:
+Programming question: Write a function that takes in a string containing a word all in lowercase and outputs a new string where every second letter is capitilized and included in the new string. Assume you have to start at index 1. Ex: "python" --> "YHN."
+skill: 9, 29, 33
+Description
+
+Possible solution:
+def capital_string (s):
+    s = s[1::2]
+    a = ''
+    for item in s:
+        a += chr (ord (item) - ord ('a') + ord ('A'))
+    return a
+print (capital_string ('python'))
+=======================
+"""
+def combine_data (s):
+    x = ''
+    for sub_list in s:
+        x += '\n'
+        for r in sub_list:
+            x += str(r) + ','
+        x = x[:-1]
+    return x[1:]
+g = [[3, 75, True], ['hello', 42], ['what?'], [4, 8, 15]]
+print (combine_data (g))
+
+list = [[1, 2], [3, 4]]
+string = ''
+for i in list:
+    for value in i:
+        string += str(value)
+print(string)
+=======================
+Question 2:
+"""
+=======================
+Question 3:
+"""
+def count_even(nums):
+    count = 0
+    for n in nums:
+        if n % 2 == 0:
+            count += 1
+    return count
+
+"""
+=======================
+Programming question:
+skill:12
+Write a function sum_even(nums) that returns the sum of all even numbers in a list.
+Possible solution:
+=======================
+"""
+
+def sum_even(nums):
+    total = 0
+    for n in nums:
+        if n % 2 == 0:
+            total += n
+    return total
+=======================
+Question 4:
+Programming question:
+skill:
+Description
+
+Possible solution:
+=======================
+"""
+=======================
+Question 5:
+"""
+
+def sum_list(numbers):
+    total = 0
+    for num in numbers:
+        total += num
+    return total
+
+"""
+=======================
+Programming question:
+skill:30,12
+Description:
+Write a function find_max(nums) that takes a list of numbers
+and returns the largest value in the list.
+
+Example:
+find_max([3, 7, 2, 9]) → 9
+
+Possible solution:
+=======================
+"""
+
+def find_max(nums):
+    largest = nums[0]
+    for n in nums:
+        if n > largest:
+            largest = n
+    return largest
+=======================
+Question 6:
+Programming question: Write a program that, when given a list, creates a string containing each element of that list as a string
+skill: Lists, Strings
+Description
+
+Possible solution:
+def string_to_list(s):
+    char_list = []
+    for char in s:
+        char_list.append(char)
+    return char_list
+
+=======================
+"""
+=======================
+Question 7:
+Programming question: Write a function that takes in a string separated
+by newlines, where every newline separates three items separated by
+commas, within the string. It should return each item separated by
+those commas, in a list.
+skill:29, 30
+Description
+EX: double_split('''sfd,fd,d
+                    xnh,nh,h
+                    pwe,we,e''') --> ['sfd','fd','d','xnh','nh','h','pwe','we','e']
+Possible solution:
+def double_split(s):
+    l = s.split('\n')
+    t = []
+    for c in l:
+        t += c.split(',')
+    return t
+=======================
+"""
+=======================
+Question 8:
+Programming question: Write a function called jump_list(s, index) that returns a list containing all items in list s,
+starting with the first, at each interval of the integer index. 
+skill:
+Description
+ex: jump_list([1, 2, 3, 4, 5], 2) --> [1, 3, 5]
+
+Possible solution:
+
+def jump_list(s, index):
+    return s[::index]
+print(jump_list([1, 2, 3, 4, 5], 3))
+=======================
+"""
+=======================
+Question 9:
+Programming question:
+skill:
+Description
+
+Possible solution:
+=======================
+"""
+=======================
+Question 10:
+Programming question:
+skill: 30, 29
+Description: write a function that takes a string of words and returns
+a list containing only the words that start with a vowel.
+
+Possible solution:
+def vowels_only(s):
+    vowel_list = []
+    my_list = s.split()
+    e = 0
+    while e < len(my_list):
+        word_string = my_list[e]
+        if (word_string[0] == 'a' or
+           word_string[0] == 'e' or
+           word_string[0] == 'i' or
+           word_string[0] == 'o' or
+           word_string[0] == 'u' or
+           word_string[0] == 'A' or
+           word_string[0] == 'E' or
+           word_string[0] == 'I' or
+           word_string[0] == 'O' or
+           word_string[0] == 'U'):
+               vowel_list.append(word_string)
+        e += 1
+    return vowel_list
+=======================
+"""
+=======================
+Question 11:
+Programming question:
+skill: 9, 12, 29, 30, 33
+Write a function that takes in a list of string numbers and returns their sum.
+
+Possible solution:
+=======================
+"""
+def first_letter(s):
+    new = s.split(' ')
+    final_g = []
+    for v in new:
+        final_g.append(v[0])
+    return final_g
+print(first_letter('hi my name is'))
+
+def sum_string(g):
+    sum = 0
+    for v in g:
+        sum += int(v)
+    return sum
+print(sum_string(['33', '20', '1']))
+=======================
+Question 12:
+Programming question: Assume list has an even number of numbers. Return a list with sums of each pair of numbers
+skill:12, 30
+Description
+[1, 2, 3, 4] should return [3, 7]
+
+Possible solution:
+def pair_sum(g):
+    counter = 0
+    h = []
+    while counter < len(g) - 1:
+        h.append(g[counter] + g[counter+1])
+        counter += 2
+    return h
+=======================
+"""
+=======================
+Question 13:
+===
+
+"""
+def add_symbols(s):
+    g = []
+    for x in s:
+        if x != '\n' and x != ',':
+            g.append(x)
+    return g          
+print(add_symbols('Hey \n ,how, are, yo\nu? \n I,m doin,g good.\n'))
+=======================
+Question 14:
+"""
+def strtolist (s):
+    g=s.split(",")
+    finlist=[]
+    for e in g:
+        if int(e) % 2 == 0:
+            finlist.append (int(e))
+    return finlist
+"""
+Programming question: Given a list of single digit integers in base 10, return a list of those integers in base 2 as strings.
+skill:
+Description
+[1,2,3,4,5,6] --> [1, 10, 11, 100, 101, 110]
+
+Possible solution:
+=======================
+"""
+
+def basechange(g):
+    result = []
+    for n in g:
+        if n == 0:
+            binary = "0"
+        else:
+            binary = ""
+            while n > 0:
+                binary = str(n % 2) + binary
+                n //= 2
+        result.append(binary)
+    return result
+=======================
+Question 15:
+Programming question:
+skill: 12, 29, 30
+Description
+Write a function that takes in a list of strings and returns a list of strings, where the Unicode value for each character is halved, rounding down.
+Possible solution:
+=======================
+"""
+def Fibpower(s):
+  n=[]
+  for e in s.split(','):
+    n.append(2**e)
+  return n
+
+def doublechar(g):
+  i=0
+  while i<len(g):
+    n=""
+    for e in g[i]:
+      n+=f"{chr(int(0.5*ord(e)))}"
+    g[i]=n
+    i+=1
+  return g
+=======================
+Question 16:
+Programming question: Write a function
+skill: 12, 29, 30
+Description: This function takes a string (of words) and returns a list of strings where each string is a word with the vowels being taken out. 
+for example: 'hello today is' --> ['hll', 'tdy', 's']
+
+Possible solution:
+=======================
+"""
+
+def amt_hi(list):
+    counter = 0
+    for value in list:
+        if value == 'hi':
+            counter+= 1
+    return counter
+
+def string_nvlist(string):
+    string1 = ''
+    for value in string:
+        if (value == 'a') or (value == 'e') or (value == 'i') or (value == 'o') or (value == 'i'):
+            string1 = string1
+        else:
+            string1+= f'{value}'
+    g = string1.split(' ')
+    return g
+=======================
+Question 17:
+Programming question:
+skill: 12 30
+Write a function add that takes in a single list of lists of number as a parameter and
+returns the list containing various lists concatenated together
+
+For example, add([[45, 2, 5], [1, 5, 3], [2, 3]]) -> [45, 2, 5, 1, 5, 3, 2, 3]
+
+Possible solution:
+=======================
+"""
+def add(list_of_lists):
+    returned_list = []
+    for small_list in list_of_lists:
+        returned_list += small_list
+    return returned_list
+=======================
+Question 18:
+Programming question:
+skill:
+Description
+
+Possible solution:
+=======================
+"""
+=======================
+Question 19:
+Programming question:
+skill:
+Description
+
+Possible solution:
+=======================
+"""
+=======================
+Question 20:
+"""
+
+def hide_vowels(text):
+    vowels = "aeiouAEIOU"
+    result = ""
+    for char in text:
+        if char in vowels:
+            result += "*"
+        else:
+            result += char
+    return result
+
+"""
+=======================
+Programming question:
+skill:33
+Write a function called 'get_reverse_skipping' that takes a list. 
+The function should return a new list that starts from the very 
+last element and moves backward to the beginning, skipping every 
+other element.
+
+Possible solution:
+=======================
+"""
+
+def get_reverse_skipping(items):
+    return items[::-2]
+=======================
+Question 21:
+"""
+def alternate(g, s):
+    new = ""
+    i = 0
+    for c in s:
+        new += c
+        new += g[i]
+        i += 1
+    return new
+
+"""
+Programming question: Write a function that takes a list of integers and returns a new list where each element is the sum of every two elements of the parameter list
+skill:
+Description: example: [1, 2, 3, 4, 5, 6] --> [3, 7, 11]. assume there is an even number of elements in the parameter list
+
+Possible solution:
+=======================
+"""
+def sum_of_every_two(g):
+    h = []
+    i = 0
+    while i < len(g):
+        h.append(g[i] + g[i + 1])
+        i += 2
+    return h
+=======================
+Question 22:
+Programming question:
+skill: 12 30
+Description
+Write a function that when given a list of numbers, returns a new list where each element is the sum of the elements of the given list up to that index.
+Example: sums([1, 2, 3, 4]) --> [1, 3, 6, 10]
+
+Possible solution:
+=======================
+"""
+
+def line_by_line(string):
+    words = string.split(' ') # or words = string.split()
+    result = ''
+    for word in words:
+        result += f'{word}\n'
+    return result
+
+def sums(numbers):
+    result = []
+    index = 0
+    while index < len(numbers):
+        partial_sum = 0
+        for number in numbers[:index+1]: # include last number
+            partial_sum += number
+        result.append(partial_sum)
+        index += 1
+    return result
+=======================
+Question 23:
+Programming question:
+skill: 12 and 30
+You are given a two-dimensional list g, where any sublist in g contains only integers. Write the
+function multiply_67(g) that multiplies any even-indexed sublist by 6 and any odd-indexed sublist by 7.
+Note that a two-dimensional list is a list whose elements are lists themselves. Below are some test
+cases for your code.
+
+Example 1:
+
+g = [[1, 2], [3, 4], [5, 6], [7, 8]]
+Expected return value for Example 1: [[6, 12], [21, 28], [30, 36], [49, 56]]
+
+Example 2:
+
+g = [[10]]
+Expected return value for Example 2: [[60]]
+
+Possible solution:
+=======================
+"""
+
+# Possible solution for first programming question
+
+def correct_expression(equation):
+    partially_separated = equation.split('+')
+    separated_equation = []
+    
+    for string in partially_separated:
+        if string.find('=') == -1:
+            separated_equation.append(string)
+            
+        else:
+            equals = string.find('=')
+            separated_equation = separated_equation + [string[0 : equals]] + [string[equals + 1 : len(string)]]
+            
+    separated_ints = []
+    
+    for string in separated_equation:
+        separated_ints.append(int(string))
+        
+    lhs_sum = 0
+    index = 0
+    
+    while index < len(separated_ints) - 1:
+        lhs_sum = lhs_sum + separated_ints[index]
+        index = index + 1
+        
+    return lhs_sum == separated_ints[-1]
+
+def check_math(arithmetic):
+    equations_list = arithmetic.split('\n')
+    accuracy_count = 0
+    
+    for equation in equations_list:
+        if correct_expression(equation) == True:
+            accuracy_count = accuracy_count + 1
+            
+    return (accuracy_count / len(equations_list)) * 100
+
+# Possible solution for second programming question
+
+def multiply_6(g):
+    result = []
+    
+    for num in g:
+        result.append(num * 6)
+        
+    return result
+
+def multiply_7(g):
+    result = []
+    
+    for num in g:
+        result.append(num * 7)
+        
+    return result
+
+def multiply_67(g):
+    result = []
+    index = 0
+    
+    while index < len(g):
+        if index % 2 == 0:
+            result.append(multiply_6(g[index]))
+            
+        else:
+            result.append(multiply_7(g[index]))
+            
+        index = index + 1
+            
+    return result
+=======================
+Question 24:
+Programming question: Write a function transpose(g) that takes a list of lists and returns that list of lists transposed.
+Transposition is the swapping of rows and columns. Assume each row is the index of each sublist within the list of lists and each column
+is the index of the item within the sublist.
+
+transpose([[5,6,7,8,9,0]]) -> ([5], [6], [7], [8], [9], [0])
+transpose([['hello there'], ['peoples']]) -> (['hello', 'peoples'], ['there'])
+
+It is reccomended you utilize the helper function largest_list(g) from my other question, which finds the size of the largest list in a list of lists g.
+
+skill: 30
+Description
+
+Possible solution:
+=======================
+"""
+
+def largest_list(g):
+    maximum_list_size = 0
+    for sublist in g:
+        if len(sublist) > maximum_list_size:
+            maximum_list_size = len(sublist)
+    
+    return maximum_list_size
+
+def transpose(g):
+    g_final = []
+    i = 0
+        
+    while i < largest_list(g):
+        g_temp = []
+        
+        for sublist in g:
+            
+            if len(sublist) > i:
+                g_temp.append(sublist[i])
+        
+        i += 1
+        g_final.append(g_temp)
+    
+    return g_final
+        
+# print(transpose([[5,6,7,8,9,0]]))
+# print(transpose([['hello', 'there'], ['peoples']]))
+=======================
+Question 25:
+"""
+
+def power_4(g):
+    i = 0
+    while i < len(g):
+        g[i] = g[i] ** 4
+        i += 1
+    return g
+
+"""
+Programming question:
+skill:
+Write a function that will take a string of numbers separated by spaces
+and return a list of each number in the string multiplied
+by 2.
+
+Possible solution:
+=======================
+"""
+
+def times2_list(s):
+    final = s.split(' ')
+    i = 0
+    while i < len(final):
+        final[i] = int(final[i]) * 2
+        i += 1
+    return final
+
+
+#print(power_4([1, 2, 3]))
+#print(times2_list('1 2 3 4 5'))
+=======================
+Question 26:
+Programming question:
+skill: 30, 29, 12
+Write a function that returns the letter of alphabet (in lowercase) that corresponds to the first number in each sublist.
+x = [[1,2,3],[4,5,6],[7,8,9]]
+func(x) returns ['a', 'd', 'g']
+
+Possible solution:
+x = [[1,2,3],[4,5,6],[7,8,9]]
+def func (x):
+    new = []
+    for group in x:
+        num = group[0]
+        char = chr(ord('a') + (num - 1))
+        new.append(char)
+    return new
+
+print(func(x))
+=======================
+"""
+=======================
+Question 27:
+Programming question:
+Write a function that takes a list containing strings and combines them into one string, separated by spaces. If the list is empty, return an empty string. 
+skill: 29, 30
+Description
+
+Possible solution:
+=======================
+"""
+
+def sum_elements (list):
+    sum = 0
+    for item in list:
+        sum += int(item)
+    return sum
+print (sum_elements(['9', '99', '100']))
+
+def combine_strings (g):
+    if len(g) == 0:
+        return ''
+    new_string = ''
+    x = 0
+    while x < len(g):
+        new_string = new_string + g[x] + ' '
+        x += 1
+    return new_string[:-1:]
+print (combine_strings(['Computer', 'Science']))
+=======================
+Question 28:
+Programming question:
+skill:
+Write a function max_consecutive(g) that returns
+the largest number of times the same number appears
+in a row (in a list).
+
+Ex: max_consecutive([1, 1, 2, 2, 2, 3, 1, 1]) --> 3
+Possible solution:
+=======================
+"""
+
+def remove_vowels(s):
+    result = ''
+    for c in s:
+        if c != 'a' and c != 'e' and c != 'i' and c != 'o' and c != 'u':
+            result += c
+    return result
+
+def max_consecutive(g):
+    max_count = 1
+    current = 1
+    prev = g[0]
+    for n in g[1:]:
+        if n == prev:
+            current += 1
+            if current > max_count:
+                max_count = current
+        else:
+            current = 1
+        prev = n
+    return max_count
+=======================
+Question 29:
+"""
+
+def can_you_tell_i_was_studying_last_night(s):
+    return s.split()
+=======================
+Question 30:
+g = [2, 3, 4]
+
+def square(g):
+    ans = ''
+    for char in g:
+        squared = char ** (1/2)
+        rounded = f'{squared:0.3f}'
+        ans += f'{char} {rounded} \n'
+    return ans
+print(square(g))
+
+Programming question: Write a function (sum_ints) that takes in a comma seperated string of integers and returns the sum of the integers.
+Example:
+s = '10, 20, 30, 40'
+sum_ints(s) ---> 100
+skill: 29
+Description
+
+Possible solution:
+=======================
+"""
+def sum_ints(s):
+    total = 0
+    str_list = s.split(',')
+    for val in str_list:
+        total += int(val)
+    return total
+print(sum_ints('10, 20, 30, 40'))
+=======================
+Question 31:
+Programming question:
+skill: 30 
+Take a list of positive integers and return one back
+with the even integers.
+
+Possible solution:
+=======================
+"""
+g = [1,4,6,22, 35, 9, 0, 4]
+def evens_only(g):
+    output = []
+    for i in g:
+        if i % 2 ==0:
+            output.append(i)
+    return(output)
+print(evens_only(g))

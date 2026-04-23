@@ -1,0 +1,411 @@
+
+=======================
+Question 0:
+Create a function that takes in a list with the
+tbe first 3 numbers in a sequence and the amount of terms in that sequence
+and returns the sum of all numbers in that sequence if it is either a arithmetic sequence or a
+geometric sequence, returns False if the sequence is neither
+skill:30
+Description
+A arithmetic sequence is defined as a sequence where the difference between
+consecutive terms is constant, formula for last term is a_n=a1+d(n-1) where d is the common difference and n is amount of terms in the sequence
+A geometric sequence is defined as a sequence of numbers where each term after the first is found by multiplying the previous term by a fixed,
+non-zero number called the common ratio. a_n=a1*r^n-1
+Sum of arithmetic series n(a1+an)/2, sum of geometric series is a1(1-r^n)/1-r
+
+
+=======================
+Question 1:
+Write a function that takes in list containing strings and numbers as an argument and returns one string containing the sum of all the numbers in the list followed by a comma followed by a comma and the rest of the words (all separated by commas). Assume all the numbers in the list are of type int. For example [1, 2, 3, "what", "hello"] would return "6,what,hello"
+skill: 9, 12, 30
+Description
+
+
+def list_check(data_list):
+    total = 0
+    s = ""
+    for item in data_list:
+        if type(item) == int:
+            total = total + item
+        elif type(item) == str:
+            if s != "":
+                s += ","
+            s += item
+    result = f'{total},{s}'
+    
+    return result
+print (list_check ([1, 2, 3, "what", "hello"]))
+=======================
+Question 2:
+Create a function that counts the amount of vowels in a string
+skill: 29
+Description
+
+
+
+def vow_count():
+    vowels = "aeiouAEIOU"
+    count = 0
+    for char in string:
+        if char in vowels:
+            count += 1
+    return count
+=======================
+Question 3:
+skill:12
+Write a function count_even(nums) that returns how many even numbers are in a list.
+
+=======================
+Question 4:
+Create a function that can use multiple delimiters.
+skill: 9, 12, 30, 33
+Description
+Create a function that can take in multiple delimiters in the form of a string, separated by another character that will not be used as a delimiter.
+Parameters include:
+string with multiple delimeters separated by a given character
+the given character
+the string
+ex:
+multiDelimeter("=/__/]", "/", "hello=i__am__a]goat") ==> ["hello", "i", "am", "a", "goat"]
+your function must separate them into a single list, without any sublists.
+
+
+def multiDelimeter(d, sep, listr):
+    separators = d.split(sep)
+    strr = listr
+    Wstr = listr
+    for delim in separators:
+        Wstr = strr.split(delim)
+        #print(f'Wtsr Del:{Wstr}')
+        strr = ""
+        for i in Wstr:
+            strr += i + sep
+        strr = strr[:len(strr)-1]
+    return strr.split(sep)
+=======================
+Question 5:
+skill:12,30
+Description:
+Write a function sum_list(numbers) that takes a list of numbers as input
+and returns the sum of all elements in the list.
+
+Example:
+sum_list([1, 2, 3, 4]) --> 10
+
+
+=======================
+Question 6:
+Write a program that, when given a string, creates a list containing each character in that string as a separate element (Without using list)
+skill: Lists, Strings
+Description
+
+
+def string_to_list(s):
+    result = []
+    for char in s:
+        result.append(char)
+    return result
+=======================
+Question 7:
+Make a list of integers, given a string of numbers
+separated by commas, inside of a list. (That string is the
+only item in the list)
+skill: 29, 30
+EX: t = ['53,55,56,36']
+    list_string_list(t) --> [53, 55, 56, 36]
+
+
+def list_string_list(l):
+    s = l[0]
+    l = s.split(',')
+    new_l = []
+    for c in l:
+        new_l.append(int(c))
+    return new_l
+=======================
+Question 8:
+Write a function called count_odd(s) that returns the number of odd integers present in the list s. 
+skill: 30/12
+
+
+def count_odd(s):
+    count = 0
+    for i in s:
+        if i % 2 == 1:
+            count += 1
+    return count
+print(count_odd([1, 2, 3, 4, 5, 6, 7, 8, 9]))
+=======================
+Question 9:
+skill:
+Description
+
+
+=======================
+Question 10:
+skill: 29, 30
+Description: write a function that takes a string of integers and makes a list of the even integers as numbers
+
+
+def even_list(s):
+    my_list = s.split()
+    even_list = []
+    for e in my_list:
+        if int(e) % 2 == 0:
+            even_list.append(int(e))
+    return even_list
+=======================
+Question 11:
+skill: 12, 29, 30, 33
+Write a function that will take a string and return a list of the first letter of each word in the string.
+
+
+=======================
+Question 12:
+Assume list only has numbers in a string. replace all strings with actual numbers and return list
+skill:12, 29,30
+Description
+
+
+def numbing(g):
+    counter = 0
+    for string in g:
+        g[counter] = int(string)
+    return g
+=======================
+Question 13:
+g):
+    new = []
+    for sublist in g:
+        avg = 0
+        for element in sublist:
+            avg += int(element)
+            avg = avg / 2
+        new.append(avg)
+    return new
+print(averages([['223', '461'], ['892', '153'], ['99', '226']]))
+
+"""
+Programming question:
+skill: 12, 29
+Take a string and append the elements to a list only if they are not newlines or commas.
+s = 'Hey \n ,how, are, yo\nu? \n I'm doin,g good.\n'
+
+
+=======================
+Question 14:
+Given a string containing only integers separated by commas, write a function returning a list of the even integers contained in that string.
+skill:
+Description
+"1,2,3,4,5,6" --> [2,4,6]
+
+=======================
+Question 15:
+skill: 9, 12
+Description
+Using the string "1,1,2,3,5,8,13,21,34,55,89" of Fibonacci numbers, construct a list that contains in the place of each number its power of two.
+
+=======================
+Question 16:
+Write a function
+skill: 12, 30, 33
+Description: This function takes a list and returns the amount of times the value 'hi' appears in the list
+
+
+=======================
+Question 17:
+skill: 12 30
+nCr is a function that takes in two integral arguments
+nCr(0, 0) = 1
+nCr(x, y) = 0 if y < 0 or y > x
+nCr(x, y) = nCr(x - 1, y - 1) + nCr(x, y - 1)
+
+Write a function many_nCr(n) that produces a list such that:
+the first element is [nCr(0, 0)]
+the second element is [nCr(1, 0), nCr(1, 1)]
+the third element is [nCr(2, 0), nCr(2, 1), nCr(2, 2)],
+and so on until the n-th element
+"""
+def many_nCr(n):
+    returned_list = []
+    current_x = 0
+    while current_x < n:
+        if current_x == 0:
+            small_list = [1]
+        else:
+            small_list = [1]
+            current_y = 1
+            while current_y < current_x:
+                small_list.append(returned_list[-1][current_y - 1] + returned_list[-1][current_y])
+                current_y += 1
+            small_list.append(1)
+            
+        current_x += 1
+        returned_list.append(small_list)
+    return returned_list
+
+"""
+=======================
+Question 18:
+skill:
+Description
+
+
+=======================
+Question 19:
+skill:
+Description
+
+
+=======================
+Question 20:
+skill:29
+Write a function called 'hide_vowels' that takes a single string. 
+The function should return a new string where every vowel (a, e, i, o, u) 
+is replaced by an asterisk '*'. 
+
+
+=======================
+Question 21:
+Write a function that takes a list and string and puts each element of the list in between the characters of the string, returning a new string
+skill: 12, 29, 30
+Description: assume that the list and string are the same length
+
+
+=======================
+Question 22:
+skill: 29 30
+Description
+Write a function that when given a sentence, returns the sentence with each word on a separate line.
+
+
+=======================
+Question 23:
+skill: 9, 12, 29, 30, and 33
+You are given a string arithmetic, which contains at least one addition equation. Each equation is
+written in the form int0+int1+...+intn=result, where two or more integers are added to obtain a result
+and no equation contains any spaces. If arithmetic contains multiple addition equations, each equation
+is separated by a newline character. You may assume that arithmetic is a string that uses triple quotes
+(''').
+
+Write the function check_math(arithmetic) that returns the percent of equations in arithmetic that are
+mathematically correct. Below are some test cases for your code.
+
+Example 1:
+
+arithmetic = '''3+4=7
+4+23=27
+2+67+2=71'''
+
+Expected return value for Example 1: 100.0 (all expressions are correct)
+
+Example 2:
+
+arithmetic = '''3+-8=-5
+4+29+-1=31
+8+-2+-1+6+7+-67=-49
+4+32+-2=34'''
+
+Expected return value for Example 2: 75.0 (only 4+29+-1=31 is incorrect)
+
+
+=======================
+Question 24:
+Write a function largest_list(g) that takes a list of lists and returns the length of the largest sublist in g.
+
+largest_list([[1], [2, 2], [3, 3, 3], [4, 4, 4, 4]]) -> 4
+
+skill: 30
+Description
+
+
+=======================
+Question 25:
+skill:
+Write a function that modifies each element of the given
+list, assuming they are all integers, to its 4th power.
+
+
+=======================
+Question 26:
+skill: 30, 12
+Write a function that returns the sum of numbers in each sublist as a value in a list.
+x = [[1,2,3],[4,5,6],[7,8,9]]
+func(x) returns [6, 15, 24].
+
+
+def func (x):
+    new = []
+    for group in x:
+        sum = 0
+        for num in group:
+            sum += num
+        new.append(sum)
+    return new
+
+print(func(x))
+=======================
+Question 27:
+Write a function that returns the sum of elements in a list, assuming the list contains only strings of numbers
+skill: 12, 30
+Description
+
+
+=======================
+Question 28:
+skill: 12, 29
+Write a function remove_vowels(s) that
+returns a new string with all vowels removed.
+
+Ex: remove_vowels('banana') --> 'bnn'
+
+=======================
+Question 29:
+skill:
+Write a function that returns a list with sublists containing the
+words of a sentence.
+
+Ex. s = 'I am a banana'
+function(s) returns ['I', 'am', 'a', 'banana']
+
+
+=======================
+Question 30:
+Write a function (square) that takes a list of integers and returns a string in which each number along with its square root (rounded to 3 decimal places). Seperate each pair of numbers with a new line.
+Example:
+g = [2, 3, 5]
+square(g) -->
+2 1.414
+3 1.732
+4 2.000
+skill: 12, 30
+Description
+
+
+=======================
+Question 31:
+skill: 29, 30
+Write a function that takes a one-word string
+(no white space) and randomizes the order of
+characters. (note: import random, but do not use
+random.shuffle().)
+
+
+
+"""
+import random
+def randmstring(s):
+    g = []
+    for i in s:
+        g.append(i)
+    output = ''
+    while len(g) > 0:
+        myint = random.randint(0, len(g)-1)
+        output += f'{g[myint]}'
+        g = g[:myint] + g[myint + 1:]
+    return(output)
+    
+hi = 'hellothere'
+print(randmstring(hi))
+
+"""
