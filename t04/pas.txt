@@ -1,0 +1,959 @@
+
+=======================
+Question 0:
+Programming question:Write a function that instructs a turtle to draw
+the hilbert curve 
+skill:11
+Description
+The hilbert curve is a fractal where at depth 0, nothing happens. The
+function should take 4 parameters, hilbert(t,depth,length,angle), angle should
+be 90º.
+This is the list of directions of a depth n hilbert curve:
+Turn left angle degrees
+Draw a Hilbert curve of depth n−1 with parameter -angle 
+Move forward
+Turn right angle degrees
+Draw a Hilbert curve of depth n−1 with the normal angle
+Move forward
+Draw a Hilbert curve of depth n−1 with the normal angle
+Turn right angle degrees
+Move forward
+Draw a Hilbert curve of depth n−1 with parameter -angle 
+Turn left angle degrees
+when i mean parameter -angle, call hilbert(t,depth-1,length,-angle)
+Possible solution:
+=======================
+"""
+import turtle
+window=turtle.Screen()
+window.setup(500,500)
+t1=turtle.Turtle()
+t1.pu()
+t1.setpos(-200,-200)
+t1.speed(0)
+def fib (n):
+    if n <= 1:
+        return n
+    else:
+        return fib(n-1)+fib(n-2)
+def hilbert(t,depth,length,angle):
+    t.pd()
+    if depth == 0:
+        return
+    else:
+        t.lt(angle)
+        hilbert(t,depth-1,length,-angle)
+        t.fd(length)
+        t.rt(angle)
+        hilbert(t,depth-1,length,angle)
+        t.fd(length)
+        hilbert(t,depth-1,length,angle)
+        t.rt(angle)
+        t.fd(length)
+        hilbert(t,depth-1,length,-angle)
+        t.lt(angle)
+hilbert(t1,3,50,90)
+=======================
+Question 1:
+Programming question: Write out a recursive problem that starts at the middle of a list. If the middle term is even, go to the right of the list and search the middle term again until it becomes odd. If an odd term does not appear, return False. Other, if at any point the middle term is odd, return True. 
+skill: 4, 11
+Description
+
+Possible solution:
+def find_odd_slicing(data):
+    if data == []:
+        return False
+    
+    a = len(data) // 2
+    b = data[a]
+    
+    if b % 2 != 0:
+        return True
+    
+    return find_odd_slicing(data[a + 1:])
+=======================
+"""
+=======================
+Question 2:
+Programming question:
+skill:
+Description
+
+Possible solution:
+=======================
+"""
+=======================
+Question 3:
+Programming question: Using recursion, write a function that returns the number of times target appears in lst
+skill: 11
+Description
+lst - a list of integers
+target - the target integer
+Do not use loops, only recursion
+Possible solution:
+def count_occurrences(lst, target):
+    if len(lst) == 0:
+        return 0
+    if lst[0] == target:
+        return 1 + count_occurrences(lst[1:], target)
+    return count_occurrences(lst[1:], target)
+=======================
+"""
+=======================
+Question 4:
+"""
+
+def has_duplicate(lst):
+    i = 0
+    while i < len(lst):
+        j = i + 1
+        while j < len(lst):
+            if lst[i] == lst[j]:
+                return True
+            j += 1
+        i += 1
+    return False
+
+"""
+=======================
+Programming question:
+skill: 11
+Write a recursive function factorial(n) that returns the factorial of n.
+Recall: factorial(n) = n * factorial(n-1), and factorial(0) = 1.
+
+Possible solution:
+=======================
+"""
+
+def factorial(n):
+    if n == 0:
+        return 1
+    return n * factorial(n - 1)
+=======================
+Question 5:
+Programming question: Create a function that finds the largest item in a list.
+skill: 11
+Description
+
+Possible solution:
+
+def largerer(x):
+    if len(x) == 0:
+        return None
+    largest = x[0]
+    for y in x:
+        if y > largest:
+            largest = y
+    return largest
+
+=======================
+"""
+=======================
+Question 6:
+Programming question:
+skill: 11
+Make a fractal, where the base case is a straight line. Depth 2
+should be depth 1, 60 degree rotation right, depth 1, 120 degree
+rotation left, depth 1, 60 degree rotation right, and one more depth 1.
+
+Bonus points if you can figure out what you drew.
+
+
+Possible solution:
+def fractal(t, depth, size):
+    t.pd()
+    if depth == 1:
+        t.fd(size)
+    else:
+        fractal(t, depth - 1, size)
+        t.rt(60)
+        fractal(t, depth - 1, size)
+        t.lt(120)
+        fractal(t, depth - 1, size)
+        t.rt(60)
+        fractal(t, depth - 1, size)
+fractal(leo, 4, 20)
+=======================
+"""
+=======================
+Question 7:
+Programming question: Make a function called city(depth, length, t). Depth = 1 will be a straight line. For the recursive case, you need to
+draw a line with length / 2, turn left 90, move length / 2, turn right 90, move length / 2, turn right 90, move length / 2, turn left 90,
+and move forward length / 2. 
+skill:11
+Description
+
+Possible solution:
+import turtle
+
+window = turtle.Screen()
+window.setup(500, 500)
+
+Donatelo = turtle.Turtle()
+turtle.penup()
+turtle.goto(0, 0)
+turtle.pendown()
+turtle.speed(0)
+
+def city(depth, length, t):
+    if depth == 1:
+        t.fd(length)
+        return
+    city(depth - 1, length / 2, t)
+    t.lt(90)
+    t.fd(length / 2)
+    t.rt(90)
+    city(depth - 1, length / 2, t)
+    t.rt(90)
+    t.fd(length/2)
+    t.lt(90)
+    city(depth - 1, length / 2, t)
+city(2, 50, Donatelo)
+=======================
+"""
+=======================
+Question 8:
+Programming question:
+skill:
+Description
+
+Possible solution:
+=======================
+"""
+=======================
+Question 9:
+Programming question: 
+skill: 11
+Description:
+Write a function that uses recursion to check if
+a string is a palindrome (assume no spaces, all lowercase, no punctuation).
+Returns True if it's a palidrome, returns False otherwise.
+
+Possible solution:
+def palindrome(s):
+    if len(s) <= 1:
+        return True
+    if s[0] == s[-1]:
+        return True
+    else:
+        return False
+    palindrome(s[1:- 1])
+
+print(palindrome('probablynotapalindrome'))
+=======================
+"""
+=======================
+Question 10:
+Programming question:
+skill: 11
+Write the trace diagram for hi([4, 5, 6], 2, 3) if:
+def hi(g, f1, f2):
+  i = 0
+  if g[i] == (f1 * f2):
+    return True
+  else:
+    hi(g[i+1:], f1, f2)
+
+Possible solution:
+=======================
+"""
+def find_max(g):
+    if len(g) == 1:
+        return g[0]
+    else:
+        max_rest = find_max(g[1:])
+        if g[0] > max_rest:
+            return g[0]
+        else:
+            return max_rest
+print(find_max([4, 2, 9, 6]))
+
+'''
+#trace
+hi([4, 5, 6]), 2, 3)
+hi([5, 6], 2, 3)
+hi([6], 2, 3)
+True
+'''
+=======================
+Question 11:
+Programming question:
+skill:
+Description
+
+Possible solution:
+=======================
+"""
+=======================
+Question 12:
+Programming question:trace this recursive function for factorial(5)
+def factorial(x):
+    if x == 2:
+        return 2
+    else:
+        return x * factorial(x-1)
+skill:4
+Description
+
+Possible solution:
+factorial(5)
+5*factorial(4)
+5*4*factorial(3)
+5*4*3*factorial(2)
+5*4*3*2
+120
+=======================
+"""
+=======================
+Question 13:
+==========
+"""
+=======================
+Question 14:
+Programming question:
+skill: 4
+Description
+Write a function that takes a function which in turn takes one integer
+argument, and returns, to some degree of certainty, the order of the
+function in time with respect to that argument (assuming that order is
+either log(n), 1, n, n**2, n**3, or 2**n).
+Possible solution:
+=======================
+"""
+import turtle
+mike=turtle.Turtle()
+wind=turtle.Screen()
+wind.setup(500,500)
+
+def levy(t, n, s):
+    if n==1:
+        t.fd(s)
+    else:
+        t.rt(90)
+        levy(t, n-1, s/2)
+        t.lt(90)
+        levy(t, n-1, s/2)
+        levy(t, n-1, s/2)
+        t.lt(90)
+        levy(t, n-1, s/2)
+        t.rt(90)
+
+def timeorder(f):
+    if abs(f(200)-2*f(100)+f(50))<0.05*f(100) and abs(f(400)-2*f(200)+f(100))<0.05*f(200) and abs(f(800)-2*f(400)+f(200))<0.05*f(400):
+        return "O(log(n)"
+    a0=f(99)
+    a1=f(100)
+    a2=f(101)
+    a3=f(102)
+    a4=f(103)
+    if abs(a1-a0)<0.05*a1 and abs(a2-a1)<0.05*a2 and abs(a3-a2)<0.05*a3:
+        return "O(1)"
+    if abs(a2-2*a1+a0)<0.05*a1 and abs(a3-2*a2+a1)<0.05*a2 and abs(a4-2*a3+a2)<0.05*a3:
+        return "O(n)"
+    if abs(a3-3*a2+3*a1-a0)<0.05*a2 and abs(a4-3*a3+3*a2-a1)<0.05*a3:
+        return "O(n**2)"
+    if abs(a4-4*a3+6*a2-4*a1+a0)<0.05*a2:
+        return "O(n**3)"
+    if a2/a1-a1/a0<0.05*a1 and a3/a2-a2/a1<0.05*a2 and a4/a3-a3/a2<0.05*a3:
+        return "O(2**n)"
+=======================
+Question 15:
+def merge_sort(nums):
+    if len(nums) <= 1:
+        return nums
+
+    middle = len(nums) // 2
+    left = merge_sort(nums[:middle])
+    right = merge_sort(nums[middle:])
+
+    result = []
+    i = 0
+    j = 0
+
+    while i < len(left) and j < len(right):
+        if left[i] < right[j]:
+            result.append(left[i])
+            i += 1
+        else:
+            result.append(right[j])
+            j += 1
+
+    result += left[i:]
+    result += right[j:]
+
+    return result
+
+=======================
+Programming question:
+skill: 11
+Write a recursive function called count_char(s, letter) that takes a string s
+and a one-character string letter. The function should return how many times
+letter appears in s.
+
+If the string is empty, return 0.
+
+Example:
+count_char("banana", "a") should return 3
+count_char("hello", "z") should return 0
+
+Possible solution:
+=======================
+
+
+def count_char(s, letter):
+    if len(s) == 0:
+        return 0
+
+    if s[0] == letter:
+        return 1 + count_char(s[1:], letter)
+    else:
+        return count_char(s[1:], letter)
+        
+"""
+=======================
+Question 16:
+Programming question: Write a recursive function.
+skill: 11
+Description:
+The function Draw_Square(t, size, box) will draw a square using a turtle (t).
+It draws a square made up of smaller squares will side length of box. The whole square is made up of 2^size boxes.
+
+Possible solution:
+=======================
+"""
+
+def Draw_Square(t, size, box):
+    if size == 0:
+        t.fd(box)
+        t.lt(90)
+        t.fd(box)
+        t.lt(90)
+        t.fd(box)
+        t.lt(90)
+        t.fd(box)
+        t.lt(90)
+    else:
+        length = (2 ** (size - 1)) * box
+        Draw_Square(t, size - 1, box)
+        t.fd(length)
+        Draw_Square(t, size - 1, box)
+        t.lt(90)
+        t.fd(length)
+        t.rt(90)
+        Draw_Square(t, size - 1, box)
+        t.backward(length)
+        Draw_Square(t, size - 1, box)
+        t.rt(90)
+        t.fd(length)
+        t.lt(90)
+=======================
+Question 17:
+def gcd_mod(x, y):
+    if y == 0:
+        return x
+    else:
+        return gcd_mod(y, x % y)
+
+def gcd_minus(x, y):
+    if y == 0:
+        return x
+    elif y > x:
+        return gcd_minus(y, x)
+    else:
+        return gcd_minus(x - y, y)
+=======================
+Programming question:
+skill: 11
+
+Given a list of numbers S and number n,
+Write a function that takes in S and n as arguments and returns if there is a way to sum elements in S to produce n
+
+E.g. [16, 3, 7], 23 --> true (21 = 16 + 7)
+     [2, 4, 6, 8], 3 --> false
+     [2.5], 5 --> false
+     [2.5, 2.5], 5 --> true
+
+Possible solution:
+=======================
+"""
+def summable(S, n):
+    if len(S) == 1:
+        return S[0] == n
+    elif n < 0:
+        return False
+    else:
+        if summable(S[1:], n - S[0]):
+            return True
+        else:
+            return summable(S[1:], n)
+=======================
+Question 18:
+Programming question: Find length of a string recursively.
+skill: 11
+Description
+
+Possible solution:
+def length(s):
+    if s == '':
+        return 0
+    return 1 + string_length(s[1:])
+=======================
+"""
+=======================
+Question 19:
+"""
+
+def find_max_complexity(n):
+    # Since the loops are nested (n * n), the complexity is Quadratic.
+    return "O(n^2)"
+
+"""
+=======================
+Programming question:
+skill: 11
+Write a recursive function recursive_sum(n) that calculates the sum of all 
+integers from n down to 1. If n is 0, the sum should be 0.
+Formula: Sum = n + (n-1) + (n-2) ... + 1
+
+Possible solution:
+=======================
+"""
+
+def recursive_sum(n):
+    if n <= 0:
+        return 0
+    else:
+        return n + recursive_sum(n - 1)
+=======================
+Question 20:
+Programming question: Write a function that draws the Koch curve 
+skill: 11
+Description
+
+Possible solution:
+=======================
+"""
+def fibonacci(n):
+    if n == 0:
+        return 0
+    if n == 1:
+        return 1
+    else:
+        return fibonacci(n - 1) + fibonacci(n - 2)
+    
+def koch(t, depth, length):
+    if depth == 1:
+        t.fd(length)
+    else:
+        koch(t, depth - 1, length)
+        t.lt(60)
+        koch(t, depth - 1, length)
+        t.rt(120)
+        koch(t, depth - 1, length)
+        t.lt(60)
+        koch(t, depth - 1, length)
+        t.lt(0)
+=======================
+Question 21:
+Programming question:
+skill: 4 11
+Description
+Write two functions that return the sum of a given list, but in different classes of time (linear, polynomial...)
+Possible solution:
+=======================
+"""
+
+def h_tree(t, length, depth):
+    if depth == 1:
+        t.fd(length/2)
+        t.bk(length)
+        t.fd(length/2)
+    else:
+        distance = length / (2**(1/2))
+        h_tree(t, length, 1)
+        t.fd(length/2)
+        t.lt(90)
+        h_tree(t, distance, depth-1)
+        t.rt(90)
+        t.bk(length)
+        t.lt(90)
+        h_tree(t, distance, depth-1)
+        t.rt(90)
+        t.fd(length/2)
+        
+def sum_list0(g):
+    if len(g) == 1:
+        return g[0]
+    else:
+        return g[0] + sum_list0(g[1:])
+
+def sum_list1(g):
+    result = 0
+    for element in g:
+        result += element
+    return result
+=======================
+Question 22:
+Programming question:
+skill: 4
+Consider the two functions duplicate_exists0 and duplicate_exists1 defined below. Both of these functions correctly
+determine if an integer array g contains duplicate elements (in other words, if there exists a number in g that can be
+found more than once). Note that duplicate_exists1 uses the syntax "if x in seen," which is the condition when an
+element x can be found inside the array seen.
+
+def duplicate_exists0(g):
+    i = 0
+
+    while i < len(g):
+        j = i + 1
+
+        while j < len(g):
+            if g[i] == g[j]:
+                return True
+                
+            j = j + 1
+
+        i = i + 1
+
+    return False
+
+def duplicate_exists1(g):
+    seen = []
+    
+    for x in g:
+        if x in seen:
+            return True
+            
+        seen.append(x)
+        
+    return False
+    
+Determine, with explanation, the worst-case time complexities of the two functions above. Note that n = len(g).
+
+Possible solution:
+=======================
+"""
+
+# Solution for first programming question
+
+# This helper function determines if num (a number) is in g, which is an integer array.
+
+def search(g, num):
+    for val in g:
+        if val == num:
+            return True
+        
+    return False
+
+def help_monks(n, holes):
+    # Taking care of the base cases (only 1 step, only 1 step and it has a hole, or step n has a hole)
+        
+    if n == 1:
+        if search(holes, 1) == True:
+            return 0
+        
+        elif search(holes, 1) == False:
+            return 1
+    
+    elif search(holes, n) == True:
+        return 0
+    
+    else:
+        num_ways = 0
+        
+        # If the monks end their journey through the tower by taking one step, they must have traveled
+        # successfully from step (n - 1) to step n. This requires step (n - 1) to not be a hole. Since
+        # their last step is fixed, the total number of ways they could have went from step 1 to step n
+        # is equal to the number of ways they could have went from step 1 to step (n - 1). For this to
+        # occur, the tower must have at least 2 steps (n >= 2), but the base case already forces this.
+        
+        if search(holes, n - 1) == False:
+            num_ways = num_ways + help_monks(n - 1, holes)
+        
+        # If the monks end their journey through the tower by taking two steps, they must have traveled
+        # successfully from step (n - 2) to step n. This requires not only step (n - 2) to not be a hole,
+        # but step (n - 1) cannot be a hole also because monks cannot step over holes. Since the last two
+        # steps are fixed, if these conditions are met, the total number of ways they could have went from
+        # step 1 to step n is equal to the number of ways they could have went from step 1 to step (n - 2).
+        # For this to occur, the tower must have had at least 3 steps, so we also need to check n >= 3 (the
+        # only thing guaranteed by passing the base case is n >= 2).
+        
+        if n >= 3 and search(holes, n - 2) == False and search(holes, n - 1) == False:
+            num_ways = num_ways + help_monks(n - 2, holes)
+            
+    return num_ways
+    
+# Solution to second question
+
+# Both of the solutions provided have an O(n^2) time complexity. duplicate_exists0 uses a nested loop; the
+# outer loop requires n operations, where n = len(g), and each iteration of the outer loop iterates over the
+# inner loop to a maximum of n times as well. This is what gives the first solution O(n^2) time complexity.
+# duplicate_exists1 stores a list called seen, and determines if a new element is already inside any elements
+# that are in seen (have been seen already). The outer for loop requires n operations, and "if x in seen"
+# requires a linear search (O(n)) through the seen list that requires a maximum of n operations. This is what
+# gives the second solution O(n^2) time complexity.
+=======================
+Question 23:
+Programming question: Write a recursive solution for the function search_table that determines whether a value is in list of lists g.
+skill: 11
+Description if you do this remember to put return statements on your recursive case!
+
+Possible solution:
+=======================
+"""
+import turtle
+
+mateus = turtle.Turtle()
+window = turtle.Screen()
+mateus.speed(0)
+
+def draw_circle(t, r):
+    cc = 3.14 * r * 2
+    i = 0
+    
+    while i < 360:
+        t.fd(cc/360)
+        t.lt(1)
+        i += 1
+    
+    
+draw_circle(mateus, 100)
+
+def search_table(g, value):
+    
+    print(g)
+    if g == []:
+        return False
+        
+    else:
+        
+        if g[0][0] == value:
+            return True
+        else:
+            g[0] = g[0][1:]
+            
+        if g[0] == []:
+            return search_table(g[1:], value)
+        else:
+            return search_table(g, value)
+
+
+# print(search_table([[1, 2, 3], [4, 5, 6]], 1))
+=======================
+Question 24:
+Programming question:
+skill: 11
+Description
+Write a recursive function sumdigs(n) to find the
+sum of digits of a number n.
+For instance, print(sumdigs(238)) returns 13.
+
+Possible solution:
+def sumdigs(n):
+    if n == 0:
+        return 0
+    if n // 10 == 0:
+        return n
+    else:
+        top = n // 10
+        return (n % 10) + sumdigs(top)
+=======================
+"""
+=======================
+Question 25:
+Programming question:
+skill: 14
+Write a recursive function for the binary search, assuming the inputted function is sorted.
+
+Possible solution:
+=======================
+"""
+
+def string_reverse(string):
+    if string == "":
+        return ""
+    else:
+        return string_reverse(string[1:]) + string[0]
+print(string_reverse('hello')) 
+        
+def binary_search(list, key):
+    if len(list) == 0:
+        return False
+    half = len(list) // 2
+    if list[half] == key:
+        return True
+    elif key < list[half]:
+        return binary_search(list[:half], key)
+    elif key > list[half]:
+        return binary_search(list[half+1:], key)
+print(binary_search([2, 3, 5, 6, 9, 10], 5))
+=======================
+Question 26:
+Programming question:
+skill: 11
+Write a recursive function called count_digits(n)
+that returns how many digits are in a positive integer. 
+
+Possible solution:
+=======================
+"""
+def count_vowels0(word):
+    count = 0
+    vowels = "aeiou"
+    for vowel in vowels:
+        for letter in word:
+            if letter == vowel:
+                count += 1
+    return count
+
+def count_vowels1(word):
+    count = 0
+    for letter in word:
+        if letter == "a" or letter == "e" or letter == "i" or letter == "o" or letter == "u":
+            count += 1
+    return count
+
+
+def count_digits(n):
+    i = 0
+    if n < 10:
+        i += 1
+    else:
+        i += 1 + count_digits(n//10)
+    return i
+=======================
+Question 27:
+"""
+
+def count_paths(n):
+    if n == 0 or n == 1:
+        return 1
+    return count_paths(n - 1) + count_paths(n - 2)
+
+"""
+=======================
+Programming question:
+skill: 11
+
+You are given the description of a recursive fractal using regular polygons:
+
+At each step:
+- Draw a regular polygon with `n` sides and side length `length`
+- Turn slightly (by angle = 360 / n)
+- Recursively draw a smaller polygon with side length multiplied by `scale`
+
+The recursion should stop when length < min_length.
+
+Write a recursive function nested_polygon(t, n, length, scale, min_length)
+that draws this fractal using turtle.
+
+Possible solution:
+=======================
+"""
+
+import turtle
+
+def draw_polygon(t, n, length):
+    angle = 360 / n
+    for _ in range(n):
+        t.forward(length)
+        t.left(angle)
+
+def nested_polygon(t, n, length, scale, min_length):
+    if length < min_length:
+        return
+    
+    draw_polygon(t, n, length)
+    
+    t.left(360 / n)  # slight rotation for visual effect
+    
+    nested_polygon(t, n, length * scale, scale, min_length)
+=======================
+Question 28:
+Programming question:
+skill:
+Description
+
+Possible solution:
+=======================
+"""
+=======================
+Question 29:
+"""
+
+def find_max(nums):
+    largest = nums[0]
+
+    for num in nums:
+        if num > largest:
+            largest = num
+
+    return largest
+
+
+"""
+Programming question:
+skill: 11 (Recursion)
+
+Description:
+Write a recursive function called countdown(n).
+
+The function should:
+1. Print numbers starting at n down to 1
+2. Use recursion instead of a loop
+3. Stop when n reaches 0
+
+Example:
+countdown(5)
+prints:
+5
+4
+3
+2
+1
+
+Possible solution:
+=======================
+"""
+
+def countdown(n):
+    if n == 0:
+        return
+
+    print(n)
+    countdown(n - 1)
+=======================
+Question 30:
+import turtle
+hi = turtle.Turtle()
+
+def right_ang(t, depth, length):
+    if depth == 1:
+        t.fd(length)
+        t.rt(90)
+        t.fd(length)
+        t.lt(90)
+    else:
+        right_ang(t, depth-1, length)
+        t.rt(90)
+        right_ang(t, depth-1, length)
+        t.lt(90)
+        
+right_ang(hi, 5, 20)
+
+=======================
+Programming question:
+skill:
+Write a function that finds n!
+
+Possible solution:
+
+def factorial(n):
+    if n == 1:
+        return(1)
+    else:
+        return(n * factorial(n-1))
+    
+print(factorial(7))
+=======================
+"""

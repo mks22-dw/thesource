@@ -1,0 +1,862 @@
+
+=======================
+Question 0.a:
+Which of the following Big O notations best represent this
+function?
+def mystery (g):
+    result=[]
+    for v0 in g:
+        sub=[]
+        total=0
+        for v1 in g:
+            total+= v1
+            sub.append(total)
+        result.append(sub)
+    return result
+    
+skill:4 
+Options:
+A) O(n)
+B) O(log n)
+C) O(n log n)
+D) O(n^2)
+Answer:
+D
+=======================
+Question 0.b:
+Which of the following is not a valid base case for a
+recursive function dealing with lists. By non valid, i mean it won't
+work. g is a valid python list.
+skill: 11
+Options:
+A)if g== ""
+B)if g == []
+C)if len (g) < 1
+D)if len (g)==0
+Answer:
+A
+=======================
+Question 1.a:
+Which Big O notation represents the fastest possible algorithmic output?
+skill: 4
+Options:
+A) O(n * logn)
+B) O(log n)
+C) O(n)
+D) None of the options above
+
+Answer D [O(1) is the fastest]
+=======================
+Question 1.b:
+What is the Big O notation for the following function.
+Def foo (b):
+    a = b
+    while a > 1:
+        a = a // 2
+        print (a)
+skill: 4, 11
+Options:
+A) O(log n)
+B) O(n)
+C) O(n ^ 2)
+D) O (1)
+Answer A (completes in logarithmic time)
+=======================
+Question 2.a:
+Which answer choice correctly lists the algorithms in order, from slowest to fastest?
+skill: 4
+Options:
+A) O(n^2), O(2^n), O(n), O(log n)
+B) O(2^n), O(n^2), O(n), O(n log n)
+C) O(2^n), O(n^2), O(1), O(log n)
+D) O(2^n), O(n^2), O(log n), O(1)
+
+Answer: D
+=======================
+Question 2.b:
+What type of algorithm would the function len(g) be?
+skill: 4
+Options:
+A) O(1)
+B) O(n)
+C)
+D)
+
+Answer: B
+=======================
+Question 3.a:
+In a recursive function, what type of code should you include?
+skill: 11
+Options:
+A) A for loop
+B) The function in itself
+C) A boolean statement
+D) Another function in itself
+Answer B
+=======================
+Question 3.b:
+How is an exponential time represented?
+skill: 4
+Options:
+A) O(2^n)
+B) O(n^2)
+C) O(n)^2
+D) O(log n)
+Answer A
+=======================
+Question 4.a:
+Which algorithm is more efficient for large n?
+skill: 4
+Options:
+A) O(n^2)
+B) O(log n)
+C) O(n)
+D) O(n log n) 
+
+Answer: B
+=======================
+Question 4.b:
+What will this recursive function return?
+
+def mystery(n):
+    if n == 1:
+        return 1
+    return n + mystery(n-1)
+
+mystery(3)
+
+skill: 11
+Options:
+A) 3
+B) 5
+C) 6
+D) 9
+
+Answer: C
+=======================
+Question 5.a:
+Which of the following algorithms (Classified using Big O notation) isn't valid?
+skill: 11
+Options:
+A. (n log n) 
+B. (3^n)
+C. (n / log n)
+D. (n^3)
+
+
+Answer
+C
+=======================
+Question 5.b:
+What type of algorithm (Classified using Big O notation) would the following shell of a recursive function create?
+                for x in y:
+                    for z in y:
+skill: 4, 11
+Options:
+A. (n^2)
+B. (2^n)
+C. (n)
+D. (1)
+
+Answer
+A
+=======================
+Question 6.a:
+Which time does this function run on?
+def func(g):
+    x = []
+    for c in g:
+        x += c
+    return x
+skill: 4, 11
+Options:
+A) O(1)
+B) O(log n)
+C) O(n)
+D) O(n^2)
+
+Answer: C
+=======================
+Question 6.b:
+Which is faster, O(n^2) or O(2^n)?
+skill: 4
+Options:
+A) They are the same
+B) O(n^2), slightly
+C) O(2^n), slightly
+D) It depends on n, but O(n^2) at high n values.
+
+Answer: D
+=======================
+Question 7.a:
+Which big O time complexity is the most efficient as you increase the number of input values?
+skill:4
+Options:
+A: O(n)
+B: O(n^2)
+C: O(1)
+D: O(2^n)
+
+Answer
+C: O(1)
+=======================
+Question 7.b:
+What must every recursive function have?
+skill:11
+Options:
+A:A counter variable
+B:A loop
+C:A base case
+D:A print statement
+Answer
+C:A base case
+=======================
+Question 8.a:
+Which is the Big O notation for exponential time?
+skill: 4
+Options:
+A. O (n)
+B. O(n^2)
+C. O(2^n)
+D. O(log n)
+Answer C
+=======================
+Question 8.b:
+skill:
+Options:
+
+Answer
+=======================
+Question 9.a:
+Given the two functions, which is more efficient based on big O?
+skill: 4
+Options:
+a. def find_the_number(number, target):
+    for num1 in number:
+        for num2 in number:
+            if num1 == target and num2 == target:
+                return True
+
+    return False
+    
+b. def find_the_number(number, target):
+    for num in number:
+        if num == target:
+            return True
+
+    return False
+
+Answer b
+=======================
+Question 9.b:
+Which of the following wouldn't be classified as O(1)?
+skill: 4
+Options:
+a. appending an element to the end of a list
+b. finding out if a list is empty
+c. retrieving the start value of a list
+d. searching for a specific value in a list
+
+Answer d
+=======================
+Question 10.a:
+What does the base case of a fractal consist of?
+skill: 11, 4
+Options:
+A) a line
+B) returning to original heading
+C) the depth 1 fractal
+D) a line and a turn
+
+Answer: C
+=======================
+Question 10.b:
+Which of the following is an O(1) operation?
+skill: 4
+Options:
+A) len(g)
+B) g.find(4)
+C) g[:-1]
+D) g[4]
+
+Answer: D
+=======================
+Question 11.a:
+In big O notation, which of the following increases at the lowest rate?
+skill: 4
+Options:
+A) O(n log n)
+B) O(1)
+C) O(log n)
+D) Constant time
+
+Answer
+C
+=======================
+Question 11.b:
+A function which can be described as linear has what?
+skill: 4
+Options:
+A) Two loops from start to finish
+B) One loop from start to finish
+C) One basic operation
+D) n basic operations
+Answer
+B
+=======================
+Question 12.a:
+which of the following is the fastest for a computer to execute
+skill:4
+Options:
+A) log time
+B) exponential time
+C) linear time
+D) polynomial time
+Answer 
+A
+=======================
+Question 12.b:
+what does greater([2, 5, 7, 9, 10], 10) return
+def greater(list, k):
+    if len(list) == 0:
+        return False
+    elif g[0] > k:
+        return True
+    else:
+        return greater(list[1:], k)
+skill:4 11
+Options:
+
+
+A)greater([2, 5, 7, 9, 10], 10)
+B)greater([5, 7, 9, 10], 10)
+C) False
+D) True
+Answer
+C
+=======================
+Question 13.a:
+What will the following code do?:
+def shape(t, depth, length):
+    if depth == 1:
+        t.fd(length)
+    else:
+        t.rt(60)
+        shape(t, depth -1, length)
+        
+        t.rt(60)
+        shape(t, depth -1, length)
+        
+        t.rt(60)
+        shape(t, depth -1, length)
+shape(t, 6, 10)
+skill: 4, 11
+Options:
+A) It will make a triangle and stop
+B) It will make three triangles
+C) It will result in an error
+D) It will recursively draw triangles
+
+Answer: D
+=======================
+Question 13.b:
+Question1: What is the result of this code?
+def algorithm(t, depth, length):
+    if depth == 1:
+        t.lt(30)
+    else:
+        t.rt(20)
+        t.fd(length)
+algorithm(t, 5, 20)
+
+skill: 4
+Options:
+A) Turtle turns left 30 and stops
+B) Turtle turns right 20, moves forward, and stops because there is no recursive call
+C) Turtle doesn't do anything because there is no recursive call
+D) Turtle turns right 20 and stops
+
+Answer: B
+=======================
+Question 14.a:
+What is the order in time of the function len(g) with respect to g?
+skill: 4
+Options:
+A) constant
+B) linear
+C) polynomial
+D) exponential
+Answer: B
+=======================
+Question 14.b:
+How many lower-level Sierpinski triangles are called to make one higher-level one?
+skill: 11
+Options:
+A) 5
+B) 4
+C) 3
+D) 2
+Answer: C
+=======================
+Question 15.a:
+Two functions both search for a number in a sorted list.
+
+Algorithm A checks each number one by one from the beginning of the list.
+Algorithm B checks the middle number, then eliminates half of the remaining list each time.
+
+Which statement best compares the two algorithms?
+skill: 4
+Options:
+A) Algorithm A is O(log n), and Algorithm B is O(n)
+B) Algorithm A is O(n), and Algorithm B is O(log n)
+C) Both algorithms are O(n)
+D) Both algorithms are O(1)
+
+Answer: B
+=======================
+Question 15.b:
+What is the Big O complexity of this function?
+
+def print_pairs(nums):
+    for i in nums:
+        for j in nums:
+            print(i, j)
+
+skill: 4
+Options:
+A) O(1)
+B) O(log n)
+C) O(n)
+D) O(n^2)
+
+Answer: D
+=======================
+Question 16.a:
+Which represents constant time?
+skill: 4
+Options:
+A) O(1):
+B) O(log n)
+C) O(n)
+D) O(n^2)
+
+Answer: A
+=======================
+Question 16.b:
+Which represents a linear time?
+skill: 4
+Options:
+A) O(1):
+B) O(log n)
+C) O(n)
+D) O(n^2)
+
+Answer: C
+=======================
+Question 17.a:
+def something(L, n):
+    if len(L) <= 1:
+        return L
+    elif len(L) <= n:
+        return something(L, 1)
+    else:
+        new_list = something(L[:n], n + 1)
+        new_list.append(something(L[n:], n + 1))
+        return new_list
+
+How many times will something be called when running something([1, 2, 3, 4, 5, 6, 7, 8], 3)?
+skill: 4 11
+Options:
+A) 11
+B) 19
+C) 27
+D) the function will never return
+Answer: B
+=======================
+Question 17.b:
+def double_factorial(n):
+    if _?_:
+        ...
+    else:
+        return n * double_factorial(n - 2)
+
+The double factorial of n is n * (n - 2) * (n - 4) * ... 6 * 4 * 2 if n is even and
+n * (n - 2) * (n - 4) * ... * 5 * 3 * 1 if n is odd
+What is the best option to fill in the blank and the code below it?
+skill: 11
+Options:
+A) n <= 1; return n
+B) n <= 2; return n
+C) n == 1; return 1
+D) n == 2; return 2
+Answer: B
+=======================
+Question 18.a:
+What type of big O notation is binary search?
+skill: 4
+Options:
+A) Constant
+B) Logarithmic
+C) Quadratic
+D) Exponential
+
+Answer B
+=======================
+Question 18.b:
+Which is faster for larger data?
+skill: 4
+Options:
+A) O(n log n)
+B) O(n**2)
+C) O(n)
+D) None
+
+Answer A
+=======================
+Question 19.a:
+skill: 4
+Which of the following Big O classifications represents the most efficient 
+algorithm for searching through a sorted list of 1,000,000 elements?
+Options:
+A) O(n)
+B) O(n^2)
+C) O(log n)
+D) O(2^n)
+
+Answer: C
+=======================
+Question 19.b:
+skill: 11
+In a recursive function, what is the primary purpose of a "base case"?
+Options:
+A) To call the function again with a different parameter.
+B) To provide the initial value that starts the recursion.
+C) To prevent an infinite loop by stopping the recursive calls.
+D) To increase the Big O efficiency of the algorithm.
+
+Answer: C
+=======================
+Question 20.a:
+Which algorithm is the most efficient?
+skill: 4
+Options:
+A) O(2^n)
+B) O(log n)
+C) O(2n)
+D) O(n)
+Answer: B
+=======================
+Question 20.b:
+Which algorithm is the least efficient?
+skill: 4
+Options:
+A) O(2^n)
+B) O(log n)
+C) O(2n)
+D) O(n)
+Answer: A
+=======================
+Question 21.a:
+What is the result of the following code when given [1, 2, 3, 4, 5], and what
+class would this function likely fit in using big O notation?
+def hello(g):
+    if len(g) == 1:
+        return g[0]
+    else:
+        return g[0] + hello(g[1:])
+skill: 4 11
+Options:
+A) 15; O(n)
+B) 15; O(n^2)
+C) [1, 2, 3, 4, 5]; O(n)
+D) [1, 2, 3, 4, 5]; O(n^2)
+Answer: A
+=======================
+Question 21.b:
+The function we wrote for the Koch curve runs in ___ time because ___.
+skill:
+Options:
+A) logarithmic time; the function involves drawing Koch curves of lower depths.
+B) linear time; the turtle draws one continuous line instead of multiple branches/shapes.
+C) polynomial time; the function involves calling itself 4 times.
+D) exponential time; the function involves calling itself 4 times. 
+Answer: D
+=======================
+Question 22.a:
+Consider the function foo, defined below. What does foo(3) return, if anything?
+
+def foo(n):
+    if n == 1:
+        return 1
+    return n * foo(n + 1)
+
+skill: 11
+Options:
+A) 0
+B) 3
+C) 6
+D) When called, foo(3) does not return a number.
+
+Answer: D
+=======================
+Question 22.b:
+Consider the function consecutive_duplicates, defined below, which determines if an integer array contains
+duplicate elements whose indices are consecutive numbers. What is the worst-case time complexity of this
+function?
+
+def consecutive_duplicates(g):
+    i = 0
+    
+    while i < len(g) - 1:
+        if g[i] == g[i + 1]:
+            return True
+            
+        i = i + 1
+        
+    return False
+    
+skill: 4
+Options:
+A) O(n)
+B) O(n^2)
+C) O(log n)
+D) O(1)
+
+Answer: A
+=======================
+Question 23.a:
+Given the function:
+
+def search_table(g, value):
+    
+    for row in g:
+        for column in row:
+            if column == value:
+                return True
+                
+    return False
+
+where g is a list of lists, what is its time complexity?          
+
+skill: 4
+Options:
+a) O(1)
+b) O(n)
+c) O(n^2)
+d) O(2^n)
+
+Answer C
+=======================
+Question 23.b:
+In a 5x5 table where value is not present in g, how long will it take before we get the value False?	
+skill: 4
+Options:
+
+a) 1
+b) 5
+c) 25
+d) 32
+
+Answer C
+=======================
+Question 24.a:
+def x(g):
+    for hi in g:
+        for ji in g:
+            print(ji + hi)
+
+x([1, 2, 3])
+What is the Big O notation for the Python function above?
+
+skill: 4
+Options:
+A) O(n)
+B) O(n^2)
+C) O(2^n)
+D) O(1)
+
+Answer: B
+=======================
+Question 24.b:
+def x(n):
+    if n == 0:
+        return
+    if n % 5 == 0:
+        print(f'{n} is a multiple of 5!')
+    x(n-1)
+
+x(21)
+What is the big O notation for the python function above?
+
+skill: 4
+Options:
+A) O(n)
+B) O(n^2)
+C) O(2^n)
+D) O(1)
+
+Answer: A
+=======================
+Question 25.a:
+What will function(4) return?
+def function(x):
+    if x == 1:
+        return 1
+    else:
+        return x + function(x-1)
+skill: 14
+Options:
+A) 10
+B) 6
+C) 4
+D) 1
+
+Answer: A
+=======================
+Question 25.b:
+What happens if a recursive function is not given a base case?
+skill: 14
+Options:
+A) Nothing, it runs normally
+B) It will run infinitely
+C) Syntax error 
+D) It doesn't run
+Answer: B
+=======================
+Question 26.a:
+A programmer uses nested loops to search
+for a number in a list, even though only one loop is
+necessary. What is the main problem with this algorithm?
+skill: 4
+Options:
+A) It will always give the wrong answer
+B) It is inefficient
+C) Nested loops cannot be used with lists
+D) The program will never stop running. 
+
+Answer: B
+=======================
+Question 26.b:
+What is printed by the following code?
+
+def mystery(n):
+   if n == 0:
+     return
+   print(n)
+   mystery(n-1)
+   print(n)
+   
+mystery(3)
+
+skill: 11
+Options:
+A) 3 2 1
+B) 1 2 3
+C) 3 2 1 1 2 3
+D) 3 2 1 0 1 2 3
+Answer: C
+=======================
+Question 27.a:
+Two algorithms both determine whether a number appears in a list.
+Algorithm A checks each element one by one.
+Algorithm B first sorts the list, then uses binary search.
+
+Which statement is true?
+skill: 4
+Options:
+A) Algorithm A is always faster than Algorithm B
+B) Algorithm B is always O(log n)
+C) Algorithm A is O(n), Algorithm B is O(n log n) overall
+D) Both algorithms have the same time complexity
+
+Answer: C
+=======================
+Question 27.b:
+What is the base case in a recursive function?
+skill: 11
+Options:
+A) The part of the function that calls itself
+B) The condition that stops the recursion
+C) The fastest part of the function
+D) The part that uses a loop instead
+
+Answer: B
+=======================
+Question 28.a:
+What is the "Big O" time in the following function?
+
+def is_true(list):
+    for item in list:
+        if item == True:
+            return True
+    return False
+
+skill: 4 
+Options:
+A) O(n^2)
+B) O(log n)
+C) O(n)
+D) O(n log n)
+
+Answer
+C
+=======================
+Question 28.b:
+If two algorithms produce the same desired outcome, does that mean the Big O for each is the same?
+skill: 4
+Options:
+A) Always true
+B) Always false
+C) Depends on the function
+
+Answer
+C
+=======================
+Question 29.a:
+Which algorithm is more efficient for finding a number
+in a sorted list of 10,000 items?
+
+skill: 4 (Understanding Algorithms)
+
+Options:
+A) Linear Search because it checks every item
+B) Binary Search because it cuts the list in half each step
+C) Nested Loop Search because it compares every pair
+D) Bubble Sort because it swaps values
+
+Answer: B
+=======================
+Question 29.b:
+What is true about a recursive function?
+
+skill: 11 (Recursion)
+
+Options:
+A) It can never return a value
+B) It always uses loops
+C) It calls itself to solve smaller versions of a problem
+D) It only works with strings
+
+Answer: C
+=======================
+Question 30.a:
+What is the indexing of a list?
+skill:4
+Options:
+A) Starts at -1
+B) Starts at 1
+C) Starts at 2
+D) Starts at 0
+
+Answer: D
+=======================
+Question 30.b:
+Which of these is binary search?
+skill:9001
+Options:
+A) O(n)
+B) O(2^n)
+C) O(logn)
+D) O(n^2)
+
+Answer: C
