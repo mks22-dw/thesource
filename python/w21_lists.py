@@ -20,15 +20,17 @@ def count_evens(g):
 print(count_evens([5, 86, -988, 17, -988]))
 
 
-def make_sentence(g):
+def make_sentence(g, space):
     s = ''
-    for word in g:
-        s+= word + ' '
+    for word in g[:-1]:
+        s+= word + space
+    if len(g) != 0:
+        s+= g[-1]
     return s
 
-print(make_sentence([]))
-print(make_sentence(['bob']))
-print(make_sentence(['hot', 'dog']))
+print(make_sentence([], ' '))
+print(make_sentence(['bob'], ' '))
+print(make_sentence(['hot', 'dog'], ' '))
 
 def join_list(g, s):
     new_s = ''

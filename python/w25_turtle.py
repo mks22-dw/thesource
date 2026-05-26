@@ -1,7 +1,7 @@
 import turtle
 
 window = turtle.Screen()
-window.setup(600, 600) #set window size to 600x600 pixels
+window.setup(500, 500) #set window size to 500x500 pixels
 window.colormode(255)
 
 def draw_square(t, size):
@@ -29,6 +29,7 @@ def draw_spiral1(t, size, angle):
 
 
 raphael = turtle.Turtle() # make a new turlte
+raphael.speed(1)
 raphael.pu()
 raphael.setpos(-245, 245)
 draw_square(raphael, 200)
